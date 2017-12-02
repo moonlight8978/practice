@@ -1,0 +1,18 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/moonlight8978/practice",
+  "author": "Lê Sĩ Bích <moonlight8978@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server ./ -o -c-1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "4.0.0-beta.2",
+    "http-server": "^0.10.0",
+    "jquery": "^3.2.1",
+    "lazyload": "^2.0.0-beta.2"
+  }
+}
