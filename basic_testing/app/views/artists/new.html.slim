@@ -1,0 +1,9 @@
+= form_for @artist, html: { id: 'artist-form' } do |f|
+  = f.label :name
+  = f.text_field :name
+
+  div class='form-errors' id='name-errors'
+    - @artist.errors.messages[:name].each do |msg|
+      span = msg
+
+  = f.submit 'Create'
