@@ -8,11 +8,10 @@ require_relative 'vegetable_oil'
 #   100g vegetable_oil = 50g oil + 50g vegetable
 
 snack = Snack.new(100)
-
 vegetable_oil = VegetableOil.new(100)
+snack << vegetable_oil
+
 vegetable_oil << Vegetable.new(50)
 vegetable_oil << Oil.new(50)
-
-snack << vegetable_oil
 
 puts snack.cost
