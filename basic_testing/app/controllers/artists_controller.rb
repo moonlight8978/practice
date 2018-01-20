@@ -25,6 +25,20 @@ class ArtistsController < ApplicationController
     @artist = Artist.new
   end
 
+  def edit
+    @artist = Artist.find(params[:id])
+  end
+
+  def update
+    @artist = Artist.find(params[:id])
+    @artist.update(artist_params)
+    if @artist.errors.any?
+      render :edit
+    else
+      redirect_to artists_path
+    end
+  end
+
 private
 
   def artist_params

@@ -69,4 +69,29 @@ RSpec.describe ArtistsController, type: :controller do
       expect(response).to have_http_status(:success)
     end
   end
+
+  describe "GET #edit" do
+    let(:artist) { create(:artist_nao) }
+
+    it "return an artist form to edit" do
+      get :edit, params: { id: artist.id }
+
+      expect(response).to have_http_status(:success)
+      expect(assigns[:artist]).to eq artist
+    end
+  end
+
+  describe "PUT #update" do
+    let(:artist) { create(:artist_nao) }
+    let(:new_name) { 'miru' }
+    let(:params) { Hash[id: artist.id, artist: { name: new_name }] }
+
+    it "updates the artist informations" do
+      put :update, params: params
+
+      expect(assigns[:artist].name).to eq new_name
+      expect(assigns[:artist]).to be_valid
+      expect(response).to redirect_to(artists_path)
+    end
+  end
 end
