@@ -19,7 +19,7 @@ $(document).on("focusout", "input.form-control", function () {
 $(document).ready(function () {
   $("input.form-control").each(function (index) {
     decideLabelClass(this, function ($label, placeholder, value) {
-      if (!placeholder) {
+      if (!placeholder && !value) {
         $label.addClass('placeholder')
       }
     })

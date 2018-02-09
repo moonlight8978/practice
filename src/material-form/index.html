@@ -3,6 +3,7 @@
 <head>
   <title>Material Form</title>
   <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../node_modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
@@ -13,14 +14,21 @@
 
     <div class="form-body">
       <div class="form-group">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <label for="exampleInputEmail1">Email address</label>
+        <div class="input-wrapper">
+          <i class="far fa-envelope form-icon"></i>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="exampleInputEmail1">Email address</label>
+        </div>
+
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
 
       <div class="form-group">
-        <input type="password" class="form-control" id="exampleInputPassword1">
-        <label for="exampleInputPassword1">Password</label>
+        <div class="input-wrapper">
+          <!-- <i class="far fa-keyboard form-icon"></i> -->
+          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1">Password</label>
+        </div>
       </div>
     </div>
   </form>

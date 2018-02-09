@@ -27,9 +27,9 @@ body {
   padding: 1rem;
 }
 
-.form-group {
+.input-wrapper {
   position: relative;
-  padding-top: 1.2rem;
+  padding-top: 1.2rem; /* 0.8rem * 1.5 */
 }
 
 input.form-control {
@@ -53,7 +53,7 @@ input.form-control ~ label {
 
 input.form-control ~ label.placeholder {
   font-size: 1rem;
-  top: 2.2rem;
+  top: 2.2rem; /* 0.8rem (font-size) * 1.5 (line-height) + 1rem (padding) */
   color: #8e8e8e;
 }
 
@@ -65,4 +65,20 @@ input.form-control:focus {
 
 input.form-control:focus ~ label {
   color: #26a69a;
+}
+
+.form-icon {
+  position: absolute;
+  top: 1.7rem; /* (0.8rem (font-size) * 1.5 (line-height) + 1rem (padding) + 1rem * 1.5 (placeholder)) - 2rem * 1 (icon) */
+  font-size: 2rem;
+  width: 3rem;
+}
+
+.form-icon ~ input.form-control {
+  margin-left: 3rem;
+  width: calc(100% - 3rem);
+}
+
+.form-icon ~ input.form-control ~ label {
+  left: 3rem;
 }
