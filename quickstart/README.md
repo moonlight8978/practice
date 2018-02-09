@@ -1,22 +1,30 @@
-rails new app_name -B -T --skip-javascript -d postgresql
+* `$ rails new app_name -B -T --skip-turbolinks -d postgresql`
 
-Copy all folder's contents except README.md to project folder
+* Copy all folder's contents except README.md to project folder
 
-bundle
+* `$ bundle`
 
-rails g rspec:install
+* `$ rails g rspec:install`
 
-Add to spec/rails_helper.rb
+* Add to `spec/rails_helper.rb`
 
+```ruby
 require 'capybara/rspec'
 require 'support/factory_bot'
 require 'support/database_cleaner'
+```
 
-rm -r config/locales
-cp $(i18n-tasks gem-path)/templates/config/i18n-tasks.yml config/
-cp $(bundle exec i18n-tasks gem-path)/templates/rspec/i18n_spec.rb spec/
+* i18n
 
-app/controllers/application_controller.rb
+ * `$ rm -r config/locales`
+
+ * `$ cp $(i18n-tasks gem-path)/templates/config/i18n-tasks.yml config/`
+
+ * `$ cp $(bundle exec i18n-tasks gem-path)/templates/rspec/i18n_spec.rb spec/`
+
+ * `app/controllers/application_controller.rb`
+
+```ruby
 class ApplicationController < ActionController::Base
   # codes
   before_action :set_locale
@@ -31,9 +39,15 @@ protected
     { locale: I18n.locale }
   end
 end
+```
 
-rails g devise:install
-config/environments/development.rb
+* Devise
+
+ * `$ rails g devise:install`
+
+ * `$ config/environments/development.rb`
+
+```ruby
 # Devise settings
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
@@ -47,15 +61,25 @@ ActionMailer::Base.smtp_settings = {
   :authentication => :plain
   # :enable_starttls_auto => true
 }
-rails generate devise user
-rake db:migrate
-rails generate devise:controllers users
-rails generate devise:views users
+```
 
-config/routes.rb
+ * `$ rails generate devise user`
+
+ * `$ rake db:migrate`
+
+ * `$ rails generate devise:controllers users`
+
+ * `$ rails generate devise:views users`
+
+ * Add to `config/routes.rb`
+
+```ruby
 devise_for :users
+```
 
-config/application.rb
+* `config/application.rb`
+
+```ruby
 # Autoload paths
 config.autoload_paths << Rails.root.join('lib')
 config.assets.paths << Rails.root.join('node_modules')
@@ -64,9 +88,14 @@ config.assets.paths << Rails.root.join('node_modules')
 ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
   html_tag.html_safe
 end
+```
 
-sudo apt-get install elasticsearch
+* Search engine
 
-rails generate draper:install
+ * `$ sudo apt-get install elasticsearch`
 
-# carrierwave
+* Decorator
+
+ * `$ rails generate draper:install`
+
+* Carrierwave (image uploader)
