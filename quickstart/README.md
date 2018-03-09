@@ -2,6 +2,8 @@
 
 * Copy all folder's contents except README.md to project folder
 
+* Add database's username, password, host, and port to `config/database.yml`
+
 * `$ bundle`
 
 * `$ rails g rspec:install`
