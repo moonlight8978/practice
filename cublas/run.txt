@@ -1,0 +1,1 @@
+nvcc -lcublas add_array.cu -o out -gencode arch=compute_11,code=sm_11
