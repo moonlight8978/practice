@@ -1,0 +1,14 @@
+.modal-loading {
+  height: 75px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  background-image: url(loading_2.gif);
+  background-position: center center;
+  background-size: contain;
+}
+
+.modal-dialog {
+  max-width: 640px;
+  margin: 60px auto;
+}
