@@ -1,0 +1,2100 @@
+==5060== NVPROF is profiling process 5060, command: vanilla.exe
+==5060== Profiling application: vanilla.exe
+==5060== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.35%  7.8667ms         1  7.8667ms  7.8667ms  7.8667ms  [CUDA memcpy DtoH]
+ 30.18%  5.6063ms         2  2.8032ms  5.2800us  5.6011ms  [CUDA memcpy HtoD]
+ 27.46%  5.1002ms         1  5.1002ms  5.1002ms  5.1002ms  s_scal(int, float*, float*)
+
+==5060== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 81.83%  114.92ms         2  57.458ms  2.9035ms  112.01ms  cudaMalloc
+ 15.30%  21.479ms         3  7.1595ms  67.967us  15.424ms  cudaMemcpy
+  1.61%  2.2652ms         2  1.1326ms  572.65us  1.6926ms  cudaFree
+  1.02%  1.4285ms        83  17.210us       0ns  729.68us  cuDeviceGetAttribute
+  0.17%  238.67us         1  238.67us  238.67us  238.67us  cuDeviceGetName
+  0.06%  77.733us         1  77.733us  77.733us  77.733us  cudaLaunch
+  0.01%  12.109us         1  12.109us  12.109us  12.109us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  2.3440us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     782ns         2     391ns       0ns     782ns  cuDeviceGet
+==10528== NVPROF is profiling process 10528, command: vanilla.exe
+==10528== Profiling application: vanilla.exe
+==10528== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 36.51%  11.755ms         1  11.755ms  11.755ms  11.755ms  [CUDA memcpy DtoH]
+ 34.75%  11.189ms         2  5.5945ms  6.4330us  11.183ms  [CUDA memcpy HtoD]
+ 28.75%  9.2560ms         1  9.2560ms  9.2560ms  9.2560ms  s_scal(int, float*, float*)
+
+==10528== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 73.94%  139.62ms         2  69.808ms  4.2265ms  135.39ms  cudaMalloc
+ 23.58%  44.522ms         3  14.841ms  99.217us  26.524ms  cudaMemcpy
+  1.57%  2.9718ms         2  1.4859ms  196.87us  2.7750ms  cudaFree
+  0.73%  1.3715ms        83  16.523us       0ns  667.18us  cuDeviceGetAttribute
+  0.12%  229.29us         1  229.29us  229.29us  229.29us  cuDeviceGetName
+  0.04%  78.124us         1  78.124us  78.124us  78.124us  cudaLaunch
+  0.02%  32.812us         1  32.812us  32.812us  32.812us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     390ns  2.3440us  cudaSetupArgument
+  0.00%  1.9540us         2     977ns     391ns  1.5630us  cuDeviceGetCount
+  0.00%     780ns         2     390ns     390ns     390ns  cuDeviceGet
+==11440== NVPROF is profiling process 11440, command: vanilla.exe
+==11440== Profiling application: vanilla.exe
+==11440== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 46.26%  10.323ms         1  10.323ms  10.323ms  10.323ms  [CUDA memcpy DtoH]
+ 30.84%  6.8814ms         2  3.4407ms  5.4410us  6.8760ms  [CUDA memcpy HtoD]
+ 22.90%  5.1112ms         1  5.1112ms  5.1112ms  5.1112ms  s_scal(int, float*, float*)
+
+==11440== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 79.06%  220.19ms         2  110.10ms  3.1320ms  217.06ms  cudaMalloc
+ 19.08%  53.149ms         3  17.716ms  103.12us  44.123ms  cudaMemcpy
+  1.36%  3.7785ms        83  45.523us       0ns  1.9433ms  cuDeviceGetAttribute
+  0.33%  906.63us         2  453.31us  191.01us  715.61us  cudaFree
+  0.13%  362.10us         1  362.10us  362.10us  362.10us  cuDeviceGetName
+  0.03%  82.030us         1  82.030us  82.030us  82.030us  cudaLaunch
+  0.01%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  7.0310us         1  7.0310us  7.0310us  7.0310us  cudaConfigureCall
+  0.00%  4.6870us         3  1.5620us     391ns  3.1250us  cudaSetupArgument
+  0.00%  2.3450us         2  1.1720us     391ns  1.9540us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==12168== NVPROF is profiling process 12168, command: vanilla.exe
+==12168== Profiling application: vanilla.exe
+==12168== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.08%  7.5648ms         1  7.5648ms  7.5648ms  7.5648ms  [CUDA memcpy DtoH]
+ 32.87%  6.2040ms         2  3.1020ms  5.2810us  6.1987ms  [CUDA memcpy HtoD]
+ 27.05%  5.1044ms         1  5.1044ms  5.1044ms  5.1044ms  s_scal(int, float*, float*)
+
+==12168== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.53%  113.49ms         2  56.744ms  2.9160ms  110.57ms  cudaMalloc
+ 15.17%  20.858ms         3  6.9528ms  61.718us  14.253ms  cudaMemcpy
+  1.08%  1.4789ms        83  17.817us       0ns  724.99us  cuDeviceGetAttribute
+  0.98%  1.3500ms         2  674.99us  360.93us  989.05us  cudaFree
+  0.17%  235.15us         1  235.15us  235.15us  235.15us  cuDeviceGetName
+  0.06%  80.858us         1  80.858us  80.858us  80.858us  cudaLaunch
+  0.01%  13.672us         1  13.672us  13.672us  13.672us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.1240us         3  1.0410us       0ns  1.9530us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==11160== NVPROF is profiling process 11160, command: vanilla.exe
+==11160== Profiling application: vanilla.exe
+==11160== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 44.25%  9.0476ms         1  9.0476ms  9.0476ms  9.0476ms  [CUDA memcpy DtoH]
+ 30.80%  6.2981ms         2  3.1491ms  5.3120us  6.2928ms  [CUDA memcpy HtoD]
+ 24.95%  5.1013ms         1  5.1013ms  5.1013ms  5.1013ms  s_scal(int, float*, float*)
+
+==11160== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.94%  134.54ms         2  67.270ms  3.0230ms  131.52ms  cudaMalloc
+ 14.38%  23.045ms         3  7.6818ms  94.139us  15.944ms  cudaMemcpy
+  0.91%  1.4601ms        83  17.591us       0ns  708.58us  cuDeviceGetAttribute
+  0.52%  832.02us         2  416.01us  210.54us  621.48us  cudaFree
+  0.18%  281.25us         1  281.25us  281.25us  281.25us  cuDeviceGetName
+  0.05%  85.155us         1  85.155us  85.155us  85.155us  cudaLaunch
+  0.01%  16.015us         1  16.015us  16.015us  16.015us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  3.1250us  cudaSetupArgument
+  0.00%  1.9540us         2     977ns     391ns  1.5630us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==11472== NVPROF is profiling process 11472, command: vanilla.exe
+==11472== Profiling application: vanilla.exe
+==11472== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 45.23%  14.524ms         1  14.524ms  14.524ms  14.524ms  [CUDA memcpy DtoH]
+ 28.13%  9.0322ms         1  9.0322ms  9.0322ms  9.0322ms  s_scal(int, float*, float*)
+ 26.64%  8.5562ms         2  4.2781ms  8.3210us  8.5479ms  [CUDA memcpy HtoD]
+
+==11472== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 76.30%  128.19ms         2  64.096ms  4.0085ms  124.18ms  cudaMalloc
+ 22.17%  37.257ms         3  12.419ms  73.827us  25.754ms  cudaMemcpy
+  0.90%  1.5179ms        83  18.288us       0ns  724.99us  cuDeviceGetAttribute
+  0.40%  676.16us         2  338.08us  252.73us  423.43us  cudaFree
+  0.16%  260.54us         1  260.54us  260.54us  260.54us  cuDeviceGetName
+  0.05%  83.202us         1  83.202us  83.202us  83.202us  cudaLaunch
+  0.01%  17.968us         1  17.968us  17.968us  17.968us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.9050us         3  1.3010us     390ns  2.7340us  cudaSetupArgument
+  0.00%  2.3430us         2  1.1710us     390ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==11524== NVPROF is profiling process 11524, command: vanilla.exe
+==11524== Profiling application: vanilla.exe
+==11524== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 44.75%  9.3974ms         1  9.3974ms  9.3974ms  9.3974ms  [CUDA memcpy DtoH]
+ 31.10%  6.5313ms         2  3.2657ms  5.3440us  6.5260ms  [CUDA memcpy HtoD]
+ 24.15%  5.0716ms         1  5.0716ms  5.0716ms  5.0716ms  s_scal(int, float*, float*)
+
+==11524== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 87.12%  197.23ms         2  98.613ms  3.3261ms  193.90ms  cudaMalloc
+ 10.68%  24.181ms         3  8.0603ms  121.48us  16.969ms  cudaMemcpy
+  1.29%  2.9211ms        83  35.193us       0ns  1.7941ms  cuDeviceGetAttribute
+  0.68%  1.5394ms         2  769.71us  592.57us  946.86us  cudaFree
+  0.18%  407.42us         1  407.42us  407.42us  407.42us  cuDeviceGetName
+  0.03%  78.514us         1  78.514us  78.514us  78.514us  cudaLaunch
+  0.01%  17.968us         1  17.968us  17.968us  17.968us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==1800== NVPROF is profiling process 1800, command: vanilla.exe
+==1800== Profiling application: vanilla.exe
+==1800== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 67.41%  43.323ms         1  43.323ms  43.323ms  43.323ms  [CUDA memcpy DtoH]
+ 18.40%  11.822ms         2  5.9112ms  5.3450us  11.817ms  [CUDA memcpy HtoD]
+ 14.19%  9.1194ms         1  9.1194ms  9.1194ms  9.1194ms  s_scal(int, float*, float*)
+
+==1800== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 71.01%  186.38ms         2  93.187ms  3.1332ms  183.24ms  cudaMalloc
+ 27.21%  71.426ms         3  23.809ms  653.90us  54.558ms  cudaMemcpy
+  1.10%  2.8875ms         2  1.4437ms  490.62us  2.3968ms  cudaFree
+  0.54%  1.4086ms        83  16.970us       0ns  677.72us  cuDeviceGetAttribute
+  0.10%  260.93us         1  260.93us  260.93us  260.93us  cuDeviceGetName
+  0.04%  92.577us         1  92.577us  92.577us  92.577us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  3.1250us  cudaSetupArgument
+  0.00%  2.3430us         2  1.1710us     390ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==9760== NVPROF is profiling process 9760, command: vanilla.exe
+==9760== Profiling application: vanilla.exe
+==9760== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.71%  7.5241ms         1  7.5241ms  7.5241ms  7.5241ms  [CUDA memcpy DtoH]
+ 31.80%  5.8782ms         2  2.9391ms  5.2800us  5.8729ms  [CUDA memcpy HtoD]
+ 27.49%  5.0810ms         1  5.0810ms  5.0810ms  5.0810ms  s_scal(int, float*, float*)
+
+==9760== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.63%  147.40ms         2  73.701ms  3.7140ms  143.69ms  cudaMalloc
+ 12.15%  21.162ms         3  7.0539ms  86.327us  14.110ms  cudaMemcpy
+  1.92%  3.3425ms         2  1.6713ms  1.5543ms  1.7883ms  cudaFree
+  1.08%  1.8855ms        83  22.717us       0ns  945.69us  cuDeviceGetAttribute
+  0.16%  273.43us         1  273.43us  273.43us  273.43us  cuDeviceGetName
+  0.04%  73.045us         1  73.045us  73.045us  73.045us  cudaLaunch
+  0.01%  16.016us         1  16.016us  16.016us  16.016us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  2.3440us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12036== NVPROF is profiling process 12036, command: vanilla.exe
+==12036== Profiling application: vanilla.exe
+==12036== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.41%  21.226ms         2  10.613ms  5.9530us  21.220ms  [CUDA memcpy HtoD]
+ 39.47%  19.756ms         1  19.756ms  19.756ms  19.756ms  [CUDA memcpy DtoH]
+ 18.12%  9.0701ms         1  9.0701ms  9.0701ms  9.0701ms  s_scal(int, float*, float*)
+
+==12036== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 81.63%  286.58ms         2  143.29ms  11.187ms  275.39ms  cudaMalloc
+ 15.35%  53.877ms         3  17.959ms  480.07us  35.439ms  cudaMemcpy
+  2.34%  8.2245ms        83  99.090us       0ns  6.2190ms  cuDeviceGetAttribute
+  0.35%  1.2133ms         2  606.63us  241.79us  971.47us  cudaFree
+  0.31%  1.0746ms         1  1.0746ms  1.0746ms  1.0746ms  cuDeviceGetName
+  0.02%  83.592us         1  83.592us  83.592us  83.592us  cudaLaunch
+  0.01%  17.578us         1  17.578us  17.578us  17.578us  cuDeviceTotalMem
+  0.00%  5.8600us         1  5.8600us  5.8600us  5.8600us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  1.9530us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==11700== NVPROF is profiling process 11700, command: vanilla.exe
+==11700== Profiling application: vanilla.exe
+==11700== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 47.87%  14.429ms         2  7.2143ms  6.0800us  14.423ms  [CUDA memcpy HtoD]
+ 34.84%  10.500ms         1  10.500ms  10.500ms  10.500ms  [CUDA memcpy DtoH]
+ 17.30%  5.2133ms         1  5.2133ms  5.2133ms  5.2133ms  s_scal(int, float*, float*)
+
+==11700== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.82%  211.13ms         2  105.56ms  7.8776ms  203.25ms  cudaMalloc
+ 13.48%  33.558ms         3  11.186ms  92.186us  18.047ms  cudaMemcpy
+  1.01%  2.5152ms        83  30.303us       0ns  1.5078ms  cuDeviceGetAttribute
+  0.49%  1.2164ms         2  608.19us  416.01us  800.38us  cudaFree
+  0.14%  352.73us         1  352.73us  352.73us  352.73us  cuDeviceGetName
+  0.04%  102.73us         1  102.73us  102.73us  102.73us  cudaLaunch
+  0.01%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  4.6870us         3  1.5620us     390ns  2.7350us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==11608== NVPROF is profiling process 11608, command: vanilla.exe
+==11608== Profiling application: vanilla.exe
+==11608== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 51.93%  19.558ms         2  9.7789ms  5.2810us  19.553ms  [CUDA memcpy HtoD]
+ 34.51%  13.000ms         1  13.000ms  13.000ms  13.000ms  [CUDA memcpy DtoH]
+ 13.56%  5.1060ms         1  5.1060ms  5.1060ms  5.1060ms  s_scal(int, float*, float*)
+
+==11608== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.44%  231.33ms         2  115.67ms  3.2011ms  228.13ms  cudaMalloc
+ 14.57%  40.407ms         3  13.469ms  95.311us  20.624ms  cudaMemcpy
+  1.27%  3.5136ms        83  42.332us       0ns  2.0738ms  cuDeviceGetAttribute
+  0.32%  879.67us         1  879.67us  879.67us  879.67us  cudaLaunch
+  0.28%  787.88us         2  393.94us  212.50us  575.38us  cudaFree
+  0.10%  287.89us         1  287.89us  287.89us  287.89us  cuDeviceGetName
+  0.01%  16.796us         1  16.796us  16.796us  16.796us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.7350us         2  1.3670us     391ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==11388== NVPROF is profiling process 11388, command: vanilla.exe
+==11388== Profiling application: vanilla.exe
+==11388== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.97%  14.904ms         2  7.4522ms  5.9200us  14.899ms  [CUDA memcpy HtoD]
+ 37.94%  14.891ms         1  14.891ms  14.891ms  14.891ms  [CUDA memcpy DtoH]
+ 24.08%  9.4523ms         1  9.4523ms  9.4523ms  9.4523ms  s_scal(int, float*, float*)
+
+==11388== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 77.13%  168.83ms         2  84.413ms  4.2449ms  164.58ms  cudaMalloc
+ 21.45%  46.943ms         3  15.648ms  379.29us  30.203ms  cudaMemcpy
+  0.67%  1.4648ms        83  17.648us       0ns  725.38us  cuDeviceGetAttribute
+  0.56%  1.2156ms         2  607.80us  226.56us  989.05us  cudaFree
+  0.15%  320.31us         1  320.31us  320.31us  320.31us  cuDeviceGetName
+  0.04%  78.123us         1  78.123us  78.123us  78.123us  cudaLaunch
+  0.01%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  3.9050us         3  1.3010us     390ns  2.7340us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==12252== NVPROF is profiling process 12252, command: vanilla.exe
+==12252== Profiling application: vanilla.exe
+==12252== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.11%  10.067ms         2  5.0337ms  7.0090us  10.060ms  [CUDA memcpy HtoD]
+ 38.06%  9.3207ms         1  9.3207ms  9.3207ms  9.3207ms  [CUDA memcpy DtoH]
+ 20.84%  5.1035ms         1  5.1035ms  5.1035ms  5.1035ms  s_scal(int, float*, float*)
+
+==12252== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 87.09%  238.83ms         2  119.42ms  4.2589ms  234.57ms  cudaMalloc
+ 11.72%  32.148ms         3  10.716ms  240.62us  16.072ms  cudaMemcpy
+  0.65%  1.7871ms        83  21.531us       0ns  854.67us  cuDeviceGetAttribute
+  0.34%  923.42us         2  461.71us  213.28us  710.15us  cudaFree
+  0.16%  440.23us         1  440.23us  440.23us  440.23us  cuDeviceGetName
+  0.03%  74.608us         1  74.608us  74.608us  74.608us  cudaLaunch
+  0.01%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.1250us         2  1.5620us  1.1720us  1.9530us  cuDeviceGetCount
+  0.00%  2.7340us         3     911ns       0ns  1.9530us  cudaSetupArgument
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==8972== NVPROF is profiling process 8972, command: vanilla.exe
+==8972== Profiling application: vanilla.exe
+==8972== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.67%  7.5882ms         1  7.5882ms  7.5882ms  7.5882ms  [CUDA memcpy DtoH]
+ 32.15%  5.9990ms         2  2.9995ms  5.2800us  5.9937ms  [CUDA memcpy HtoD]
+ 27.18%  5.0723ms         1  5.0723ms  5.0723ms  5.0723ms  s_scal(int, float*, float*)
+
+==8972== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.93%  171.51ms         2  85.753ms  5.8116ms  165.69ms  cudaMalloc
+ 10.54%  21.040ms         3  7.0134ms  91.015us  14.372ms  cudaMemcpy
+  2.30%  4.5859ms         2  2.2929ms  213.28us  4.3726ms  cudaFree
+  1.04%  2.0832ms        83  25.098us       0ns  1.1801ms  cuDeviceGetAttribute
+  0.14%  269.53us         1  269.53us  269.53us  269.53us  cuDeviceGetName
+  0.04%  78.514us         1  78.514us  78.514us  78.514us  cudaLaunch
+  0.01%  17.968us         1  17.968us  17.968us  17.968us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3430us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     390ns  2.3440us  cuDeviceGetCount
+  0.00%     782ns         2     391ns       0ns     782ns  cuDeviceGet
+==11472== NVPROF is profiling process 11472, command: vanilla.exe
+==11472== Profiling application: vanilla.exe
+==11472== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.85%  12.687ms         1  12.687ms  12.687ms  12.687ms  [CUDA memcpy DtoH]
+ 37.73%  11.439ms         2  5.7197ms  6.0800us  11.433ms  [CUDA memcpy HtoD]
+ 20.42%  6.1909ms         1  6.1909ms  6.1909ms  6.1909ms  s_scal(int, float*, float*)
+
+==11472== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 89.03%  387.76ms         2  193.88ms  4.2171ms  383.55ms  cudaMalloc
+ 10.08%  43.905ms         3  14.635ms  104.69us  31.750ms  cudaMemcpy
+  0.59%  2.5730ms        83  31.000us       0ns  1.4953ms  cuDeviceGetAttribute
+  0.21%  925.77us         2  462.88us  234.37us  691.40us  cudaFree
+  0.06%  253.90us         1  253.90us  253.90us  253.90us  cuDeviceGetName
+  0.02%  73.827us         1  73.827us  73.827us  73.827us  cudaLaunch
+  0.00%  16.016us         1  16.016us  16.016us  16.016us  cuDeviceTotalMem
+  0.00%  4.2960us         1  4.2960us  4.2960us  4.2960us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12240== NVPROF is profiling process 12240, command: vanilla.exe
+==12240== Profiling application: vanilla.exe
+==12240== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.71%  12.113ms         2  6.0565ms  6.7840us  12.106ms  [CUDA memcpy HtoD]
+ 33.45%  10.745ms         1  10.745ms  10.745ms  10.745ms  [CUDA memcpy DtoH]
+ 28.84%  9.2617ms         1  9.2617ms  9.2617ms  9.2617ms  s_scal(int, float*, float*)
+
+==12240== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 78.54%  142.67ms         2  71.333ms  6.4679ms  136.20ms  cudaMalloc
+ 18.88%  34.285ms         3  11.428ms  89.842us  22.459ms  cudaMemcpy
+  1.41%  2.5605ms         2  1.2803ms  614.83us  1.9457ms  cudaFree
+  0.96%  1.7519ms        83  21.107us       0ns  848.03us  cuDeviceGetAttribute
+  0.13%  236.72us         1  236.72us  236.72us  236.72us  cuDeviceGetName
+  0.06%  111.72us         1  111.72us  111.72us  111.72us  cudaLaunch
+  0.01%  14.843us         1  14.843us  14.843us  14.843us  cuDeviceTotalMem
+  0.00%  5.8600us         1  5.8600us  5.8600us  5.8600us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     391ns  2.7340us  cudaSetupArgument
+  0.00%  1.5620us         2     781ns     390ns  1.1720us  cuDeviceGetCount
+  0.00%     782ns         2     391ns       0ns     782ns  cuDeviceGet
+==11324== NVPROF is profiling process 11324, command: vanilla.exe
+==11324== Profiling application: vanilla.exe
+==11324== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 44.50%  17.380ms         1  17.380ms  17.380ms  17.380ms  [CUDA memcpy DtoH]
+ 31.76%  12.405ms         2  6.2024ms  6.4650us  12.398ms  [CUDA memcpy HtoD]
+ 23.74%  9.2701ms         1  9.2701ms  9.2701ms  9.2701ms  s_scal(int, float*, float*)
+
+==11324== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 74.38%  143.27ms         2  71.637ms  4.0804ms  139.19ms  cudaMalloc
+ 23.92%  46.083ms         3  15.361ms  92.186us  28.936ms  cudaMemcpy
+  0.83%  1.5910ms        83  19.168us       0ns  771.08us  cuDeviceGetAttribute
+  0.67%  1.2933ms         2  646.67us  254.29us  1.0391ms  cudaFree
+  0.14%  276.17us         1  276.17us  276.17us  276.17us  cuDeviceGetName
+  0.05%  87.498us         1  87.498us  87.498us  87.498us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  6.6410us         1  6.6410us  6.6410us  6.6410us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us       0ns  2.3440us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     390ns  1.5630us  cuDeviceGetCount
+  0.00%     780ns         2     390ns     390ns     390ns  cuDeviceGet
+==5172== NVPROF is profiling process 5172, command: vanilla.exe
+==5172== Profiling application: vanilla.exe
+==5172== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 55.66%  15.104ms         1  15.104ms  15.104ms  15.104ms  [CUDA memcpy DtoH]
+ 25.55%  6.9325ms         2  3.4662ms  5.3120us  6.9272ms  [CUDA memcpy HtoD]
+ 18.79%  5.0997ms         1  5.0997ms  5.0997ms  5.0997ms  s_scal(int, float*, float*)
+
+==5172== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 79.45%  131.43ms         2  65.713ms  3.1382ms  128.29ms  cudaMalloc
+ 17.94%  29.684ms         3  9.8945ms  85.936us  22.069ms  cudaMemcpy
+  1.16%  1.9113ms         2  955.65us  237.89us  1.6734ms  cudaFree
+  0.95%  1.5742ms        83  18.966us       0ns  788.66us  cuDeviceGetAttribute
+  0.43%  708.97us         1  708.97us  708.97us  708.97us  cuDeviceGetName
+  0.05%  80.467us         1  80.467us  80.467us  80.467us  cudaLaunch
+  0.01%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     391ns  2.7340us  cudaSetupArgument
+  0.00%  3.5150us         2  1.7570us     781ns  2.7340us  cuDeviceGetCount
+  0.00%  1.5620us         2     781ns     781ns     781ns  cuDeviceGet
+==9960== NVPROF is profiling process 9960, command: vanilla.exe
+==9960== Profiling application: vanilla.exe
+==9960== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.11%  13.506ms         1  13.506ms  13.506ms  13.506ms  [CUDA memcpy DtoH]
+ 34.20%  11.811ms         2  5.9056ms  7.0090us  11.804ms  [CUDA memcpy HtoD]
+ 26.69%  9.2184ms         1  9.2184ms  9.2184ms  9.2184ms  s_scal(int, float*, float*)
+
+==9960== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 76.09%  149.26ms         2  74.631ms  4.1140ms  145.15ms  cudaMalloc
+ 21.11%  41.410ms         3  13.803ms  80.077us  28.706ms  cudaMemcpy
+  1.35%  2.6507ms         2  1.3254ms  651.94us  1.9988ms  cudaFree
+  1.16%  2.2847ms        83  27.526us       0ns  1.2308ms  cuDeviceGetAttribute
+  0.17%  331.25us         1  331.25us  331.25us  331.25us  cuDeviceGetName
+  0.05%  103.91us         1  103.91us  103.91us  103.91us  cudaLaunch
+  0.04%  70.702us         2  35.351us     391ns  70.311us  cuDeviceGetCount
+  0.01%  17.968us         1  17.968us  17.968us  17.968us  cuDeviceTotalMem
+  0.01%  17.187us         3  5.7290us     391ns  12.890us  cudaSetupArgument
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==12252== NVPROF is profiling process 12252, command: vanilla.exe
+==12252== Profiling application: vanilla.exe
+==12252== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 45.62%  14.572ms         1  14.572ms  14.572ms  14.572ms  [CUDA memcpy DtoH]
+ 28.90%  9.2322ms         1  9.2322ms  9.2322ms  9.2322ms  s_scal(int, float*, float*)
+ 25.48%  8.1400ms         2  4.0700ms  6.9130us  8.1331ms  [CUDA memcpy HtoD]
+
+==12252== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 88.58%  297.81ms         2  148.90ms  7.1718ms  290.63ms  cudaMalloc
+ 10.21%  34.339ms         3  11.446ms  108.98us  26.080ms  cudaMemcpy
+  0.58%  1.9656ms        83  23.681us       0ns  1.0258ms  cuDeviceGetAttribute
+  0.48%  1.6172ms         2  808.58us  314.45us  1.3027ms  cudaFree
+  0.11%  367.57us         1  367.57us  367.57us  367.57us  cuDeviceGetName
+  0.02%  75.389us         1  75.389us  75.389us  75.389us  cudaLaunch
+  0.01%  21.484us         1  21.484us  21.484us  21.484us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  4.2960us         3  1.4320us     390ns  2.7340us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns       0ns     781ns  cuDeviceGet
+==12428== NVPROF is profiling process 12428, command: vanilla.exe
+==12428== Profiling application: vanilla.exe
+==12428== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 46.65%  11.993ms         1  11.993ms  11.993ms  11.993ms  [CUDA memcpy DtoH]
+ 30.71%  7.8949ms         1  7.8949ms  7.8949ms  7.8949ms  s_scal(int, float*, float*)
+ 22.65%  5.8230ms         2  2.9115ms  5.3760us  5.8176ms  [CUDA memcpy HtoD]
+
+==12428== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.70%  230.62ms         2  115.31ms  2.9113ms  227.71ms  cudaMalloc
+ 11.39%  30.286ms         3  10.095ms  90.623us  23.384ms  cudaMemcpy
+  1.00%  2.6668ms         2  1.3334ms  375.78us  2.2910ms  cudaFree
+  0.75%  1.9867ms        83  23.935us       0ns  974.98us  cuDeviceGetAttribute
+  0.12%  321.09us         1  321.09us  321.09us  321.09us  cuDeviceGetName
+  0.03%  78.515us         1  78.515us  78.515us  78.515us  cudaLaunch
+  0.01%  15.234us         1  15.234us  15.234us  15.234us  cuDeviceTotalMem
+  0.00%  5.8590us         1  5.8590us  5.8590us  5.8590us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     390ns     782ns  cuDeviceGet
+==12552== NVPROF is profiling process 12552, command: vanilla.exe
+==12552== Profiling application: vanilla.exe
+==12552== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 47.25%  19.126ms         2  9.5628ms  5.2800us  19.120ms  [CUDA memcpy HtoD]
+ 40.15%  16.252ms         1  16.252ms  16.252ms  16.252ms  [CUDA memcpy DtoH]
+ 12.60%  5.1015ms         1  5.1015ms  5.1015ms  5.1015ms  s_scal(int, float*, float*)
+
+==12552== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 89.71%  474.09ms         2  237.05ms  38.017ms  436.07ms  cudaMalloc
+  9.16%  48.423ms         3  16.141ms  92.577us  25.040ms  cudaMemcpy
+  0.79%  4.1675ms        83  50.210us       0ns  3.1132ms  cuDeviceGetAttribute
+  0.24%  1.2742ms         2  637.10us  297.26us  976.94us  cudaFree
+  0.08%  407.42us         1  407.42us  407.42us  407.42us  cuDeviceGetName
+  0.02%  87.499us         1  87.499us  87.499us  87.499us  cudaLaunch
+  0.00%  17.188us         1  17.188us  17.188us  17.188us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us       0ns  2.7350us  cudaSetupArgument
+  0.00%  3.5150us         2  1.7570us     781ns  2.7340us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12692== NVPROF is profiling process 12692, command: vanilla.exe
+==12692== Profiling application: vanilla.exe
+==12692== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.79%  12.064ms         1  12.064ms  12.064ms  12.064ms  [CUDA memcpy DtoH]
+ 39.12%  11.027ms         2  5.5135ms  5.2800us  11.022ms  [CUDA memcpy HtoD]
+ 18.09%  5.1004ms         1  5.1004ms  5.1004ms  5.1004ms  s_scal(int, float*, float*)
+
+==12692== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 81.92%  155.64ms         2  77.820ms  2.9945ms  152.65ms  cudaMalloc
+ 16.04%  30.468ms         3  10.156ms  80.858us  18.905ms  cudaMemcpy
+  1.04%  1.9793ms        83  23.846us       0ns  1.0398ms  cuDeviceGetAttribute
+  0.80%  1.5254ms         2  762.68us  208.20us  1.3172ms  cudaFree
+  0.14%  257.81us         1  257.81us  257.81us  257.81us  cuDeviceGetName
+  0.04%  84.764us         1  84.764us  84.764us  84.764us  cudaLaunch
+  0.01%  15.625us         1  15.625us  15.625us  15.625us  cuDeviceTotalMem
+  0.00%  5.8600us         1  5.8600us  5.8600us  5.8600us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us       0ns  2.3440us  cudaSetupArgument
+  0.00%  1.9540us         2     977ns     391ns  1.5630us  cuDeviceGetCount
+  0.00%     780ns         2     390ns     390ns     390ns  cuDeviceGet
+==12800== NVPROF is profiling process 12800, command: vanilla.exe
+==12800== Profiling application: vanilla.exe
+==12800== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 44.11%  10.669ms         1  10.669ms  10.669ms  10.669ms  [CUDA memcpy DtoH]
+ 34.81%  8.4193ms         2  4.2097ms  5.3120us  8.4140ms  [CUDA memcpy HtoD]
+ 21.09%  5.1004ms         1  5.1004ms  5.1004ms  5.1004ms  s_scal(int, float*, float*)
+
+==12800== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 62.85%  381.11ms         2  190.55ms  3.6124ms  377.50ms  cudaMalloc
+ 36.52%  221.44ms         3  73.814ms  107.81us  211.89ms  cudaMemcpy
+  0.36%  2.1820ms        83  26.289us       0ns  1.2648ms  cuDeviceGetAttribute
+  0.19%  1.1730ms         2  586.51us  219.92us  953.11us  cudaFree
+  0.05%  280.07us         1  280.07us  280.07us  280.07us  cuDeviceGetName
+  0.02%  104.69us         1  104.69us  104.69us  104.69us  cudaLaunch
+  0.02%  101.95us         1  101.95us  101.95us  101.95us  cudaConfigureCall
+  0.00%  14.453us         1  14.453us  14.453us  14.453us  cuDeviceTotalMem
+  0.00%  4.2960us         3  1.4320us       0ns  2.7340us  cudaSetupArgument
+  0.00%  2.3450us         2  1.1720us     782ns  1.5630us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==12956== NVPROF is profiling process 12956, command: vanilla.exe
+==12956== Profiling application: vanilla.exe
+==12956== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 49.66%  17.758ms         1  17.758ms  17.758ms  17.758ms  [CUDA memcpy DtoH]
+ 25.71%  9.1940ms         1  9.1940ms  9.1940ms  9.1940ms  s_scal(int, float*, float*)
+ 24.63%  8.8080ms         2  4.4040ms  5.9200us  8.8021ms  [CUDA memcpy HtoD]
+
+==12956== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 75.12%  140.37ms         2  70.185ms  4.0312ms  136.34ms  cudaMalloc
+ 23.36%  43.650ms         3  14.550ms  97.264us  29.234ms  cudaMemcpy
+  0.78%  1.4605ms        83  17.596us       0ns  705.85us  cuDeviceGetAttribute
+  0.52%  966.39us         2  483.20us  198.44us  767.96us  cudaFree
+  0.15%  283.59us         1  283.59us  283.59us  283.59us  cuDeviceGetName
+  0.04%  80.077us         1  80.077us  80.077us  80.077us  cudaLaunch
+  0.02%  29.687us         1  29.687us  29.687us  29.687us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  2.3440us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     781ns  1.1720us  cuDeviceGet
+  0.00%  1.9520us         2     976ns     390ns  1.5620us  cuDeviceGetCount
+==13080== NVPROF is profiling process 13080, command: vanilla.exe
+==13080== Profiling application: vanilla.exe
+==13080== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.87%  7.6647ms         1  7.6647ms  7.6647ms  7.6647ms  [CUDA memcpy DtoH]
+ 30.22%  5.5332ms         2  2.7666ms  5.3770us  5.5279ms  [CUDA memcpy HtoD]
+ 27.91%  5.1092ms         1  5.1092ms  5.1092ms  5.1092ms  s_scal(int, float*, float*)
+
+==13080== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.72%  141.71ms         2  70.856ms  2.8750ms  138.84ms  cudaMalloc
+ 12.39%  20.483ms         3  6.8278ms  74.218us  14.376ms  cudaMemcpy
+  1.11%  1.8390ms        83  22.157us       0ns  964.83us  cuDeviceGetAttribute
+  0.53%  873.81us         2  436.91us  208.59us  665.22us  cudaFree
+  0.19%  317.18us         1  317.18us  317.18us  317.18us  cuDeviceGetName
+  0.04%  70.311us         1  70.311us  70.311us  70.311us  cudaLaunch
+  0.01%  17.969us         1  17.969us  17.969us  17.969us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.7350us         2  1.3670us     391ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==13204== NVPROF is profiling process 13204, command: vanilla.exe
+==13204== Profiling application: vanilla.exe
+==13204== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.87%  14.708ms         1  14.708ms  14.708ms  14.708ms  [CUDA memcpy DtoH]
+ 34.37%  12.369ms         2  6.1847ms  6.1760us  12.363ms  [CUDA memcpy HtoD]
+ 24.76%  8.9089ms         1  8.9089ms  8.9089ms  8.9089ms  s_scal(int, float*, float*)
+
+==13204== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 75.77%  141.18ms         2  70.590ms  4.2128ms  136.97ms  cudaMalloc
+ 22.69%  42.288ms         3  14.096ms  83.592us  28.959ms  cudaMemcpy
+  0.83%  1.5547ms        83  18.730us       0ns  764.83us  cuDeviceGetAttribute
+  0.52%  962.48us         2  481.24us  341.79us  620.69us  cudaFree
+  0.13%  241.40us         1  241.40us  241.40us  241.40us  cuDeviceGetName
+  0.04%  76.952us         1  76.952us  76.952us  76.952us  cudaLaunch
+  0.01%  13.281us         1  13.281us  13.281us  13.281us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  6.2490us         2  3.1240us     390ns  5.8590us  cuDeviceGetCount
+  0.00%  3.9060us         3  1.3020us     391ns  2.3440us  cudaSetupArgument
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==9760== NVPROF is profiling process 9760, command: vanilla.exe
+==9760== Profiling application: vanilla.exe
+==9760== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.28%  7.8507ms         1  7.8507ms  7.8507ms  7.8507ms  [CUDA memcpy DtoH]
+ 30.38%  5.6420ms         2  2.8210ms  5.4730us  5.6365ms  [CUDA memcpy HtoD]
+ 27.34%  5.0774ms         1  5.0774ms  5.0774ms  5.0774ms  s_scal(int, float*, float*)
+
+==9760== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.95%  114.03ms         2  57.016ms  2.8843ms  111.15ms  cudaMalloc
+ 14.92%  20.504ms         3  6.8345ms  71.874us  14.425ms  cudaMemcpy
+  1.19%  1.6301ms        83  19.639us       0ns  892.56us  cuDeviceGetAttribute
+  0.71%  976.55us         2  488.27us  231.64us  744.91us  cudaFree
+  0.16%  226.56us         1  226.56us  226.56us  226.56us  cuDeviceGetName
+  0.05%  73.827us         1  73.827us  73.827us  73.827us  cudaLaunch
+  0.01%  13.281us         1  13.281us  13.281us  13.281us  cuDeviceTotalMem
+  0.00%  4.6880us         1  4.6880us  4.6880us  4.6880us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.3430us         2  1.1710us     781ns  1.5620us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==11896== NVPROF is profiling process 11896, command: vanilla.exe
+==11896== Profiling application: vanilla.exe
+==11896== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 43.62%  12.184ms         1  12.184ms  12.184ms  12.184ms  [CUDA memcpy DtoH]
+ 36.73%  10.259ms         2  5.1294ms  7.2010us  10.252ms  [CUDA memcpy HtoD]
+ 19.66%  5.4912ms         1  5.4912ms  5.4912ms  5.4912ms  s_scal(int, float*, float*)
+
+==11896== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 80.61%  137.02ms         2  68.512ms  4.2140ms  132.81ms  cudaMalloc
+ 17.65%  29.994ms         3  9.9980ms  86.717us  19.289ms  cudaMemcpy
+  0.95%  1.6101ms        83  19.399us       0ns  799.21us  cuDeviceGetAttribute
+  0.59%  1.0086ms         2  504.29us  197.65us  810.93us  cudaFree
+  0.14%  239.06us         1  239.06us  239.06us  239.06us  cuDeviceGetName
+  0.04%  73.437us         1  73.437us  73.437us  73.437us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  5.0790us         1  5.0790us  5.0790us  5.0790us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     390ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==12488== NVPROF is profiling process 12488, command: vanilla.exe
+==12488== Profiling application: vanilla.exe
+==12488== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.09%  7.6666ms         1  7.6666ms  7.6666ms  7.6666ms  [CUDA memcpy DtoH]
+ 31.72%  5.9187ms         2  2.9593ms  5.2800us  5.9134ms  [CUDA memcpy HtoD]
+ 27.19%  5.0743ms         1  5.0743ms  5.0743ms  5.0743ms  s_scal(int, float*, float*)
+
+==12488== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.01%  137.29ms         2  68.646ms  2.9179ms  134.38ms  cudaMalloc
+ 12.79%  20.656ms         3  6.8853ms  73.827us  14.200ms  cudaMemcpy
+  1.18%  1.9129ms        83  23.046us       0ns  1.0547ms  cuDeviceGetAttribute
+  0.77%  1.2445ms         2  622.26us  279.68us  964.83us  cudaFree
+  0.18%  286.72us         1  286.72us  286.72us  286.72us  cuDeviceGetName
+  0.05%  83.202us         1  83.202us  83.202us  83.202us  cudaLaunch
+  0.01%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  6.6410us         1  6.6410us  6.6410us  6.6410us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us     390ns  2.7350us  cudaSetupArgument
+  0.00%  2.7350us         2  1.3670us     391ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==12552== NVPROF is profiling process 12552, command: vanilla.exe
+==12552== Profiling application: vanilla.exe
+==12552== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 51.77%  18.093ms         2  9.0463ms  5.2490us  18.087ms  [CUDA memcpy HtoD]
+ 33.48%  11.702ms         1  11.702ms  11.702ms  11.702ms  [CUDA memcpy DtoH]
+ 14.75%  5.1557ms         1  5.1557ms  5.1557ms  5.1557ms  s_scal(int, float*, float*)
+
+==12552== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.13%  297.62ms         2  148.81ms  8.7776ms  288.84ms  cudaMalloc
+ 14.82%  52.434ms         3  17.478ms  94.139us  29.600ms  cudaMemcpy
+  0.58%  2.0621ms        83  24.844us       0ns  1.2410ms  cuDeviceGetAttribute
+  0.35%  1.2398ms         2  619.91us  316.79us  923.03us  cudaFree
+  0.08%  279.29us         1  279.29us  279.29us  279.29us  cuDeviceGetName
+  0.03%  103.91us         1  103.91us  103.91us  103.91us  cudaLaunch
+  0.00%  15.235us         1  15.235us  15.235us  15.235us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.9050us         3  1.3010us     390ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==12748== NVPROF is profiling process 12748, command: vanilla.exe
+==12748== Profiling application: vanilla.exe
+==12748== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 52.90%  14.484ms         1  14.484ms  14.484ms  14.484ms  [CUDA memcpy DtoH]
+ 26.51%  7.2593ms         1  7.2593ms  7.2593ms  7.2593ms  s_scal(int, float*, float*)
+ 20.59%  5.6375ms         2  2.8188ms  5.4400us  5.6321ms  [CUDA memcpy HtoD]
+
+==12748== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 79.22%  133.08ms         2  66.542ms  3.2058ms  129.88ms  cudaMalloc
+ 18.44%  30.979ms         3  10.326ms  89.452us  24.762ms  cudaMemcpy
+  1.56%  2.6195ms        83  31.560us       0ns  1.4008ms  cuDeviceGetAttribute
+  0.49%  817.95us         2  408.98us  221.48us  596.47us  cudaFree
+  0.23%  392.18us         1  392.18us  392.18us  392.18us  cuDeviceGetName
+  0.04%  73.436us         1  73.436us  73.436us  73.436us  cudaLaunch
+  0.01%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.1240us         3  1.0410us       0ns  2.3430us  cudaSetupArgument
+  0.00%  2.7350us         2  1.3670us     391ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12860== NVPROF is profiling process 12860, command: vanilla.exe
+==12860== Profiling application: vanilla.exe
+==12860== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 52.51%  17.556ms         1  17.556ms  17.556ms  17.556ms  [CUDA memcpy DtoH]
+ 32.22%  10.774ms         2  5.3870ms  5.4410us  10.769ms  [CUDA memcpy HtoD]
+ 15.27%  5.1056ms         1  5.1056ms  5.1056ms  5.1056ms  s_scal(int, float*, float*)
+
+==12860== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 78.11%  175.22ms         2  87.610ms  3.1375ms  172.08ms  cudaMalloc
+ 17.82%  39.984ms         3  13.328ms  88.280us  28.511ms  cudaMemcpy
+  3.08%  6.9147ms         2  3.4574ms  3.0726ms  3.8421ms  cudaFree
+  0.71%  1.6012ms        83  19.290us       0ns  793.35us  cuDeviceGetAttribute
+  0.18%  399.99us         1  399.99us  399.99us  399.99us  cuDeviceGetName
+  0.08%  178.51us         1  178.51us  178.51us  178.51us  cudaLaunch
+  0.01%  15.625us         1  15.625us  15.625us  15.625us  cuDeviceTotalMem
+  0.00%  5.8590us         1  5.8590us  5.8590us  5.8590us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us     391ns  2.7340us  cudaSetupArgument
+  0.00%  2.7330us         2  1.3660us     390ns  2.3430us  cuDeviceGet
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+==12936== NVPROF is profiling process 12936, command: vanilla.exe
+==12936== Profiling application: vanilla.exe
+==12936== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 49.00%  10.347ms         1  10.347ms  10.347ms  10.347ms  [CUDA memcpy DtoH]
+ 26.97%  5.6942ms         2  2.8471ms  5.2800us  5.6889ms  [CUDA memcpy HtoD]
+ 24.03%  5.0744ms         1  5.0744ms  5.0744ms  5.0744ms  s_scal(int, float*, float*)
+
+==12936== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.34%  135.52ms         2  67.757ms  3.3781ms  132.14ms  cudaMalloc
+ 14.55%  23.661ms         3  7.8870ms  78.905us  17.436ms  cudaMemcpy
+  1.15%  1.8625ms        83  22.439us       0ns  900.77us  cuDeviceGetAttribute
+  0.69%  1.1289ms         2  564.44us  228.51us  900.38us  cudaFree
+  0.20%  328.12us         1  328.12us  328.12us  328.12us  cuDeviceGetName
+  0.04%  72.264us         1  72.264us  72.264us  72.264us  cudaLaunch
+  0.01%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.4680us         1  5.4680us  5.4680us  5.4680us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==13200== NVPROF is profiling process 13200, command: vanilla.exe
+==13200== Profiling application: vanilla.exe
+==13200== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 56.10%  17.406ms         1  17.406ms  17.406ms  17.406ms  [CUDA memcpy DtoH]
+ 23.04%  7.1501ms         1  7.1501ms  7.1501ms  7.1501ms  s_scal(int, float*, float*)
+ 20.86%  6.4724ms         2  3.2362ms  5.2810us  6.4671ms  [CUDA memcpy HtoD]
+
+==13200== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 77.24%  131.41ms         2  65.703ms  2.9300ms  128.48ms  cudaMalloc
+ 19.49%  33.164ms         3  11.055ms  87.499us  26.016ms  cudaMemcpy
+  2.14%  3.6460ms         2  1.8230ms  599.21us  3.0468ms  cudaFree
+  0.90%  1.5258ms        83  18.382us       0ns  746.86us  cuDeviceGetAttribute
+  0.16%  273.04us         1  273.04us  273.04us  273.04us  cuDeviceGetName
+  0.05%  84.764us         1  84.764us  84.764us  84.764us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  5.8590us         1  5.8590us  5.8590us  5.8590us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us     391ns  2.7340us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     390ns  1.5630us  cuDeviceGetCount
+  0.00%  1.5630us         2     781ns     781ns     782ns  cuDeviceGet
+==13288== NVPROF is profiling process 13288, command: vanilla.exe
+==13288== Profiling application: vanilla.exe
+==13288== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.89%  7.9269ms         1  7.9269ms  7.9269ms  7.9269ms  [CUDA memcpy DtoH]
+ 29.51%  5.4534ms         2  2.7267ms  5.3130us  5.4481ms  [CUDA memcpy HtoD]
+ 27.60%  5.1020ms         1  5.1020ms  5.1020ms  5.1020ms  s_scal(int, float*, float*)
+
+==13288== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.63%  131.06ms         2  65.528ms  3.1046ms  127.95ms  cudaMalloc
+ 13.30%  20.599ms         3  6.8663ms  75.780us  14.591ms  cudaMemcpy
+  1.30%  2.0097ms        83  24.213us       0ns  1.1031ms  cuDeviceGetAttribute
+  0.54%  833.97us         2  416.99us  203.90us  630.07us  cudaFree
+  0.17%  260.93us         1  260.93us  260.93us  260.93us  cuDeviceGetName
+  0.05%  73.827us         1  73.827us  73.827us  73.827us  cudaLaunch
+  0.01%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.5170us         3  1.1720us     391ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     390ns  1.9540us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==11496== NVPROF is profiling process 11496, command: vanilla.exe
+==11496== Profiling application: vanilla.exe
+==11496== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 44.34%  8.7261ms         1  8.7261ms  8.7261ms  8.7261ms  [CUDA memcpy DtoH]
+ 29.78%  5.8609ms         2  2.9305ms  5.2810us  5.8556ms  [CUDA memcpy HtoD]
+ 25.89%  5.0946ms         1  5.0946ms  5.0946ms  5.0946ms  s_scal(int, float*, float*)
+
+==11496== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.24%  161.37ms         2  80.683ms  3.0582ms  158.31ms  cudaMalloc
+ 11.62%  22.004ms         3  7.3345ms  119.14us  15.419ms  cudaMemcpy
+  1.96%  3.7101ms         2  1.8551ms  1.0922ms  2.6179ms  cudaFree
+  0.93%  1.7511ms        83  21.098us       0ns  895.69us  cuDeviceGetAttribute
+  0.20%  371.87us         1  371.87us  371.87us  371.87us  cuDeviceGetName
+  0.04%  73.827us         1  73.827us  73.827us  73.827us  cudaLaunch
+  0.01%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  5.4680us         1  5.4680us  5.4680us  5.4680us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     390ns  2.3440us  cuDeviceGetCount
+  0.00%  1.5620us         2     781ns     781ns     781ns  cuDeviceGet
+==12484== NVPROF is profiling process 12484, command: vanilla.exe
+==12484== Profiling application: vanilla.exe
+==12484== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.72%  7.8374ms         1  7.8374ms  7.8374ms  7.8374ms  [CUDA memcpy DtoH]
+ 31.09%  5.8400ms         2  2.9200ms  5.3770us  5.8346ms  [CUDA memcpy HtoD]
+ 27.19%  5.1089ms         1  5.1089ms  5.1089ms  5.1089ms  s_scal(int, float*, float*)
+
+==12484== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 89.81%  216.57ms         2  108.29ms  2.8539ms  213.72ms  cudaMalloc
+  8.60%  20.738ms         3  6.9125ms  66.405us  14.329ms  cudaMemcpy
+  0.86%  2.0656ms        83  24.886us       0ns  1.0070ms  cuDeviceGetAttribute
+  0.55%  1.3344ms         2  667.18us  339.45us  994.91us  cudaFree
+  0.13%  323.82us         1  323.82us  323.82us  323.82us  cuDeviceGetName
+  0.03%  79.686us         1  79.686us  79.686us  79.686us  cudaLaunch
+  0.01%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.1240us         3  1.0410us       0ns  2.3430us  cudaSetupArgument
+  0.00%  2.3430us         2  1.1710us     390ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==12584== NVPROF is profiling process 12584, command: vanilla.exe
+==12584== Profiling application: vanilla.exe
+==12584== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 48.30%  9.9687ms         1  9.9687ms  9.9687ms  9.9687ms  [CUDA memcpy DtoH]
+ 27.02%  5.5777ms         2  2.7888ms  5.2800us  5.5724ms  [CUDA memcpy HtoD]
+ 24.68%  5.0946ms         1  5.0946ms  5.0946ms  5.0946ms  s_scal(int, float*, float*)
+
+==12584== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.17%  141.28ms         2  70.638ms  3.5808ms  137.70ms  cudaMalloc
+ 14.16%  24.062ms         3  8.0207ms  98.436us  17.103ms  cudaMemcpy
+  1.65%  2.8011ms         2  1.4006ms  328.12us  2.4730ms  cudaFree
+  0.82%  1.3883ms        83  16.726us       0ns  683.19us  cuDeviceGetAttribute
+  0.14%  238.67us         1  238.67us  238.67us  238.67us  cuDeviceGetName
+  0.05%  78.514us         1  78.514us  78.514us  78.514us  cudaLaunch
+  0.01%  15.234us         1  15.234us  15.234us  15.234us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     391ns  2.7340us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12768== NVPROF is profiling process 12768, command: vanilla.exe
+==12768== Profiling application: vanilla.exe
+==12768== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 68.93%  27.163ms         1  27.163ms  27.163ms  27.163ms  [CUDA memcpy DtoH]
+ 18.12%  7.1407ms         2  3.5704ms  5.2810us  7.1354ms  [CUDA memcpy HtoD]
+ 12.95%  5.1023ms         1  5.1023ms  5.1023ms  5.1023ms  s_scal(int, float*, float*)
+
+==12768== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.55%  300.06ms         2  150.03ms  2.9976ms  297.06ms  cudaMalloc
+ 14.25%  50.566ms         3  16.856ms  91.795us  39.042ms  cudaMemcpy
+  0.61%  2.1492ms        83  25.893us       0ns  1.2285ms  cuDeviceGetAttribute
+  0.29%  1.0351ms         1  1.0351ms  1.0351ms  1.0351ms  cuDeviceGetName
+  0.26%  920.30us         2  460.15us  333.59us  586.71us  cudaFree
+  0.03%  117.97us         1  117.97us  117.97us  117.97us  cudaLaunch
+  0.00%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     391ns  2.3430us  cudaSetupArgument
+  0.00%  3.1250us         2  1.5620us     390ns  2.7350us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==13000== NVPROF is profiling process 13000, command: vanilla.exe
+==13000== Profiling application: vanilla.exe
+==13000== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.35%  14.838ms         2  7.4191ms  6.4960us  14.832ms  [CUDA memcpy HtoD]
+ 32.58%  11.690ms         1  11.690ms  11.690ms  11.690ms  [CUDA memcpy DtoH]
+ 26.07%  9.3550ms         1  9.3550ms  9.3550ms  9.3550ms  s_scal(int, float*, float*)
+
+==13000== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 80.88%  191.82ms         2  95.909ms  4.1593ms  187.66ms  cudaMalloc
+ 17.93%  42.511ms         3  14.171ms  91.405us  24.668ms  cudaMemcpy
+  0.64%  1.5269ms        83  18.396us       0ns  749.21us  cuDeviceGetAttribute
+  0.39%  936.31us         2  468.16us  232.81us  703.50us  cudaFree
+  0.11%  263.67us         1  263.67us  263.67us  263.67us  cuDeviceGetName
+  0.03%  76.171us         1  76.171us  76.171us  76.171us  cudaLaunch
+  0.01%  16.015us         1  16.015us  16.015us  16.015us  cuDeviceTotalMem
+  0.00%  4.2970us         1  4.2970us  4.2970us  4.2970us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us     391ns  2.3440us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==13192== NVPROF is profiling process 13192, command: vanilla.exe
+==13192== Profiling application: vanilla.exe
+==13192== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 43.71%  14.655ms         1  14.655ms  14.655ms  14.655ms  [CUDA memcpy DtoH]
+ 28.77%  9.6445ms         2  4.8223ms  5.6010us  9.6389ms  [CUDA memcpy HtoD]
+ 27.52%  9.2267ms         1  9.2267ms  9.2267ms  9.2267ms  s_scal(int, float*, float*)
+
+==13192== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 80.50%  161.83ms         2  80.915ms  4.2023ms  157.63ms  cudaMalloc
+ 17.71%  35.608ms         3  11.869ms  87.498us  25.590ms  cudaMemcpy
+  1.01%  2.0351ms        83  24.519us       0ns  1.1324ms  cuDeviceGetAttribute
+  0.54%  1.0863ms         2  543.16us  278.90us  807.41us  cudaFree
+  0.17%  350.39us         1  350.39us  350.39us  350.39us  cuDeviceGetName
+  0.04%  83.592us         1  83.592us  83.592us  83.592us  cudaLaunch
+  0.01%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us       0ns  2.7350us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     781ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     390ns     782ns  cuDeviceGet
+==13184== NVPROF is profiling process 13184, command: vanilla.exe
+==13184== Profiling application: vanilla.exe
+==13184== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 46.25%  11.120ms         1  11.120ms  11.120ms  11.120ms  [CUDA memcpy DtoH]
+ 27.97%  6.7251ms         1  6.7251ms  6.7251ms  6.7251ms  s_scal(int, float*, float*)
+ 25.78%  6.1978ms         2  3.0989ms  5.3130us  6.1925ms  [CUDA memcpy HtoD]
+
+==13184== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.42%  140.93ms         2  70.464ms  3.0457ms  137.88ms  cudaMalloc
+ 15.46%  26.436ms         3  8.8118ms  234.76us  19.340ms  cudaMemcpy
+  1.04%  1.7804ms        83  21.451us       0ns  996.86us  cuDeviceGetAttribute
+  0.83%  1.4238ms         2  711.90us  379.29us  1.0445ms  cudaFree
+  0.18%  305.07us         1  305.07us  305.07us  305.07us  cuDeviceGetName
+  0.05%  85.936us         1  85.936us  85.936us  85.936us  cudaLaunch
+  0.01%  15.235us         1  15.235us  15.235us  15.235us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     390ns  2.3440us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     391ns  2.3430us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     390ns     782ns  cuDeviceGet
+==2596== NVPROF is profiling process 2596, command: vanilla.exe
+==2596== Profiling application: vanilla.exe
+==2596== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.69%  8.2789ms         1  8.2789ms  8.2789ms  8.2789ms  [CUDA memcpy DtoH]
+ 34.21%  6.9599ms         2  3.4800ms  5.2810us  6.9546ms  [CUDA memcpy HtoD]
+ 25.10%  5.1061ms         1  5.1061ms  5.1061ms  5.1061ms  s_scal(int, float*, float*)
+
+==2596== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.32%  136.09ms         2  68.043ms  2.8980ms  133.19ms  cudaMalloc
+ 14.96%  24.432ms         3  8.1439ms  64.452us  18.220ms  cudaMemcpy
+  0.91%  1.4926ms        83  17.982us       0ns  740.61us  cuDeviceGetAttribute
+  0.55%  901.16us         2  450.58us  339.45us  561.71us  cudaFree
+  0.17%  280.47us         1  280.47us  280.47us  280.47us  cuDeviceGetName
+  0.06%  100.78us         1  100.78us  100.78us  100.78us  cudaLaunch
+  0.01%  15.625us         1  15.625us  15.625us  15.625us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us       0ns  3.1250us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     781ns  1.5630us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12396== NVPROF is profiling process 12396, command: vanilla.exe
+==12396== Profiling application: vanilla.exe
+==12396== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 46.17%  9.7716ms         1  9.7716ms  9.7716ms  9.7716ms  [CUDA memcpy DtoH]
+ 29.71%  6.2882ms         2  3.1441ms  5.2800us  6.2829ms  [CUDA memcpy HtoD]
+ 24.11%  5.1027ms         1  5.1027ms  5.1027ms  5.1027ms  s_scal(int, float*, float*)
+
+==12396== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.74%  148.16ms         2  74.080ms  2.8300ms  145.33ms  cudaMalloc
+ 13.65%  23.857ms         3  7.9524ms  62.108us  16.412ms  cudaMemcpy
+  0.83%  1.4504ms        83  17.474us       0ns  731.24us  cuDeviceGetAttribute
+  0.54%  935.92us         2  467.96us  212.11us  723.82us  cudaFree
+  0.18%  323.43us         1  323.43us  323.43us  323.43us  cuDeviceGetName
+  0.04%  76.952us         1  76.952us  76.952us  76.952us  cudaLaunch
+  0.01%  14.844us         1  14.844us  14.844us  14.844us  cuDeviceTotalMem
+  0.00%  5.4680us         1  5.4680us  5.4680us  5.4680us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3430us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12672== NVPROF is profiling process 12672, command: vanilla.exe
+==12672== Profiling application: vanilla.exe
+==12672== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.11%  8.6336ms         1  8.6336ms  8.6336ms  8.6336ms  [CUDA memcpy DtoH]
+ 32.96%  6.7566ms         2  3.3783ms  5.3440us  6.7513ms  [CUDA memcpy HtoD]
+ 24.93%  5.1105ms         1  5.1105ms  5.1105ms  5.1105ms  s_scal(int, float*, float*)
+
+==12672== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 88.20%  208.87ms         2  104.44ms  3.2062ms  205.67ms  cudaMalloc
+ 10.12%  23.975ms         3  7.9918ms  93.749us  16.095ms  cudaMemcpy
+  1.15%  2.7136ms        83  32.694us       0ns  1.5328ms  cuDeviceGetAttribute
+  0.38%  898.03us         2  449.02us  226.95us  671.08us  cudaFree
+  0.10%  237.50us         1  237.50us  237.50us  237.50us  cuDeviceGetName
+  0.03%  81.639us         1  81.639us  81.639us  81.639us  cudaLaunch
+  0.01%  21.094us         1  21.094us  21.094us  21.094us  cuDeviceTotalMem
+  0.00%  5.8590us         1  5.8590us  5.8590us  5.8590us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us     390ns  2.7350us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12664== NVPROF is profiling process 12664, command: vanilla.exe
+==12664== Profiling application: vanilla.exe
+==12664== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 44.87%  17.035ms         1  17.035ms  17.035ms  17.035ms  [CUDA memcpy DtoH]
+ 30.82%  11.703ms         2  5.8513ms  5.8250us  11.697ms  [CUDA memcpy HtoD]
+ 24.31%  9.2311ms         1  9.2311ms  9.2311ms  9.2311ms  s_scal(int, float*, float*)
+
+==12664== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 73.69%  122.97ms         2  61.487ms  7.2460ms  115.73ms  cudaMalloc
+ 24.49%  40.874ms         3  13.625ms  97.264us  28.735ms  cudaMemcpy
+  0.88%  1.4640ms        83  17.638us       0ns  757.80us  cuDeviceGetAttribute
+  0.70%  1.1762ms         2  588.08us  254.68us  921.47us  cudaFree
+  0.17%  280.86us         1  280.86us  280.86us  280.86us  cuDeviceGetName
+  0.05%  87.108us         1  87.108us  87.108us  87.108us  cudaLaunch
+  0.01%  17.188us         1  17.188us  17.188us  17.188us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us     391ns  3.1250us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     391ns         2     195ns       0ns     391ns  cuDeviceGet
+==12824== NVPROF is profiling process 12824, command: vanilla.exe
+==12824== Profiling application: vanilla.exe
+==12824== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.72%  7.9226ms         1  7.9226ms  7.9226ms  7.9226ms  [CUDA memcpy DtoH]
+ 31.42%  5.9678ms         2  2.9839ms  5.2810us  5.9625ms  [CUDA memcpy HtoD]
+ 26.86%  5.1011ms         1  5.1011ms  5.1011ms  5.1011ms  s_scal(int, float*, float*)
+
+==12824== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.91%  125.99ms         2  62.993ms  2.8164ms  123.17ms  cudaMalloc
+ 14.28%  21.700ms         3  7.2334ms  113.67us  14.883ms  cudaMemcpy
+  1.79%  2.7179ms        83  32.746us       0ns  1.9215ms  cuDeviceGetAttribute
+  0.62%  940.22us         2  470.11us  410.15us  530.07us  cudaFree
+  0.33%  500.77us         1  500.77us  500.77us  500.77us  cuDeviceGetName
+  0.05%  71.483us         1  71.483us  71.483us  71.483us  cudaLaunch
+  0.01%  22.265us         1  22.265us  22.265us  22.265us  cuDeviceTotalMem
+  0.00%  3.1250us         1  3.1250us  3.1250us  3.1250us  cudaConfigureCall
+  0.00%  3.1240us         2  1.5620us     781ns  2.3430us  cuDeviceGetCount
+  0.00%  2.7340us         3     911ns       0ns  1.9530us  cudaSetupArgument
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==13156== NVPROF is profiling process 13156, command: vanilla.exe
+==13156== Profiling application: vanilla.exe
+==13156== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.55%  7.5414ms         1  7.5414ms  7.5414ms  7.5414ms  [CUDA memcpy DtoH]
+ 32.02%  5.9540ms         2  2.9770ms  5.2800us  5.9487ms  [CUDA memcpy HtoD]
+ 27.43%  5.1012ms         1  5.1012ms  5.1012ms  5.1012ms  s_scal(int, float*, float*)
+
+==13156== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.85%  159.48ms         2  79.741ms  2.8906ms  156.59ms  cudaMalloc
+ 11.20%  20.574ms         3  6.8578ms  64.843us  14.194ms  cudaMemcpy
+  1.20%  2.1957ms        83  26.453us       0ns  1.1656ms  cuDeviceGetAttribute
+  0.46%  838.27us         2  419.13us  238.28us  599.99us  cudaFree
+  0.21%  392.18us         1  392.18us  392.18us  392.18us  cuDeviceGetName
+  0.04%  71.874us         1  71.874us  71.874us  71.874us  cuDeviceTotalMem
+  0.04%  69.921us         1  69.921us  69.921us  69.921us  cudaLaunch
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==8448== NVPROF is profiling process 8448, command: vanilla.exe
+==8448== Profiling application: vanilla.exe
+==8448== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.32%  7.7709ms         1  7.7709ms  7.7709ms  7.7709ms  [CUDA memcpy DtoH]
+ 31.52%  5.9282ms         2  2.9641ms  5.2810us  5.9229ms  [CUDA memcpy HtoD]
+ 27.17%  5.1098ms         1  5.1098ms  5.1098ms  5.1098ms  s_scal(int, float*, float*)
+
+==8448== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.21%  131.13ms         2  65.563ms  3.0086ms  128.12ms  cudaMalloc
+ 14.48%  23.104ms         3  7.7014ms  101.56us  14.556ms  cudaMemcpy
+  2.45%  3.9089ms        83  47.095us       0ns  2.9683ms  cuDeviceGetAttribute
+  0.60%  959.36us         2  479.68us  291.79us  667.57us  cudaFree
+  0.19%  303.12us         1  303.12us  303.12us  303.12us  cuDeviceGetName
+  0.05%  77.733us         1  77.733us  77.733us  77.733us  cudaLaunch
+  0.01%  16.796us         1  16.796us  16.796us  16.796us  cuDeviceTotalMem
+  0.00%  5.4680us         1  5.4680us  5.4680us  5.4680us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     780ns         2     390ns     390ns     390ns  cuDeviceGet
+==13304== NVPROF is profiling process 13304, command: vanilla.exe
+==13304== Profiling application: vanilla.exe
+==13304== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.87%  7.6998ms         1  7.6998ms  7.6998ms  7.6998ms  [CUDA memcpy DtoH]
+ 32.04%  6.0350ms         2  3.0175ms  5.2800us  6.0298ms  [CUDA memcpy HtoD]
+ 27.09%  5.1033ms         1  5.1033ms  5.1033ms  5.1033ms  s_scal(int, float*, float*)
+
+==13304== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.30%  143.10ms         2  71.552ms  2.9132ms  140.19ms  cudaMalloc
+ 12.54%  21.036ms         3  7.0120ms  84.374us  14.389ms  cudaMemcpy
+  1.32%  2.2140ms        83  26.675us       0ns  1.1660ms  cuDeviceGetAttribute
+  0.59%  982.02us         2  491.01us  399.21us  582.80us  cudaFree
+  0.19%  314.06us         1  314.06us  314.06us  314.06us  cuDeviceGetName
+  0.05%  80.467us         1  80.467us  80.467us  80.467us  cudaLaunch
+  0.01%  15.235us         1  15.235us  15.235us  15.235us  cuDeviceTotalMem
+  0.00%  6.2490us         1  6.2490us  6.2490us  6.2490us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     390ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12544== NVPROF is profiling process 12544, command: vanilla.exe
+==12544== Profiling application: vanilla.exe
+==12544== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 35.94%  11.053ms         2  5.5263ms  6.6250us  11.046ms  [CUDA memcpy HtoD]
+ 34.97%  10.753ms         1  10.753ms  10.753ms  10.753ms  [CUDA memcpy DtoH]
+ 29.09%  8.9461ms         1  8.9461ms  8.9461ms  8.9461ms  s_scal(int, float*, float*)
+
+==12544== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 77.05%  133.15ms         2  66.577ms  4.2835ms  128.87ms  cudaMalloc
+ 21.28%  36.771ms         3  12.257ms  210.15us  25.631ms  cudaMemcpy
+  0.87%  1.5101ms        83  18.194us       0ns  746.86us  cuDeviceGetAttribute
+  0.58%  994.52us         2  497.26us  312.50us  682.02us  cudaFree
+  0.16%  277.73us         1  277.73us  277.73us  277.73us  cuDeviceGetName
+  0.04%  75.389us         1  75.389us  75.389us  75.389us  cudaLaunch
+  0.01%  15.624us         1  15.624us  15.624us  15.624us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  2.7340us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12408== NVPROF is profiling process 12408, command: vanilla.exe
+==12408== Profiling application: vanilla.exe
+==12408== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 43.25%  9.5692ms         2  4.7846ms  5.3770us  9.5639ms  [CUDA memcpy HtoD]
+ 33.66%  7.4465ms         1  7.4465ms  7.4465ms  7.4465ms  [CUDA memcpy DtoH]
+ 23.09%  5.1088ms         1  5.1088ms  5.1088ms  5.1088ms  s_scal(int, float*, float*)
+
+==12408== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.24%  127.23ms         2  63.614ms  3.1136ms  124.12ms  cudaMalloc
+ 15.79%  24.427ms         3  8.1422ms  64.061us  14.003ms  cudaMemcpy
+  1.07%  1.6554ms        83  19.945us       0ns  819.91us  cuDeviceGetAttribute
+  0.61%  936.70us         2  468.35us  371.87us  564.84us  cudaFree
+  0.23%  359.37us         1  359.37us  359.37us  359.37us  cuDeviceGetName
+  0.05%  74.999us         1  74.999us  74.999us  74.999us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     390ns  2.3440us  cudaSetupArgument
+  0.00%  2.3450us         2  1.1720us     391ns  1.9540us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12684== NVPROF is profiling process 12684, command: vanilla.exe
+==12684== Profiling application: vanilla.exe
+==12684== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 43.87%  11.251ms         2  5.6254ms  6.9760us  11.244ms  [CUDA memcpy HtoD]
+ 28.19%  7.2298ms         1  7.2298ms  7.2298ms  7.2298ms  s_scal(int, float*, float*)
+ 27.93%  7.1631ms         1  7.1631ms  7.1631ms  7.1631ms  [CUDA memcpy DtoH]
+
+==12684== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 78.55%  134.62ms         2  67.308ms  4.1269ms  130.49ms  cudaMalloc
+ 19.53%  33.471ms         3  11.157ms  108.20us  17.061ms  cudaMemcpy
+  1.11%  1.8996ms        83  22.886us       0ns  1.0648ms  cuDeviceGetAttribute
+  0.56%  955.84us         2  477.92us  394.13us  561.71us  cudaFree
+  0.20%  335.15us         1  335.15us  335.15us  335.15us  cuDeviceGetName
+  0.04%  74.608us         1  74.608us  74.608us  74.608us  cudaLaunch
+  0.01%  16.796us         1  16.796us  16.796us  16.796us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.1240us         3  1.0410us       0ns  2.3430us  cudaSetupArgument
+  0.00%  1.5610us         2     780ns     390ns  1.1710us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12808== NVPROF is profiling process 12808, command: vanilla.exe
+==12808== Profiling application: vanilla.exe
+==12808== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 52.07%  19.469ms         1  19.469ms  19.469ms  19.469ms  [CUDA memcpy DtoH]
+ 24.59%  9.1931ms         1  9.1931ms  9.1931ms  9.1931ms  s_scal(int, float*, float*)
+ 23.34%  8.7274ms         2  4.3637ms  5.9520us  8.7215ms  [CUDA memcpy HtoD]
+
+==12808== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 77.15%  161.10ms         2  80.551ms  4.1917ms  156.91ms  cudaMalloc
+ 20.74%  43.312ms         3  14.437ms  78.905us  30.728ms  cudaMemcpy
+  1.43%  2.9804ms        83  35.908us       0ns  1.9043ms  cuDeviceGetAttribute
+  0.49%  1.0180ms         2  508.98us  244.14us  773.82us  cudaFree
+  0.15%  303.12us         1  303.12us  303.12us  303.12us  cuDeviceGetName
+  0.04%  83.983us         1  83.983us  83.983us  83.983us  cudaLaunch
+  0.01%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5170us         3  1.1720us       0ns  2.7350us  cudaSetupArgument
+  0.00%  2.3450us         2  1.1720us     391ns  1.9540us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==13140== NVPROF is profiling process 13140, command: vanilla.exe
+==13140== Profiling application: vanilla.exe
+==13140== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.92%  7.3949ms         1  7.3949ms  7.3949ms  7.3949ms  [CUDA memcpy DtoH]
+ 32.69%  6.0559ms         2  3.0280ms  5.2810us  6.0507ms  [CUDA memcpy HtoD]
+ 27.39%  5.0734ms         1  5.0734ms  5.0734ms  5.0734ms  s_scal(int, float*, float*)
+
+==13140== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 88.91%  191.54ms         2  95.769ms  3.0746ms  188.46ms  cudaMalloc
+  9.54%  20.544ms         3  6.8481ms  89.843us  13.898ms  cudaMemcpy
+  0.84%  1.8023ms        83  21.714us       0ns  872.64us  cuDeviceGetAttribute
+  0.52%  1.1195ms         2  559.76us  361.71us  757.80us  cudaFree
+  0.14%  308.98us         1  308.98us  308.98us  308.98us  cuDeviceGetName
+  0.03%  74.999us         1  74.999us  74.999us  74.999us  cudaLaunch
+  0.01%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us     391ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     391ns         2     195ns       0ns     391ns  cuDeviceGet
+==8936== NVPROF is profiling process 8936, command: vanilla.exe
+==8936== Profiling application: vanilla.exe
+==8936== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.92%  7.1905ms         1  7.1905ms  7.1905ms  7.1905ms  [CUDA memcpy DtoH]
+ 31.92%  5.7493ms         2  2.8747ms  5.4720us  5.7438ms  [CUDA memcpy HtoD]
+ 28.17%  5.0737ms         1  5.0737ms  5.0737ms  5.0737ms  s_scal(int, float*, float*)
+
+==8936== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.82%  127.78ms         2  63.888ms  3.1191ms  124.66ms  cudaMalloc
+ 13.30%  20.039ms         3  6.6796ms  81.640us  13.721ms  cudaMemcpy
+  1.01%  1.5140ms        83  18.241us       0ns  742.18us  cuDeviceGetAttribute
+  0.59%  891.39us         2  445.70us  230.47us  660.93us  cudaFree
+  0.21%  321.87us         1  321.87us  321.87us  321.87us  cuDeviceGetName
+  0.05%  74.999us         1  74.999us  74.999us  74.999us  cudaLaunch
+  0.01%  16.796us         1  16.796us  16.796us  16.796us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.5160us         2  1.7580us     782ns  2.7340us  cuDeviceGetCount
+  0.00%  3.1240us         3  1.0410us       0ns  2.3430us  cudaSetupArgument
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==12604== NVPROF is profiling process 12604, command: vanilla.exe
+==12604== Profiling application: vanilla.exe
+==12604== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.90%  7.8197ms         1  7.8197ms  7.8197ms  7.8197ms  [CUDA memcpy DtoH]
+ 32.35%  6.1855ms         2  3.0928ms  5.2810us  6.1803ms  [CUDA memcpy HtoD]
+ 26.75%  5.1149ms         1  5.1149ms  5.1149ms  5.1149ms  s_scal(int, float*, float*)
+
+==12604== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.61%  127.48ms         2  63.741ms  2.9476ms  124.53ms  cudaMalloc
+ 13.88%  21.425ms         3  7.1417ms  82.030us  14.709ms  cudaMemcpy
+  2.22%  3.4296ms         2  1.7148ms  1.2914ms  2.1383ms  cudaFree
+  1.06%  1.6297ms        83  19.634us       0ns  743.35us  cuDeviceGetAttribute
+  0.16%  250.00us         1  250.00us  250.00us  250.00us  cuDeviceGetName
+  0.05%  73.436us         1  73.436us  73.436us  73.436us  cudaLaunch
+  0.01%  14.453us         1  14.453us  14.453us  14.453us  cuDeviceTotalMem
+  0.00%  3.9060us         1  3.9060us  3.9060us  3.9060us  cudaConfigureCall
+  0.00%  2.7340us         3     911ns     391ns  1.5620us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==12568== NVPROF is profiling process 12568, command: vanilla.exe
+==12568== Profiling application: vanilla.exe
+==12568== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 48.04%  10.717ms         1  10.717ms  10.717ms  10.717ms  [CUDA memcpy DtoH]
+ 29.24%  6.5239ms         2  3.2620ms  5.2800us  6.5187ms  [CUDA memcpy HtoD]
+ 22.71%  5.0672ms         1  5.0672ms  5.0672ms  5.0672ms  s_scal(int, float*, float*)
+
+==12568== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.07%  137.42ms         2  68.707ms  3.0050ms  134.41ms  cudaMalloc
+ 15.18%  25.107ms         3  8.3691ms  74.608us  17.625ms  cudaMemcpy
+  1.00%  1.6543ms        83  19.931us       0ns  821.47us  cuDeviceGetAttribute
+  0.53%  870.69us         2  435.34us  255.47us  615.22us  cudaFree
+  0.16%  260.54us         1  260.54us  260.54us  260.54us  cuDeviceGetName
+  0.05%  78.124us         1  78.124us  78.124us  78.124us  cudaLaunch
+  0.01%  16.015us         1  16.015us  16.015us  16.015us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us       0ns  3.1250us  cudaSetupArgument
+  0.00%  2.3450us         2  1.1720us     391ns  1.9540us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==13072== NVPROF is profiling process 13072, command: vanilla.exe
+==13072== Profiling application: vanilla.exe
+==13072== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.05%  11.558ms         1  11.558ms  11.558ms  11.558ms  [CUDA memcpy DtoH]
+ 37.12%  10.202ms         2  5.1008ms  5.3770us  10.196ms  [CUDA memcpy HtoD]
+ 20.83%  5.7264ms         1  5.7264ms  5.7264ms  5.7264ms  s_scal(int, float*, float*)
+
+==13072== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 79.11%  122.93ms         2  61.462ms  2.9214ms  120.00ms  cudaMalloc
+ 19.15%  29.757ms         3  9.9191ms  82.812us  22.371ms  cudaMemcpy
+  0.92%  1.4273ms        83  17.196us       0ns  696.08us  cuDeviceGetAttribute
+  0.59%  912.88us         2  456.44us  214.45us  698.43us  cudaFree
+  0.17%  267.18us         1  267.18us  267.18us  267.18us  cuDeviceGetName
+  0.05%  74.999us         1  74.999us  74.999us  74.999us  cudaLaunch
+  0.01%  15.234us         1  15.234us  15.234us  15.234us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3430us  cudaSetupArgument
+  0.00%  1.9520us         2     976ns     390ns  1.5620us  cuDeviceGetCount
+  0.00%     391ns         2     195ns       0ns     391ns  cuDeviceGet
+==13112== NVPROF is profiling process 13112, command: vanilla.exe
+==13112== Profiling application: vanilla.exe
+==13112== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.41%  7.2936ms         1  7.2936ms  7.2936ms  7.2936ms  [CUDA memcpy DtoH]
+ 31.27%  5.6447ms         2  2.8223ms  5.2800us  5.6394ms  [CUDA memcpy HtoD]
+ 28.32%  5.1108ms         1  5.1108ms  5.1108ms  5.1108ms  s_scal(int, float*, float*)
+
+==13112== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.51%  115.85ms         2  57.924ms  3.0558ms  112.79ms  cudaMalloc
+ 14.47%  20.069ms         3  6.6897ms  78.905us  13.885ms  cudaMemcpy
+  1.13%  1.5609ms        83  18.806us       0ns  742.18us  cuDeviceGetAttribute
+  0.63%  869.91us         2  434.95us  214.06us  655.85us  cudaFree
+  0.19%  268.75us         1  268.75us  268.75us  268.75us  cuDeviceGetName
+  0.05%  73.827us         1  73.827us  73.827us  73.827us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     391ns  2.7340us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     390ns  2.3440us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12464== NVPROF is profiling process 12464, command: vanilla.exe
+==12464== Profiling application: vanilla.exe
+==12464== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 43.66%  17.520ms         2  8.7597ms  8.1290us  17.511ms  [CUDA memcpy HtoD]
+ 33.19%  13.315ms         1  13.315ms  13.315ms  13.315ms  [CUDA memcpy DtoH]
+ 23.15%  9.2878ms         1  9.2878ms  9.2878ms  9.2878ms  s_scal(int, float*, float*)
+
+==12464== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 72.77%  144.05ms         2  72.027ms  3.9843ms  140.07ms  cudaMalloc
+ 23.26%  46.043ms         3  15.348ms  77.342us  24.377ms  cudaMemcpy
+  2.99%  5.9171ms         2  2.9586ms  2.1347ms  3.7824ms  cudaFree
+  0.81%  1.5980ms        83  19.253us       0ns  785.53us  cuDeviceGetAttribute
+  0.12%  230.86us         1  230.86us  230.86us  230.86us  cuDeviceGetName
+  0.04%  76.561us         1  76.561us  76.561us  76.561us  cudaLaunch
+  0.01%  12.500us         1  12.500us  12.500us  12.500us  cuDeviceTotalMem
+  0.00%  8.9840us         1  8.9840us  8.9840us  8.9840us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     390ns  2.7350us  cudaSetupArgument
+  0.00%  1.5620us         2     781ns     390ns  1.1720us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12528== NVPROF is profiling process 12528, command: vanilla.exe
+==12528== Profiling application: vanilla.exe
+==12528== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 45.99%  9.0742ms         1  9.0742ms  9.0742ms  9.0742ms  [CUDA memcpy DtoH]
+ 28.09%  5.5418ms         2  2.7709ms  5.2800us  5.5365ms  [CUDA memcpy HtoD]
+ 25.92%  5.1130ms         1  5.1130ms  5.1130ms  5.1130ms  s_scal(int, float*, float*)
+
+==12528== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 81.79%  113.38ms         2  56.688ms  2.8761ms  110.50ms  cudaMalloc
+ 16.29%  22.583ms         3  7.5277ms  351.17us  15.638ms  cudaMemcpy
+  0.99%  1.3734ms        83  16.547us       0ns  665.22us  cuDeviceGetAttribute
+  0.68%  944.13us         2  472.06us  246.87us  697.26us  cudaFree
+  0.17%  239.06us         1  239.06us  239.06us  239.06us  cuDeviceGetName
+  0.05%  74.608us         1  74.608us  74.608us  74.608us  cudaLaunch
+  0.01%  14.062us         1  14.062us  14.062us  14.062us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us     391ns  2.3440us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==12940== NVPROF is profiling process 12940, command: vanilla.exe
+==12940== Profiling application: vanilla.exe
+==12940== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.84%  14.511ms         1  14.511ms  14.511ms  14.511ms  [CUDA memcpy DtoH]
+ 31.01%  10.754ms         2  5.3770ms  5.3440us  10.749ms  [CUDA memcpy HtoD]
+ 27.15%  9.4156ms         1  9.4156ms  9.4156ms  9.4156ms  s_scal(int, float*, float*)
+
+==12940== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 77.86%  143.75ms         2  71.873ms  4.2925ms  139.45ms  cudaMalloc
+ 20.40%  37.671ms         3  12.557ms  104.30us  26.279ms  cudaMemcpy
+  0.97%  1.7941ms        83  21.615us       0ns  999.59us  cuDeviceGetAttribute
+  0.46%  850.77us         2  425.38us  207.81us  642.96us  cudaFree
+  0.22%  398.43us         1  398.43us  398.43us  398.43us  cuDeviceGetName
+  0.07%  120.70us         1  120.70us  120.70us  120.70us  cudaLaunch
+  0.01%  24.608us         3  8.2020us     390ns  23.046us  cudaSetupArgument
+  0.01%  16.015us         1  16.015us  16.015us  16.015us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==13164== NVPROF is profiling process 13164, command: vanilla.exe
+==13164== Profiling application: vanilla.exe
+==13164== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 50.82%  12.511ms         1  12.511ms  12.511ms  12.511ms  [CUDA memcpy DtoH]
+ 28.28%  6.9612ms         2  3.4806ms  5.2810us  6.9559ms  [CUDA memcpy HtoD]
+ 20.90%  5.1461ms         1  5.1461ms  5.1461ms  5.1461ms  s_scal(int, float*, float*)
+
+==13164== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.08%  218.55ms         2  109.27ms  3.2621ms  215.28ms  cudaMalloc
+ 12.76%  32.403ms         3  10.801ms  94.529us  19.773ms  cudaMemcpy
+  0.61%  1.5574ms        83  18.763us       0ns  754.68us  cuDeviceGetAttribute
+  0.40%  1.0199ms         2  509.95us  199.22us  820.69us  cudaFree
+  0.10%  266.40us         1  266.40us  266.40us  266.40us  cuDeviceGetName
+  0.03%  81.639us         1  81.639us  81.639us  81.639us  cudaLaunch
+  0.01%  15.234us         1  15.234us  15.234us  15.234us  cuDeviceTotalMem
+  0.00%  4.2970us         1  4.2970us  4.2970us  4.2970us  cudaConfigureCall
+  0.00%  2.7330us         3     911ns     390ns  1.5620us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     782ns         2     391ns       0ns     782ns  cuDeviceGet
+==12388== NVPROF is profiling process 12388, command: vanilla.exe
+==12388== Profiling application: vanilla.exe
+==12388== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.67%  7.2833ms         1  7.2833ms  7.2833ms  7.2833ms  [CUDA memcpy DtoH]
+ 30.94%  5.5396ms         2  2.7698ms  5.2800us  5.5343ms  [CUDA memcpy HtoD]
+ 28.39%  5.0839ms         1  5.0839ms  5.0839ms  5.0839ms  s_scal(int, float*, float*)
+
+==12388== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.88%  156.23ms         2  78.114ms  3.0445ms  153.18ms  cudaMalloc
+ 11.17%  20.088ms         3  6.6960ms  81.640us  13.842ms  cudaMemcpy
+  1.26%  2.2738ms        83  27.395us       0ns  1.2129ms  cuDeviceGetAttribute
+  0.44%  793.35us         2  396.67us  214.45us  578.90us  cudaFree
+  0.18%  330.07us         1  330.07us  330.07us  330.07us  cuDeviceGetName
+  0.04%  76.171us         1  76.171us  76.171us  76.171us  cudaLaunch
+  0.01%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     390ns  2.3440us  cudaSetupArgument
+  0.00%  2.7330us         2  1.3660us     390ns  2.3430us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12912== NVPROF is profiling process 12912, command: vanilla.exe
+==12912== Profiling application: vanilla.exe
+==12912== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.76%  7.3516ms         1  7.3516ms  7.3516ms  7.3516ms  [CUDA memcpy DtoH]
+ 30.99%  5.5888ms         2  2.7944ms  5.2800us  5.5836ms  [CUDA memcpy HtoD]
+ 28.25%  5.0946ms         1  5.0946ms  5.0946ms  5.0946ms  s_scal(int, float*, float*)
+
+==12912== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.60%  151.33ms         2  75.666ms  2.8168ms  148.51ms  cudaMalloc
+ 11.46%  20.034ms         3  6.6779ms  62.499us  13.919ms  cudaMemcpy
+  1.24%  2.1695ms        83  26.138us       0ns  1.0207ms  cuDeviceGetAttribute
+  0.44%  767.57us         2  383.78us  208.20us  559.37us  cudaFree
+  0.20%  348.04us         1  348.04us  348.04us  348.04us  cuDeviceGetName
+  0.04%  72.656us         1  72.656us  72.656us  72.656us  cudaLaunch
+  0.01%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  1.9530us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==12556== NVPROF is profiling process 12556, command: vanilla.exe
+==12556== Profiling application: vanilla.exe
+==12556== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.51%  7.6066ms         1  7.6066ms  7.6066ms  7.6066ms  [CUDA memcpy DtoH]
+ 37.32%  7.5680ms         2  3.7840ms  5.2810us  7.5627ms  [CUDA memcpy HtoD]
+ 25.17%  5.1031ms         1  5.1031ms  5.1031ms  5.1031ms  s_scal(int, float*, float*)
+
+==12556== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.70%  154.12ms         2  77.060ms  3.1457ms  150.98ms  cudaMalloc
+ 12.76%  22.950ms         3  7.6501ms  92.577us  14.766ms  cudaMemcpy
+  0.85%  1.5211ms        83  18.326us       0ns  772.25us  cuDeviceGetAttribute
+  0.48%  868.74us         2  434.37us  208.98us  659.76us  cudaFree
+  0.14%  251.56us         1  251.56us  251.56us  251.56us  cuDeviceGetName
+  0.05%  81.640us         1  81.640us  81.640us  81.640us  cudaLaunch
+  0.02%  33.984us         1  33.984us  33.984us  33.984us  cuDeviceTotalMem
+  0.00%  5.8600us         1  5.8600us  5.8600us  5.8600us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     390ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==12264== NVPROF is profiling process 12264, command: vanilla.exe
+==12264== Profiling application: vanilla.exe
+==12264== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.79%  12.508ms         1  12.508ms  12.508ms  12.508ms  [CUDA memcpy DtoH]
+ 34.77%  11.508ms         2  5.7540ms  5.9850us  11.502ms  [CUDA memcpy HtoD]
+ 27.44%  9.0831ms         1  9.0831ms  9.0831ms  9.0831ms  s_scal(int, float*, float*)
+
+==12264== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 74.46%  136.87ms         2  68.436ms  4.1234ms  132.75ms  cudaMalloc
+ 22.85%  41.997ms         3  13.999ms  80.858us  26.838ms  cudaMemcpy
+  1.62%  2.9734ms         2  1.4867ms  732.80us  2.2406ms  cudaFree
+  0.86%  1.5742ms        83  18.966us       0ns  751.16us  cuDeviceGetAttribute
+  0.16%  287.11us         1  287.11us  287.11us  287.11us  cuDeviceGetName
+  0.04%  81.640us         1  81.640us  81.640us  81.640us  cudaLaunch
+  0.01%  17.188us         1  17.188us  17.188us  17.188us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us     391ns  2.7340us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12464== NVPROF is profiling process 12464, command: vanilla.exe
+==12464== Profiling application: vanilla.exe
+==12464== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.24%  12.860ms         2  6.4300ms  5.3120us  12.855ms  [CUDA memcpy HtoD]
+ 32.85%  10.764ms         1  10.764ms  10.764ms  10.764ms  [CUDA memcpy DtoH]
+ 27.91%  9.1453ms         1  9.1453ms  9.1453ms  9.1453ms  s_scal(int, float*, float*)
+
+==12464== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 87.33%  281.77ms         2  140.88ms  23.306ms  258.46ms  cudaMalloc
+ 11.61%  37.446ms         3  12.482ms  84.373us  21.897ms  cudaMemcpy
+  0.55%  1.7676ms        83  21.295us       0ns  853.50us  cuDeviceGetAttribute
+  0.40%  1.2883ms         2  644.13us  417.18us  871.08us  cudaFree
+  0.09%  275.39us         1  275.39us  275.39us  275.39us  cuDeviceGetName
+  0.03%  85.155us         1  85.155us  85.155us  85.155us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.1260us         3  1.0420us       0ns  2.3440us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==10528== NVPROF is profiling process 10528, command: vanilla.exe
+==10528== Profiling application: vanilla.exe
+==10528== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.99%  8.7064ms         1  8.7064ms  8.7064ms  8.7064ms  [CUDA memcpy DtoH]
+ 34.95%  7.4240ms         2  3.7120ms  5.4400us  7.4186ms  [CUDA memcpy HtoD]
+ 24.06%  5.1110ms         1  5.1110ms  5.1110ms  5.1110ms  s_scal(int, float*, float*)
+
+==10528== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 88.39%  205.77ms         2  102.89ms  4.7765ms  201.00ms  cudaMalloc
+ 10.12%  23.571ms         3  7.8569ms  97.264us  15.249ms  cudaMemcpy
+  0.85%  1.9828ms        83  23.888us       0ns  988.66us  cuDeviceGetAttribute
+  0.38%  875.77us         2  437.88us  228.12us  647.65us  cudaFree
+  0.22%  502.73us         1  502.73us  502.73us  502.73us  cuDeviceGetName
+  0.03%  77.733us         1  77.733us  77.733us  77.733us  cudaLaunch
+  0.01%  17.969us         1  17.969us  17.969us  17.969us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.5170us         3  1.1720us     391ns  2.3440us  cudaSetupArgument
+  0.00%  2.3430us         2  1.1710us     390ns  1.9530us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12092== NVPROF is profiling process 12092, command: vanilla.exe
+==12092== Profiling application: vanilla.exe
+==12092== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.80%  8.9298ms         1  8.9298ms  8.9298ms  8.9298ms  [CUDA memcpy DtoH]
+ 34.45%  7.3592ms         2  3.6796ms  5.6000us  7.3536ms  [CUDA memcpy HtoD]
+ 23.75%  5.0737ms         1  5.0737ms  5.0737ms  5.0737ms  s_scal(int, float*, float*)
+
+==12092== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 92.61%  405.12ms         2  202.56ms  5.1538ms  399.97ms  cudaMalloc
+  6.29%  27.519ms         3  9.1730ms  1.6078ms  16.310ms  cudaMemcpy
+  0.76%  3.3433ms        83  40.280us       0ns  1.9414ms  cuDeviceGetAttribute
+  0.23%  1.0211ms         2  510.54us  330.46us  690.61us  cudaFree
+  0.08%  341.01us         1  341.01us  341.01us  341.01us  cuDeviceGetName
+  0.02%  80.858us         1  80.858us  80.858us  80.858us  cudaLaunch
+  0.00%  15.625us         1  15.625us  15.625us  15.625us  cuDeviceTotalMem
+  0.00%  5.8600us         1  5.8600us  5.8600us  5.8600us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     781ns  1.9530us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==12308== NVPROF is profiling process 12308, command: vanilla.exe
+==12308== Profiling application: vanilla.exe
+==12308== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.95%  8.7269ms         1  8.7269ms  8.7269ms  8.7269ms  [CUDA memcpy DtoH]
+ 36.58%  7.9895ms         2  3.9947ms  5.9520us  7.9835ms  [CUDA memcpy HtoD]
+ 23.47%  5.1273ms         1  5.1273ms  5.1273ms  5.1273ms  s_scal(int, float*, float*)
+
+==12308== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 93.21%  411.56ms         2  205.78ms  6.8933ms  404.66ms  cudaMalloc
+  6.00%  26.489ms         3  8.8298ms  108.98us  16.338ms  cudaMemcpy
+  0.42%  1.8344ms        83  22.100us       0ns  909.36us  cuDeviceGetAttribute
+  0.27%  1.1976ms         2  598.82us  241.40us  956.23us  cudaFree
+  0.07%  314.84us         1  314.84us  314.84us  314.84us  cuDeviceGetName
+  0.02%  98.827us         1  98.827us  98.827us  98.827us  cudaLaunch
+  0.00%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  2.7340us         3     911ns       0ns  1.9530us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1710us         2     585ns     390ns     781ns  cuDeviceGet
+==12840== NVPROF is profiling process 12840, command: vanilla.exe
+==12840== Profiling application: vanilla.exe
+==12840== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.49%  13.321ms         1  13.321ms  13.321ms  13.321ms  [CUDA memcpy DtoH]
+ 37.58%  12.678ms         2  6.3389ms  6.1120us  12.672ms  [CUDA memcpy HtoD]
+ 22.93%  7.7350ms         1  7.7350ms  7.7350ms  7.7350ms  s_scal(int, float*, float*)
+
+==12840== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 75.98%  135.01ms         2  67.503ms  4.0367ms  130.97ms  cudaMalloc
+ 22.44%  39.869ms         3  13.290ms  87.889us  26.429ms  cudaMemcpy
+  0.83%  1.4789ms        83  17.817us       0ns  725.38us  cuDeviceGetAttribute
+  0.55%  982.41us         2  491.20us  233.98us  748.43us  cudaFree
+  0.14%  241.79us         1  241.79us  241.79us  241.79us  cuDeviceGetName
+  0.05%  83.592us         1  83.592us  83.592us  83.592us  cudaLaunch
+  0.01%  15.234us         1  15.234us  15.234us  15.234us  cuDeviceTotalMem
+  0.00%  5.8590us         1  5.8590us  5.8590us  5.8590us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     390ns  1.9530us  cudaSetupArgument
+  0.00%  1.9540us         2     977ns     391ns  1.5630us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12776== NVPROF is profiling process 12776, command: vanilla.exe
+==12776== Profiling application: vanilla.exe
+==12776== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 43.77%  9.7685ms         1  9.7685ms  9.7685ms  9.7685ms  [CUDA memcpy DtoH]
+ 33.36%  7.4459ms         2  3.7230ms  5.2810us  7.4407ms  [CUDA memcpy HtoD]
+ 22.87%  5.1048ms         1  5.1048ms  5.1048ms  5.1048ms  s_scal(int, float*, float*)
+
+==12776== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 80.46%  131.15ms         2  65.574ms  2.9777ms  128.17ms  cudaMalloc
+ 17.74%  28.912ms         3  9.6375ms  80.077us  16.779ms  cudaMemcpy
+  0.90%  1.4617ms        83  17.610us       0ns  695.69us  cuDeviceGetAttribute
+  0.66%  1.0801ms         2  540.03us  224.61us  855.46us  cudaFree
+  0.16%  263.28us         1  263.28us  263.28us  263.28us  cuDeviceGetName
+  0.06%  99.998us         1  99.998us  99.998us  99.998us  cudaLaunch
+  0.01%  14.843us         1  14.843us  14.843us  14.843us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us       0ns  2.7350us  cudaSetupArgument
+  0.00%  1.5620us         2     781ns     390ns  1.1720us  cuDeviceGetCount
+  0.00%     391ns         2     195ns       0ns     391ns  cuDeviceGet
+==11488== NVPROF is profiling process 11488, command: vanilla.exe
+==11488== Profiling application: vanilla.exe
+==11488== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.92%  7.2913ms         1  7.2913ms  7.2913ms  7.2913ms  [CUDA memcpy DtoH]
+ 30.62%  5.4562ms         2  2.7281ms  5.3120us  5.4509ms  [CUDA memcpy HtoD]
+ 28.46%  5.0717ms         1  5.0717ms  5.0717ms  5.0717ms  s_scal(int, float*, float*)
+
+==11488== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.22%  119.95ms         2  59.974ms  2.9421ms  117.01ms  cudaMalloc
+ 14.24%  20.530ms         3  6.8433ms  79.686us  14.551ms  cudaMemcpy
+  1.18%  1.6992ms        83  20.472us       0ns  878.50us  cuDeviceGetAttribute
+  1.04%  1.5047ms         2  752.33us  587.10us  917.56us  cudaFree
+  0.24%  349.60us         1  349.60us  349.60us  349.60us  cuDeviceGetName
+  0.05%  73.046us         1  73.046us  73.046us  73.046us  cudaLaunch
+  0.01%  15.625us         1  15.625us  15.625us  15.625us  cuDeviceTotalMem
+  0.00%  4.6880us         1  4.6880us  4.6880us  4.6880us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  2.3440us  cudaSetupArgument
+  0.00%  3.1240us         2  1.5620us     390ns  2.7340us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==13268== NVPROF is profiling process 13268, command: vanilla.exe
+==13268== Profiling application: vanilla.exe
+==13268== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 50.68%  11.076ms         1  11.076ms  11.076ms  11.076ms  [CUDA memcpy DtoH]
+ 26.00%  5.6835ms         2  2.8418ms  5.2800us  5.6783ms  [CUDA memcpy HtoD]
+ 23.32%  5.0971ms         1  5.0971ms  5.0971ms  5.0971ms  s_scal(int, float*, float*)
+
+==13268== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 80.37%  120.55ms         2  60.277ms  2.9113ms  117.64ms  cudaMalloc
+ 17.66%  26.494ms         3  8.8314ms  92.967us  20.290ms  cudaMemcpy
+  1.05%  1.5734ms        83  18.956us       0ns  770.30us  cuDeviceGetAttribute
+  0.61%  910.92us         2  455.46us  223.43us  687.49us  cudaFree
+  0.24%  354.29us         1  354.29us  354.29us  354.29us  cuDeviceGetName
+  0.05%  79.686us         1  79.686us  79.686us  79.686us  cudaLaunch
+  0.01%  16.406us         1  16.406us  16.406us  16.406us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us     391ns  2.3440us  cudaSetupArgument
+  0.00%  3.1250us         2  1.5620us     781ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12828== NVPROF is profiling process 12828, command: vanilla.exe
+==12828== Profiling application: vanilla.exe
+==12828== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.30%  7.5189ms         1  7.5189ms  7.5189ms  7.5189ms  [CUDA memcpy DtoH]
+ 32.33%  6.0320ms         2  3.0160ms  5.2810us  6.0268ms  [CUDA memcpy HtoD]
+ 27.38%  5.1085ms         1  5.1085ms  5.1085ms  5.1085ms  s_scal(int, float*, float*)
+
+==12828== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.29%  145.98ms         2  72.988ms  2.9351ms  143.04ms  cudaMalloc
+ 12.18%  20.598ms         3  6.8660ms  77.734us  14.108ms  cudaMemcpy
+  0.80%  1.3617ms        83  16.405us       0ns  659.76us  cuDeviceGetAttribute
+  0.51%  855.07us         2  427.53us  210.54us  644.52us  cudaFree
+  0.17%  282.03us         1  282.03us  282.03us  282.03us  cuDeviceGetName
+  0.04%  74.217us         1  74.217us  74.217us  74.217us  cudaLaunch
+  0.01%  15.235us         1  15.235us  15.235us  15.235us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  2.7350us         2  1.3670us     391ns  2.3440us  cuDeviceGetCount
+  0.00%  2.7340us         3     911ns       0ns  1.9530us  cudaSetupArgument
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==8448== NVPROF is profiling process 8448, command: vanilla.exe
+==8448== Profiling application: vanilla.exe
+==8448== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 44.71%  17.191ms         1  17.191ms  17.191ms  17.191ms  [CUDA memcpy DtoH]
+ 31.63%  12.162ms         2  6.0808ms  6.4330us  12.155ms  [CUDA memcpy HtoD]
+ 23.66%  9.0997ms         1  9.0997ms  9.0997ms  9.0997ms  s_scal(int, float*, float*)
+
+==8448== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 71.10%  118.03ms         2  59.014ms  3.9066ms  114.12ms  cudaMalloc
+ 27.05%  44.898ms         3  14.966ms  212.89us  32.229ms  cudaMemcpy
+  0.85%  1.4082ms        83  16.966us       0ns  676.55us  cuDeviceGetAttribute
+  0.77%  1.2777ms         2  638.86us  536.71us  741.00us  cudaFree
+  0.17%  282.42us         1  282.42us  282.42us  282.42us  cuDeviceGetName
+  0.05%  77.733us         1  77.733us  77.733us  77.733us  cudaLaunch
+  0.01%  16.796us         1  16.796us  16.796us  16.796us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3430us  cudaSetupArgument
+  0.00%  2.7330us         2  1.3660us     390ns  2.3430us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12836== NVPROF is profiling process 12836, command: vanilla.exe
+==12836== Profiling application: vanilla.exe
+==12836== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.41%  7.2395ms         1  7.2395ms  7.2395ms  7.2395ms  [CUDA memcpy DtoH]
+ 32.77%  6.0203ms         2  3.0101ms  5.3130us  6.0150ms  [CUDA memcpy HtoD]
+ 27.82%  5.1101ms         1  5.1101ms  5.1101ms  5.1101ms  s_scal(int, float*, float*)
+
+==12836== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.58%  130.40ms         2  65.200ms  2.8527ms  127.55ms  cudaMalloc
+ 13.25%  20.429ms         3  6.8098ms  62.889us  13.779ms  cudaMemcpy
+  1.36%  2.0910ms        83  25.192us       0ns  1.1105ms  cuDeviceGetAttribute
+  0.50%  776.94us         2  388.47us  215.23us  561.71us  cudaFree
+  0.24%  371.48us         1  371.48us  371.48us  371.48us  cuDeviceGetName
+  0.05%  76.952us         1  76.952us  76.952us  76.952us  cudaLaunch
+  0.01%  15.625us         1  15.625us  15.625us  15.625us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  2.7340us         3     911ns       0ns  1.9530us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==12852== NVPROF is profiling process 12852, command: vanilla.exe
+==12852== Profiling application: vanilla.exe
+==12852== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.97%  10.423ms         2  5.2115ms  6.4640us  10.417ms  [CUDA memcpy HtoD]
+ 35.04%  8.4987ms         1  8.4987ms  8.4987ms  8.4987ms  [CUDA memcpy DtoH]
+ 21.99%  5.3339ms         1  5.3339ms  5.3339ms  5.3339ms  s_scal(int, float*, float*)
+
+==12852== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.89%  141.40ms         2  70.701ms  4.1761ms  137.23ms  cudaMalloc
+ 15.42%  26.312ms         3  8.7707ms  88.670us  15.266ms  cudaMemcpy
+  0.93%  1.5820ms        83  19.060us       0ns  780.07us  cuDeviceGetAttribute
+  0.51%  874.21us         2  437.10us  228.51us  645.69us  cudaFree
+  0.18%  313.28us         1  313.28us  313.28us  313.28us  cuDeviceGetName
+  0.04%  72.655us         1  72.655us  72.655us  72.655us  cudaLaunch
+  0.01%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3430us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==13284== NVPROF is profiling process 13284, command: vanilla.exe
+==13284== Profiling application: vanilla.exe
+==13284== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.15%  7.6927ms         1  7.6927ms  7.6927ms  7.6927ms  [CUDA memcpy DtoH]
+ 29.88%  5.4542ms         2  2.7271ms  5.2800us  5.4489ms  [CUDA memcpy HtoD]
+ 27.97%  5.1048ms         1  5.1048ms  5.1048ms  5.1048ms  s_scal(int, float*, float*)
+
+==13284== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.19%  132.39ms         2  66.196ms  7.8452ms  124.55ms  cudaMalloc
+ 13.07%  20.314ms         3  6.7712ms  82.811us  14.403ms  cudaMemcpy
+  0.88%  1.3633ms        83  16.424us       0ns  658.58us  cuDeviceGetAttribute
+  0.63%  978.89us         2  489.45us  209.76us  769.13us  cudaFree
+  0.16%  255.86us         1  255.86us  255.86us  255.86us  cuDeviceGetName
+  0.05%  71.874us         1  71.874us  71.874us  71.874us  cudaLaunch
+  0.01%  14.063us         1  14.063us  14.063us  14.063us  cuDeviceTotalMem
+  0.00%  3.1250us         1  3.1250us  3.1250us  3.1250us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  1.9530us  cudaSetupArgument
+  0.00%  1.9530us         2     976ns     391ns  1.5620us  cuDeviceGetCount
+  0.00%     780ns         2     390ns     390ns     390ns  cuDeviceGet
+==11484== NVPROF is profiling process 11484, command: vanilla.exe
+==11484== Profiling application: vanilla.exe
+==11484== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 46.72%  14.772ms         1  14.772ms  14.772ms  14.772ms  [CUDA memcpy DtoH]
+ 28.34%  8.9601ms         1  8.9601ms  8.9601ms  8.9601ms  s_scal(int, float*, float*)
+ 24.94%  7.8854ms         2  3.9427ms  7.1690us  7.8782ms  [CUDA memcpy HtoD]
+
+==11484== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 80.43%  168.40ms         2  84.198ms  3.9679ms  164.43ms  cudaMalloc
+ 18.18%  38.056ms         3  12.686ms  93.748us  26.132ms  cudaMemcpy
+  0.73%  1.5371ms        83  18.519us       0ns  763.27us  cuDeviceGetAttribute
+  0.45%  950.77us         2  475.38us  213.67us  737.10us  cudaFree
+  0.15%  322.65us         1  322.65us  322.65us  322.65us  cuDeviceGetName
+  0.04%  75.780us         1  75.780us  75.780us  75.780us  cudaLaunch
+  0.01%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.5630us         2     781ns     781ns     782ns  cuDeviceGet
+==11288== NVPROF is profiling process 11288, command: vanilla.exe
+==11288== Profiling application: vanilla.exe
+==11288== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.38%  12.738ms         1  12.738ms  12.738ms  12.738ms  [CUDA memcpy DtoH]
+ 36.32%  12.378ms         2  6.1889ms  7.6160us  12.370ms  [CUDA memcpy HtoD]
+ 26.30%  8.9633ms         1  8.9633ms  8.9633ms  8.9633ms  s_scal(int, float*, float*)
+
+==11288== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 75.30%  132.85ms         2  66.424ms  4.1238ms  128.72ms  cudaMalloc
+ 22.94%  40.477ms         3  13.492ms  89.842us  28.101ms  cudaMemcpy
+  0.92%  1.6269ms        83  19.601us       0ns  847.25us  cuDeviceGetAttribute
+  0.61%  1.0808ms         2  540.42us  366.79us  714.05us  cudaFree
+  0.16%  282.81us         1  282.81us  282.81us  282.81us  cuDeviceGetName
+  0.05%  82.811us         1  82.811us  82.811us  82.811us  cudaLaunch
+  0.01%  15.234us         1  15.234us  15.234us  15.234us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  2.7340us  cudaSetupArgument
+  0.00%  1.9520us         2     976ns     390ns  1.5620us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==13184== NVPROF is profiling process 13184, command: vanilla.exe
+==13184== Profiling application: vanilla.exe
+==13184== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.62%  13.931ms         1  13.931ms  13.931ms  13.931ms  [CUDA memcpy DtoH]
+ 31.89%  10.938ms         2  5.4688ms  7.6800us  10.930ms  [CUDA memcpy HtoD]
+ 27.48%  9.4246ms         1  9.4246ms  9.4246ms  9.4246ms  s_scal(int, float*, float*)
+
+==13184== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 77.84%  139.42ms         2  69.709ms  4.4210ms  135.00ms  cudaMalloc
+ 20.41%  36.558ms         3  12.186ms  73.827us  25.714ms  cudaMemcpy
+  0.96%  1.7222ms        83  20.749us       0ns  836.71us  cuDeviceGetAttribute
+  0.56%  1.0004ms         2  500.19us  272.65us  727.72us  cudaFree
+  0.17%  301.95us         1  301.95us  301.95us  301.95us  cuDeviceGetName
+  0.04%  73.827us         1  73.827us  73.827us  73.827us  cudaLaunch
+  0.01%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.5170us         3  1.1720us     391ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==12360== NVPROF is profiling process 12360, command: vanilla.exe
+==12360== Profiling application: vanilla.exe
+==12360== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 43.16%  8.2952ms         1  8.2952ms  8.2952ms  8.2952ms  [CUDA memcpy DtoH]
+ 30.45%  5.8522ms         2  2.9261ms  5.2480us  5.8470ms  [CUDA memcpy HtoD]
+ 26.40%  5.0741ms         1  5.0741ms  5.0741ms  5.0741ms  s_scal(int, float*, float*)
+
+==12360== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 84.87%  135.92ms         2  67.961ms  6.6370ms  129.29ms  cudaMalloc
+ 13.37%  21.411ms         3  7.1369ms  85.545us  15.013ms  cudaMemcpy
+  0.96%  1.5328ms        83  18.467us       0ns  744.91us  cuDeviceGetAttribute
+  0.56%  896.08us         2  448.04us  226.17us  669.91us  cudaFree
+  0.18%  284.76us         1  284.76us  284.76us  284.76us  cuDeviceGetName
+  0.05%  74.608us         1  74.608us  74.608us  74.608us  cudaLaunch
+  0.01%  17.187us         1  17.187us  17.187us  17.187us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us       0ns  2.3440us  cudaSetupArgument
+  0.00%  3.1240us         2  1.5620us     781ns  2.3430us  cuDeviceGetCount
+  0.00%     390ns         2     195ns       0ns     390ns  cuDeviceGet
+==13260== NVPROF is profiling process 13260, command: vanilla.exe
+==13260== Profiling application: vanilla.exe
+==13260== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.83%  9.7539ms         1  9.7539ms  9.7539ms  9.7539ms  [CUDA memcpy DtoH]
+ 36.29%  8.4617ms         2  4.2308ms  5.3130us  8.4564ms  [CUDA memcpy HtoD]
+ 21.89%  5.1039ms         1  5.1039ms  5.1039ms  5.1039ms  s_scal(int, float*, float*)
+
+==13260== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 83.12%  144.04ms         2  72.021ms  3.2437ms  140.80ms  cudaMalloc
+ 15.24%  26.413ms         3  8.8043ms  85.155us  16.944ms  cudaMemcpy
+  0.93%  1.6183ms        83  19.498us       0ns  870.69us  cuDeviceGetAttribute
+  0.50%  870.69us         2  435.35us  221.87us  648.82us  cudaFree
+  0.14%  239.84us         1  239.84us  239.84us  239.84us  cuDeviceGetName
+  0.05%  80.468us         1  80.468us  80.468us  80.468us  cudaLaunch
+  0.01%  14.844us         1  14.844us  14.844us  14.844us  cuDeviceTotalMem
+  0.00%  3.9060us         1  3.9060us  3.9060us  3.9060us  cudaConfigureCall
+  0.00%  2.3430us         3     781ns       0ns  1.5620us  cudaSetupArgument
+  0.00%  1.9540us         2     977ns     391ns  1.5630us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==12144== NVPROF is profiling process 12144, command: vanilla.exe
+==12144== Profiling application: vanilla.exe
+==12144== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.91%  7.3495ms         1  7.3495ms  7.3495ms  7.3495ms  [CUDA memcpy DtoH]
+ 35.73%  6.9264ms         2  3.4632ms  5.3760us  6.9210ms  [CUDA memcpy HtoD]
+ 26.36%  5.1108ms         1  5.1108ms  5.1108ms  5.1108ms  s_scal(int, float*, float*)
+
+==12144== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 81.22%  120.28ms         2  60.139ms  2.9261ms  117.35ms  cudaMalloc
+ 15.81%  23.412ms         3  7.8039ms  146.87us  14.161ms  cudaMemcpy
+  1.82%  2.7019ms         2  1.3510ms  659.37us  2.0425ms  cudaFree
+  0.91%  1.3539ms        83  16.311us       0ns  645.30us  cuDeviceGetAttribute
+  0.17%  246.48us         1  246.48us  246.48us  246.48us  cuDeviceGetName
+  0.05%  72.655us         1  72.655us  72.655us  72.655us  cudaLaunch
+  0.01%  14.453us         1  14.453us  14.453us  14.453us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     781ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     390ns     782ns  cuDeviceGet
+==12864== NVPROF is profiling process 12864, command: vanilla.exe
+==12864== Profiling application: vanilla.exe
+==12864== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 38.73%  14.948ms         1  14.948ms  14.948ms  14.948ms  [CUDA memcpy DtoH]
+ 37.03%  14.294ms         2  7.1468ms  6.6880us  14.287ms  [CUDA memcpy HtoD]
+ 24.24%  9.3579ms         1  9.3579ms  9.3579ms  9.3579ms  s_scal(int, float*, float*)
+
+==12864== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 75.39%  137.76ms         2  68.877ms  4.1933ms  133.56ms  cudaMalloc
+ 23.01%  42.037ms         3  14.012ms  91.795us  26.136ms  cudaMemcpy
+  0.81%  1.4887ms        83  17.935us       0ns  779.68us  cuDeviceGetAttribute
+  0.59%  1.0871ms         2  543.55us  193.36us  893.74us  cudaFree
+  0.14%  251.95us         1  251.95us  251.95us  251.95us  cuDeviceGetName
+  0.04%  75.780us         1  75.780us  75.780us  75.780us  cudaLaunch
+  0.01%  16.016us         1  16.016us  16.016us  16.016us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  2.7340us  cudaSetupArgument
+  0.00%  1.5630us         2     781ns     391ns  1.1720us  cuDeviceGetCount
+  0.00%     390ns         2     195ns       0ns     390ns  cuDeviceGet
+==13184== NVPROF is profiling process 13184, command: vanilla.exe
+==13184== Profiling application: vanilla.exe
+==13184== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.33%  16.825ms         2  8.4125ms  6.4010us  16.819ms  [CUDA memcpy HtoD]
+ 37.52%  15.654ms         1  15.654ms  15.654ms  15.654ms  [CUDA memcpy DtoH]
+ 22.16%  9.2439ms         1  9.2439ms  9.2439ms  9.2439ms  s_scal(int, float*, float*)
+
+==13184== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 82.03%  238.31ms         2  119.15ms  7.3386ms  230.97ms  cudaMalloc
+ 16.65%  48.367ms         3  16.122ms  307.81us  30.023ms  cudaMemcpy
+  0.86%  2.4929ms        83  30.035us       0ns  1.3465ms  cuDeviceGetAttribute
+  0.33%  959.36us         2  479.68us  237.50us  721.86us  cudaFree
+  0.10%  287.89us         1  287.89us  287.89us  287.89us  cuDeviceGetName
+  0.03%  74.609us         1  74.609us  74.609us  74.609us  cudaLaunch
+  0.01%  15.235us         1  15.235us  15.235us  15.235us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  3.9070us         3  1.3020us       0ns  2.7350us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     391ns  2.3430us  cuDeviceGetCount
+  0.00%     782ns         2     391ns     391ns     391ns  cuDeviceGet
+==13148== NVPROF is profiling process 13148, command: vanilla.exe
+==13148== Profiling application: vanilla.exe
+==13148== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 39.71%  13.850ms         1  13.850ms  13.850ms  13.850ms  [CUDA memcpy DtoH]
+ 34.93%  12.181ms         2  6.0907ms  6.6240us  12.175ms  [CUDA memcpy HtoD]
+ 25.36%  8.8437ms         1  8.8437ms  8.8437ms  8.8437ms  s_scal(int, float*, float*)
+
+==13148== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 74.96%  133.86ms         2  66.931ms  3.9492ms  129.91ms  cudaMalloc
+ 23.04%  41.147ms         3  13.716ms  210.54us  28.710ms  cudaMemcpy
+  1.07%  1.9035ms        83  22.933us       0ns  1.0363ms  cuDeviceGetAttribute
+  0.74%  1.3152ms         2  657.61us  449.99us  865.22us  cudaFree
+  0.13%  240.62us         1  240.62us  240.62us  240.62us  cuDeviceGetName
+  0.04%  75.390us         1  75.390us  75.390us  75.390us  cudaLaunch
+  0.01%  16.016us         1  16.016us  16.016us  16.016us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.5150us         3  1.1710us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.3430us         2  1.1710us     390ns  1.9530us  cuDeviceGetCount
+  0.00%     390ns         2     195ns       0ns     390ns  cuDeviceGet
+==12236== NVPROF is profiling process 12236, command: vanilla.exe
+==12236== Profiling application: vanilla.exe
+==12236== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.63%  7.4449ms         1  7.4449ms  7.4449ms  7.4449ms  [CUDA memcpy DtoH]
+ 29.85%  5.3377ms         2  2.6689ms  5.3120us  5.3324ms  [CUDA memcpy HtoD]
+ 28.53%  5.1017ms         1  5.1017ms  5.1017ms  5.1017ms  s_scal(int, float*, float*)
+
+==12236== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.48%  134.68ms         2  67.339ms  3.0554ms  131.62ms  cudaMalloc
+ 12.63%  19.904ms         3  6.6345ms  89.452us  14.027ms  cudaMemcpy
+  0.97%  1.5258ms        83  18.382us       0ns  724.21us  cuDeviceGetAttribute
+  0.67%  1.0629ms         2  531.44us  351.95us  710.93us  cudaFree
+  0.18%  289.45us         1  289.45us  289.45us  289.45us  cuDeviceGetName
+  0.05%  73.045us         1  73.045us  73.045us  73.045us  cudaLaunch
+  0.01%  16.015us         1  16.015us  16.015us  16.015us  cuDeviceTotalMem
+  0.00%  5.0780us         1  5.0780us  5.0780us  5.0780us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us     390ns  2.7350us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     781ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==13164== NVPROF is profiling process 13164, command: vanilla.exe
+==13164== Profiling application: vanilla.exe
+==13164== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 38.06%  13.833ms         1  13.833ms  13.833ms  13.833ms  [CUDA memcpy DtoH]
+ 36.53%  13.274ms         2  6.6370ms  7.8090us  13.266ms  [CUDA memcpy HtoD]
+ 25.41%  9.2354ms         1  9.2354ms  9.2354ms  9.2354ms  s_scal(int, float*, float*)
+
+==13164== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 77.48%  158.87ms         2  79.437ms  4.0953ms  154.78ms  cudaMalloc
+ 20.89%  42.833ms         3  14.278ms  157.03us  29.856ms  cudaMemcpy
+  1.02%  2.0925ms        83  25.211us       0ns  1.2535ms  cuDeviceGetAttribute
+  0.42%  864.44us         2  432.22us  201.56us  662.88us  cudaFree
+  0.13%  265.23us         1  265.23us  265.23us  265.23us  cuDeviceGetName
+  0.04%  90.624us         1  90.624us  90.624us  90.624us  cudaLaunch
+  0.01%  15.625us         1  15.625us  15.625us  15.625us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  4.2970us         3  1.4320us     390ns  2.7350us  cudaSetupArgument
+  0.00%  2.3430us         2  1.1710us     390ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==13280== NVPROF is profiling process 13280, command: vanilla.exe
+==13280== Profiling application: vanilla.exe
+==13280== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 41.58%  14.416ms         1  14.416ms  14.416ms  14.416ms  [CUDA memcpy DtoH]
+ 31.60%  10.957ms         2  5.4783ms  7.2010us  10.950ms  [CUDA memcpy HtoD]
+ 26.82%  9.2986ms         1  9.2986ms  9.2986ms  9.2986ms  s_scal(int, float*, float*)
+
+==13280== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 73.42%  134.22ms         2  67.112ms  5.7066ms  128.52ms  cudaMalloc
+ 22.19%  40.557ms         3  13.519ms  89.061us  25.453ms  cudaMemcpy
+  2.98%  5.4511ms         2  2.7255ms  2.0113ms  3.4398ms  cudaFree
+  1.15%  2.1027ms        83  25.333us       0ns  1.1476ms  cuDeviceGetAttribute
+  0.20%  369.14us         1  369.14us  369.14us  369.14us  cuDeviceGetName
+  0.04%  74.999us         1  74.999us  74.999us  74.999us  cudaLaunch
+  0.01%  16.016us         1  16.016us  16.016us  16.016us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.1250us         3  1.0410us       0ns  2.3440us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1730us         2     586ns     391ns     782ns  cuDeviceGet
+==12952== NVPROF is profiling process 12952, command: vanilla.exe
+==12952== Profiling application: vanilla.exe
+==12952== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 45.52%  9.8078ms         1  9.8078ms  9.8078ms  9.8078ms  [CUDA memcpy DtoH]
+ 30.92%  6.6618ms         2  3.3309ms  5.3130us  6.6565ms  [CUDA memcpy HtoD]
+ 23.57%  5.0777ms         1  5.0777ms  5.0777ms  5.0777ms  s_scal(int, float*, float*)
+
+==12952== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.03%  190.27ms         2  95.134ms  3.2773ms  186.99ms  cudaMalloc
+ 11.02%  24.365ms         3  8.1216ms  108.20us  16.817ms  cudaMemcpy
+  2.28%  5.0503ms        83  60.847us       0ns  2.5937ms  cuDeviceGetAttribute
+  0.43%  943.34us         2  471.67us  265.23us  678.11us  cudaFree
+  0.19%  409.76us         1  409.76us  409.76us  409.76us  cuDeviceGetName
+  0.04%  87.108us         1  87.108us  87.108us  87.108us  cudaLaunch
+  0.01%  16.796us         1  16.796us  16.796us  16.796us  cuDeviceTotalMem
+  0.00%  6.2500us         1  6.2500us  6.2500us  6.2500us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  2.7340us  cudaSetupArgument
+  0.00%  2.3440us         2  1.1720us     391ns  1.9530us  cuDeviceGetCount
+  0.00%  1.5620us         2     781ns     781ns     781ns  cuDeviceGet
+==12260== NVPROF is profiling process 12260, command: vanilla.exe
+==12260== Profiling application: vanilla.exe
+==12260== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.32%  16.000ms         2  7.9999ms  7.2330us  15.993ms  [CUDA memcpy HtoD]
+ 32.92%  12.445ms         1  12.445ms  12.445ms  12.445ms  [CUDA memcpy DtoH]
+ 24.76%  9.3627ms         1  9.3627ms  9.3627ms  9.3627ms  s_scal(int, float*, float*)
+
+==12260== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 80.81%  197.47ms         2  98.734ms  7.2659ms  190.20ms  cudaMalloc
+ 17.51%  42.784ms         3  14.261ms  295.31us  29.303ms  cudaMemcpy
+  1.06%  2.5859ms        83  31.155us       0ns  1.2547ms  cuDeviceGetAttribute
+  0.42%  1.0180ms         2  508.98us  196.87us  821.08us  cudaFree
+  0.16%  393.74us         1  393.74us  393.74us  393.74us  cuDeviceGetName
+  0.03%  81.249us         1  81.249us  81.249us  81.249us  cudaLaunch
+  0.01%  17.188us         1  17.188us  17.188us  17.188us  cuDeviceTotalMem
+  0.00%  6.6400us         1  6.6400us  6.6400us  6.6400us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  3.1250us  cudaSetupArgument
+  0.00%  2.7340us         2  1.3670us     391ns  2.3430us  cuDeviceGetCount
+  0.00%     781ns         2     390ns     390ns     391ns  cuDeviceGet
+==12952== NVPROF is profiling process 12952, command: vanilla.exe
+==12952== Profiling application: vanilla.exe
+==12952== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 42.20%  8.6491ms         1  8.6491ms  8.6491ms  8.6491ms  [CUDA memcpy DtoH]
+ 32.91%  6.7451ms         2  3.3726ms  5.2800us  6.7399ms  [CUDA memcpy HtoD]
+ 24.89%  5.1019ms         1  5.1019ms  5.1019ms  5.1019ms  s_scal(int, float*, float*)
+
+==12952== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 94.33%  480.35ms         2  240.17ms  3.4476ms  476.90ms  cudaMalloc
+  4.66%  23.743ms         3  7.9145ms  101.56us  16.107ms  cudaMemcpy
+  0.45%  2.2820ms        83  27.493us       0ns  1.2066ms  cuDeviceGetAttribute
+  0.44%  2.2445ms         2  1.1223ms  327.73us  1.9168ms  cudaFree
+  0.10%  491.79us         1  491.79us  491.79us  491.79us  cuDeviceGetName
+  0.02%  82.811us         1  82.811us  82.811us  82.811us  cudaLaunch
+  0.00%  18.359us         1  18.359us  18.359us  18.359us  cuDeviceTotalMem
+  0.00%  5.4690us         1  5.4690us  5.4690us  5.4690us  cudaConfigureCall
+  0.00%  5.0770us         2  2.5380us     781ns  4.2960us  cuDeviceGetCount
+  0.00%  4.2970us         3  1.4320us     390ns  2.7350us  cudaSetupArgument
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
+==3468== NVPROF is profiling process 3468, command: vanilla.exe
+==3468== Profiling application: vanilla.exe
+==3468== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 51.32%  16.135ms         2  8.0676ms  7.1050us  16.128ms  [CUDA memcpy HtoD]
+ 32.46%  10.207ms         1  10.207ms  10.207ms  10.207ms  [CUDA memcpy DtoH]
+ 16.22%  5.1004ms         1  5.1004ms  5.1004ms  5.1004ms  s_scal(int, float*, float*)
+
+==3468== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 86.78%  248.18ms         2  124.09ms  7.5139ms  240.67ms  cudaMalloc
+ 11.77%  33.659ms         3  11.220ms  114.06us  17.137ms  cudaMemcpy
+  0.85%  2.4320ms        83  29.301us       0ns  1.3316ms  cuDeviceGetAttribute
+  0.44%  1.2551ms         2  627.53us  310.15us  944.91us  cudaFree
+  0.13%  360.15us         1  360.15us  360.15us  360.15us  cuDeviceGetName
+  0.03%  83.593us         1  83.593us  83.593us  83.593us  cudaLaunch
+  0.01%  16.797us         1  16.797us  16.797us  16.797us  cuDeviceTotalMem
+  0.00%  4.6880us         1  4.6880us  4.6880us  4.6880us  cudaConfigureCall
+  0.00%  3.5160us         3  1.1720us     391ns  2.3440us  cudaSetupArgument
+  0.00%  1.9540us         2     977ns     391ns  1.5630us  cuDeviceGetCount
+  0.00%  1.5640us         2     782ns     782ns     782ns  cuDeviceGet
+==12740== NVPROF is profiling process 12740, command: vanilla.exe
+==12740== Profiling application: vanilla.exe
+==12740== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 63.13%  27.598ms         1  27.598ms  27.598ms  27.598ms  [CUDA memcpy DtoH]
+ 25.22%  11.024ms         2  5.5121ms  5.2810us  11.019ms  [CUDA memcpy HtoD]
+ 11.65%  5.0927ms         1  5.0927ms  5.0927ms  5.0927ms  s_scal(int, float*, float*)
+
+==12740== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 81.73%  241.62ms         2  120.81ms  3.1355ms  238.48ms  cudaMalloc
+ 16.23%  47.968ms         3  15.990ms  297.26us  34.378ms  cudaMemcpy
+  0.98%  2.8937ms        83  34.863us       0ns  1.7691ms  cuDeviceGetAttribute
+  0.94%  2.7793ms         2  1.3896ms  891.39us  1.8879ms  cudaFree
+  0.09%  251.95us         1  251.95us  251.95us  251.95us  cuDeviceGetName
+  0.02%  73.827us         1  73.827us  73.827us  73.827us  cudaLaunch
+  0.01%  14.844us         1  14.844us  14.844us  14.844us  cuDeviceTotalMem
+  0.00%  5.4680us         1  5.4680us  5.4680us  5.4680us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us       0ns  2.7350us  cudaSetupArgument
+  0.00%  2.7350us         2  1.3670us     391ns  2.3440us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
