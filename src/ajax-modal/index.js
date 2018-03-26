@@ -44,11 +44,23 @@ const html = `
       Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
+      <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn-primary btn-append-data">Save changes</button>
     </div>
   </div>
 `
+
+let i = 1;
+function dataFromServer(id) {
+  return `
+    <div id="item-${id}" class="item">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary">
+        Launch demo modal
+      </button>
+    </div>
+  `
+}
 
 const loading = `<div class="modal-loading"></div>`
 
@@ -68,7 +80,11 @@ $(document).on("click", ".btn", function(event) {
   const $this = $(this)
   const $modal = $(".modal")
   const $modalContent = $modal.find(".modal-content")
+  const $item = $this.closest('.item')
+
+  $modal.attr('for', `#${$item.attr('id')}`)
   $modal.modal("show")
+  $this.trigger("fuck")
   getData()
     .then((data) => {
       if (modalLoading) {
@@ -77,10 +93,27 @@ $(document).on("click", ".btn", function(event) {
     })
 })
 
-$(document).on("hidden.bs.modal", ".modal", function (event) {
+$(document).on("fuck", ".btn", function(event) {
+
+  console.log("fuck");
+})
+$(document).on("show.bs.modal", ".modal", function(event) {
+
+})
+
+$(document).on("hidden.bs.modal", ".modal", function(event) {
   modalLoading = false
   const $this = $(this)
   const $modalContent = $this.find(".modal-content")
   console.log("hide")
   $modalContent.html(loading)
+})
+
+$(document).on("click", ".btn-append-data", function(event) {
+  event.preventDefault()
+
+  const $modal = $(this).closest('.modal')
+  const appendToSelector = $modal.attr('for')
+  $modal.modal('hide')
+  $(appendToSelector).closest('.data-container').append(dataFromServer(++i));
 })
