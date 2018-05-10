@@ -81,7 +81,7 @@ Rails use:
 * `key `: to retrieve the blob file saved on disk.
 * `variation_key`: to retrieve the resized version (image only).
 
-Some non-image files can be previewed . Extracting previews requires third-party applications, `ffmpeg` for video and `mutool` for PDFs.  
+Some non-image files can be previewed . Extracting previews requires third-party applications, `ffmpeg` for video and `mutool` for PDFs.
 
 ```ruby
 = link_to(@post.cover.filename, rails_blob_path(@post.cover, disposition: :attachment))
@@ -115,3 +115,8 @@ end
 
 Direct uploads
 
+```ruby
+= f.file_field :cover, direct_upload: true, class: 'form-control'
+```
+
+JS events and more details: [here](http://edgeguides.rubyonrails.org/active_storage_overview.html#direct-upload-javascript-events)
