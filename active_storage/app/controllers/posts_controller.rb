@@ -4,7 +4,10 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by(id: params[:id])
+    @post = Post
+      .with_attached_images
+      .with_attached_cover
+      .find_by(id: params[:id])
   end
 
   def new
@@ -12,8 +15,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params)
-    redirect_to action: :index, notice: 'Post was successfully created!'
+    @post = Post.new(post_params)
+    @post.save
+    if @post.errors.any?
+      render :new
+    else
+      redirect_to({ action: :index }, notice: 'Post was successfully created!')
+    end
   end
 
 private

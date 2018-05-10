@@ -9,7 +9,7 @@
 
   div.form-group
     = f.label :cover
-    = f.file_field :cover, class: 'form-control'
+    = f.file_field :cover, direct_upload: true, class: 'form-control'
 
   div.form-group
     = f.label :images
