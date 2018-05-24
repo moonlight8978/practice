@@ -1,0 +1,38 @@
+:root {
+  --gray: #e8e8e8;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--gray);
+}
+
+.navbar-outer {
+  background-color: var(--white);
+}
+
+.form-control {
+  width: 500px !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+form {
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.fade-in-down {
+  top: 100%;
+  opacity: 1;
+}
