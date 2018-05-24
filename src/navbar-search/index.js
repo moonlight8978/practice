@@ -1,49 +1,68 @@
 const renderItem = item => `<li class="list-group-item list-group-item-action">${item}</li>`
-const renderList = (items) =>  `
+const renderList = items => `
   <ul class="list-group">
-    ${items.map((item, index) => renderItem('Item' + index)).join('')}
+    ${items.map((_item, index) => renderItem(`Item ${index}`)).join('')}
   </ul>
 `
 
-const getRandomInt = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+const getRandomInt = (min, max) => (Math.floor(Math.random() * (max - min + 1)) + min)
+const createItems = () => (new Array(getRandomInt(1, 10))).fill(0)
 
-const createItems = () => {
-  const items = new Array(getRandomInt(1, 10))
-  items.fill(0)
+let timer
+let timer2
 
-  return items
-}
-
-let timeout
 $(document).on('input', 'input', function(event) {
   const $this = $(this)
+  const $form = $this.parent('form')
+  const $result = $form.find('.search-results')
 
-  clearTimeout(timeout)
-  if ($this.val().trim() !== '') {
-    timeout = setTimeout(() => {
-      const items = createItems()
+  $form.removeClass('loading')
+  clearTimeout(timer)
+  clearTimeout(timer2)
 
-      $this.parent('form').find('.search-results')
-        .html(renderList(items))
-        .addClass('fade-in-down')
-    }, 500)
-  } else {
-    $this.parent('form').find('.search-results')
-      .removeClass('fade-in-down')
+  if ($this.val().trim() === '') {
+    $result.removeClass('fade-in-down')
+    return false
   }
+
+  timer = setTimeout(async () => {
+    $form.addClass('loading')
+    const response = await callApi()
+    $form
+      .removeClass('loading')
+      .find('.search-results')
+        .trigger('data:receive', [response])
+  }, 500)
+})
+
+$('.search-results').on('data:receive', function(event, data) {
+  $(this)
+    .html(data)
+    .addClass('fade-in-down')
+})
+
+$('.search-results').on('data:reset', function(event) {
+  $(this).empty()
 })
 
 $(document).on(
   'transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd',
   '.search-results',
   function(event) {
+
   if (event.originalEvent.propertyName === 'top') {
-    console.log(0);
     const $this = $(this)
     if (!$this.is('.fade-in-down')) {
       $this.empty()
     }
   }
 })
+
+function callApi() {
+  const items = createItems()
+  return new Promise((resolve, reject) => {
+    timer2 = setTimeout(function () {
+      resolve(renderList(items))
+    }, 2000)
+  })
+}
