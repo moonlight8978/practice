@@ -2,11 +2,7 @@ import Head from 'next/head'
 
 import Header from './header'
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
-}
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Layout = ({ children }) => (
   <div>
@@ -16,9 +12,12 @@ const Layout = ({ children }) => (
       <link rel="stylesheet" href="/_next/static/style.css" />
     </Head>
 
-    <div style={layoutStyle}>
+    <div className="nextjs-app">
       <Header />
-      {children}
+
+      <div className="container">
+        {children}
+      </div>
     </div>
   </div>
 )
