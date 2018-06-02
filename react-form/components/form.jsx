@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Input from './input'
-import Dump from './dump'
+import Dump from '../components/re-render/dump'
+import UsingPureComponent from '../components/no-re-render/using-pure-component'
+import UsingComponent from '../components/no-re-render/using-component'
 
 class Form extends React.Component {
   constructor(props) {
@@ -9,7 +10,6 @@ class Form extends React.Component {
 
     this.state = {
       name: '',
-      age: 18,
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -20,17 +20,25 @@ class Form extends React.Component {
   }
 
   render() {
-    const { name, age } = this.state
+    const { name } = this.state
+    const { children } = this.props
 
     return (
       <form>
-        <Input
-          name="name"
-          value={name}
+        <input
+          type="text"
           onChange={this.handleChange}
+          value={name}
         />
 
-        <Dump />
+        {children ? children : (
+          <div>
+            <Dump n="1" />
+
+            <UsingPureComponent n="1" />
+            <UsingComponent n="1" />
+          </div>
+        )}
       </form>
     )
   }
