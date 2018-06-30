@@ -1,0 +1,12 @@
+html, body,
+.page-outer {
+  min-height: 100%;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+.page-outer > .container {
+  padding-top: 1rem;
+}

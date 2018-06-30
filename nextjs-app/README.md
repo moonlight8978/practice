@@ -5,7 +5,7 @@ It handles SSR (server side rendering), routing, ...
 ##### Install
 
 ```bash
-$ yarn install react react-dom next
+$ yarn add react react-dom next node-sass @zeit/next-css @zeit/next-sass
 ```
 
 Wait until the installation finish. Then add the following object to `package.json`
@@ -55,7 +55,7 @@ For example: To access `./static/data.json`, make a HTTP request to `/static/dat
 
 Every files in `./pages` will be mapped to the corresponding path. Except `index.js`, the others can be `.jsx`
 
-For example: 
+For example:
 
 * `./pages/index.js` => `/`
 * `./pages/item.js` => `/item`
@@ -112,7 +112,7 @@ export default function() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="/_next/static/style.css" />
       </Head>
-      
+
       // codes...
     </div>
   )
@@ -120,4 +120,3 @@ export default function() {
 ```
 
 Note that `/_next/static/style.css` is the application stylesheet which is compiled from the SASS files.
-
