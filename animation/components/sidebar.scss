@@ -7,6 +7,7 @@ aside {
   left: -80%;
   transition: 0.5s ease-in-out;
   opacity: 0;
+  z-index: 999;
 
   &.active {
     left: 0;
