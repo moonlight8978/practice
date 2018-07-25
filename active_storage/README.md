@@ -57,7 +57,7 @@ end
 
 Process:
 
-* Store attachment data into `active_storage_blobs` table: filename, size, checksum...
+* Store attachment data into `active_storage_blobs` table: filename, size, key, checksum...
 * `active_storage_attachments` table works as a join table. Store attachment type, its blob id, and the model id.
 * Use `ActiveJob` to set the metadata for blobs: width, height
 
@@ -78,7 +78,7 @@ Access from view:
 Rails will send a request to `ActiveStorage::BlobsController#show` to resize/retrieve the image.
 Rails use:
 * `signed_blob_id`:  to retrieve the blob record from database.
-* `key `: to retrieve the blob file saved on disk.
+* `key `: location of the blob on disk.
 * `variation_key`: to retrieve the resized version (image only).
 
 Some non-image files can be previewed . Extracting previews requires third-party applications, `ffmpeg` for video and `mutool` for PDFs.
