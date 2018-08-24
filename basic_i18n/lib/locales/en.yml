@@ -30,3 +30,24 @@ en:
 
   # keys with _html suffix is marked as HTML safe (not be escaped)
   welcome_html: "<b>Welcome %{username}</b>"
+  activerecord:
+    models:
+      album: Album
+      artist: Artist
+    errors:
+      models:
+        album:
+          attributes:
+            artist:
+              required: Artist doesn't exist
+            title:
+              blank: You must provide album's title
+            code:
+              blank: You must provide album's code
+              must_start_with_specific_characters: Album's code must start with AL, follow by numbers
+            genre:
+              blank: You must provide album's genre
+        artist:
+          attributes:
+            name:
+              blank: You must provide artist's name
