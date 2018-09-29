@@ -1,0 +1,11 @@
+@import '~styles/color';
+
+.box {
+  padding: 1rem;
+  background-color: $main-bg-color;
+  border-radius: 3px;
+  border: 2px solid $box-border-color;
+  // height: 100%;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+}
