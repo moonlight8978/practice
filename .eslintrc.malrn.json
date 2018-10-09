@@ -1,0 +1,22 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "import",
+        "react",
+        "react-native"
+    ],
+    "rules": {
+        "arrow-body-style": "off",
+        "comma-dangle": ["error", "always-multiline"],
+        "consistent-return": "off",
+        "global-require": "off",
+        "no-console": "off",
+        "no-underscore-dangle": "off",
+        "no-unused-vars": ["error", { "args": "none" }],
+        "no-use-before-define": "off",
+        "semi": ["error", "never"],
+        "import/prefer-default-export": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+}
