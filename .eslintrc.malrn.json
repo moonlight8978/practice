@@ -2,11 +2,10 @@
     "parser": "babel-eslint",
     "extends": "airbnb",
     "plugins": [
-        "import",
-        "react",
         "react-native"
     ],
     "rules": {
+        "arrow-parens": ["error", "as-needed"],
         "arrow-body-style": "off",
         "comma-dangle": ["error", "always-multiline"],
         "consistent-return": "off",
@@ -16,6 +15,8 @@
         "no-unused-vars": ["error", { "args": "none" }],
         "no-use-before-define": "off",
         "semi": ["error", "never"],
+        "no-confusing-arrow": ["error", { "allowParens": true }],
+        "object-curly-newline": "off",
         "import/prefer-default-export": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
