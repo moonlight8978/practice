@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  web:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    command: yarn start
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - 33333:3000
