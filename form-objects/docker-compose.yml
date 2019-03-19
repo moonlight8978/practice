@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:10.6-alpine
+    env_file:
+      - .env
+    volumes:
+      - ./tmp/postgresql/data:/var/lib/postgresql/data
+    restart: always
+
+  server:
+    build: .
+    command: bash -c "rm -rf ./tmp/pids && rails s"
+    ports:
+      - 76543:3000
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+    tty: true
+    stdin_open: true
