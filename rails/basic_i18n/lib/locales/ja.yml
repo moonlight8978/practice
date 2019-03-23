@@ -1,0 +1,27 @@
+ja:
+  welcome: ようこそ
+  date_notify: 今日は
+  date:
+    formats:
+      custom: '%Y年%m月%d日'
+  activerecord:
+    models:
+      album: アルバム
+      artist: アーティスト
+    errors:
+      models:
+        album:
+          attributes:
+            artist:
+              required: アーティストが存在しません
+            title:
+              blank: アルバムのタイトルを入録してください
+            code:
+              blank: アルバムのコードを入録してください
+              must_start_with_specific_characters: アルバムは「AL」を始めるコードを入録してください
+            genre:
+              blank: アルバムのジャンルを入録してください
+        artist:
+          attributes:
+            name:
+              blank: アーティストの名前を入録してください

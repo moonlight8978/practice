@@ -1,0 +1,12 @@
+{
+  "name": "active_storage",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lê Sĩ Bích <moonlight8978@gmail.com>",
+  "license": "MIT"
+}

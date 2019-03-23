@@ -1,0 +1,8 @@
+h1 Create new post
+
+- if @post.errors.any?
+  ul
+    - @post.errors.full_messages.each do |message|
+      li = message
+
+= render partial: 'posts/form', locals: { post: @post }
