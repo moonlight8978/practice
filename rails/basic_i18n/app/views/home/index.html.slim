@@ -1,0 +1,8 @@
+h1 = t(:welcome)
+
+div = t(:welcome_html, username: '<a href="asdads">adasdas</a>')
+
+div
+  div = "#{t(:date_notify)} #{t(:'date.day_names')[Date.today.wday]}"
+
+  div = l(Date.today, format: :custom)
