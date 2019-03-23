@@ -10,9 +10,9 @@ services:
 
   server:
     build: .
-    command: bash -c "rm -rf ./tmp/pids && rails s"
+    command: rails s
     ports:
-      - 76543:3000
+      - 3000:3000
     volumes:
       - .:/usr/src/app
     depends_on:
