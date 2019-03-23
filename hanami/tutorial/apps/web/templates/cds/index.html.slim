@@ -1,0 +1,8 @@
+- if cds.any?
+  div#cds
+    - cds.each do |cd|
+      div.cd
+        h2 = cd.title
+        p = cd.artist
+- else
+  p There are no cds

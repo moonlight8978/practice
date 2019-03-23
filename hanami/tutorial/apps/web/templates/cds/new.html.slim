@@ -1,0 +1,24 @@
+h2 Create new CD
+
+/ <%= form_for .... do
+/    div do
+/       ...
+/ %>
+= form_for :cd, routes.cds_path do
+  - div class: 'input'
+    - label :title
+    - text_field :title
+
+  - div class: 'input'
+    - label :artist
+    - text_field :artist
+
+  - div class: 'control'
+    - submit 'Create'
+
+- unless params.valid?
+  div.errors
+    h3 There was a problem with your submission
+    ul
+      - params.error_messages.each do |message|
+        li = message
