@@ -1,0 +1,27 @@
+.b {
+  width: 100px;
+  height: 100px;
+}
+
+.one {
+  background-color: red;
+  border: 5px solid black;
+}
+
+.two {
+  background-color: yellow;
+  border: 5px solid green;
+}
+
+.three {
+  background-color: red;
+  border: 5px solid black;
+}
+
+.vertical .two {
+  margin: -2px 0;
+}
+
+.horizontal .two {
+  margin: 0 -2px;
+}

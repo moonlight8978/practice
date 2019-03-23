@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+  <h5>Not using placeholder (content should blink)</h5>
+  <div class="row">
+    <div class="col-4">
+      <div class="wrap">
+        <img src="pixiv-36633503.jpg">
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="wrap">
+        <img src="pixiv-37770454.jpg">
+      </div>
+    </div>
+  </div>
+
+  <h5>Placeholder with ratio (prevent blinking)</h5>
+
+  <h5>Using div + bg-image</h5>
+  <div class="row">
+    <div class="col-4">
+      <div class="wrap">
+        <div class="placeholder ratio-16_9">
+          <div class="image" style="background-image: url('pixiv-36633503.jpg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="wrap">
+        <div class="placeholder ratio-16_9">
+          <div class="image" style="background-image: url('pixiv-37770454.jpg');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h5>Using img</h5>
+  <div class="row">
+    <div class="col-4">
+      <div class="wrap">
+        <div class="placeholder ratio-16_9">
+          <img src="pixiv-36633503.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="wrap">
+        <div class="placeholder ratio-16_9">
+          <img src="pixiv-37770454.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
