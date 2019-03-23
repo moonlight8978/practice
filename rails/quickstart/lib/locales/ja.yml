@@ -1,6 +1,0 @@
-ja:
-  welcome: ようこそ
-  date_notify: 今日は
-  date:
-    formats:
-      custom: '%Y年%m月%d日'
