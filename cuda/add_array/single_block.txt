@@ -1,0 +1,24 @@
+==15504== NVPROF is profiling process 15504, command: single_block
+Time taken: 0.016000 seconds
+Max error: 0
+==15504== Profiling application: single_block
+==15504== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 36.90%  4.4717ms         2  2.2359ms  2.2022ms  2.2695ms  [CUDA memcpy HtoD]
+ 32.80%  3.9748ms         1  3.9748ms  3.9748ms  3.9748ms  add(int, float*, float*)
+ 30.30%  3.6723ms         1  3.6723ms  3.6723ms  3.6723ms  [CUDA memcpy DtoH]
+
+==15504== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 85.43%  119.04ms         2  59.518ms  1.8738ms  117.16ms  cudaMalloc
+  7.69%  10.717ms         3  3.5722ms  2.8168ms  4.5214ms  cudaMemcpy
+  4.70%  6.5499ms         1  6.5499ms  6.5499ms  6.5499ms  cudaDeviceSynchronize
+  1.04%  1.4469ms        83  17.431us       0ns  716.40us  cuDeviceGetAttribute
+  0.85%  1.1883ms         2  594.13us  531.24us  657.02us  cudaFree
+  0.22%  300.39us         1  300.39us  300.39us  300.39us  cuDeviceGetName
+  0.05%  74.218us         1  74.218us  74.218us  74.218us  cudaLaunch
+  0.01%  14.843us         1  14.843us  14.843us  14.843us  cuDeviceTotalMem
+  0.00%  4.6870us         1  4.6870us  4.6870us  4.6870us  cudaConfigureCall
+  0.00%  3.9060us         3  1.3020us     391ns  2.3430us  cudaSetupArgument
+  0.00%  2.7350us         2  1.3670us     782ns  1.9530us  cuDeviceGetCount
+  0.00%  1.1720us         2     586ns     391ns     781ns  cuDeviceGet
