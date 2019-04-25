@@ -3,15 +3,15 @@ import React, { useState, useEffect } from "react";
 function useTimeCounter() {
   const [currentTime, setCurrentTime] = useState(new Date());
 
+  console.log(currentTime);
+
   useEffect(() => {
     const handleTimeChange = () => {
-      setCurrentTime(currentTime => new Date(currentTime.getTime() + 1000));
+      setCurrentTime(new Date(currentTime.getTime() + 3000));
       console.log("rolling in the deep");
     };
 
-    console.log("Effect");
-
-    const interval = setInterval(handleTimeChange, 1000);
+    const interval = setInterval(handleTimeChange, 3000);
 
     return () => {
       interval && clearInterval(interval);
@@ -54,7 +54,6 @@ function App(props) {
         Click me
       </button>
       <TestHook count={count} />
-      <Time />
     </div>
   );
 }
