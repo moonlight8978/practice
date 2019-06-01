@@ -1,0 +1,8 @@
+<%= link_to 'Create post', new_post_path %>
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class="creator"><%= post.creator %></div>
+    <div class="content"><%= post.content %></div>
+  </div>
+<% end %>

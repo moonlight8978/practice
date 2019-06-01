@@ -8,8 +8,8 @@ describe('Create a post', () => {
 
     cy.url().should('include', '/posts/new')
 
-    cy.get('#post_creator').type(creator)
-    cy.get('#post_content').type(content)
+    creator && cy.get('#post_creator').type(creator)
+    content && cy.get('#post_content').type(content)
 
     cy.get('button')
       .contains('Create')
