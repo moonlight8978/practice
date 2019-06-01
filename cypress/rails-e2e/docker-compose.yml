@@ -19,11 +19,9 @@ services:
 
   cypress:
     image: cypress/included:3.3.1
-    working_dir: /e2e
     entrypoint: cypress open --project /e2e
     environment:
       - DISPLAY=:0
-      - CYPRESS_baseUrl=http://web:3000
     volumes:
       - ./e2e:/e2e
       - /tmp/.X11-unix:/tmp/.X11-unix

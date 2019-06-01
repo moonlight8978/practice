@@ -1,24 +1,12 @@
-# README
+# Cypress meets Compose
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Use cypress prebuilt image
+  https://github.com/cypress-io/cypress-docker-images
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Use X11 for Cypress GUI
+  - Cypress container needs xvfb, x11 client
+  - Host need x11 server
+  - Share x11 socket on Host with container
+    `/tmp/.X11-unix:/tmp/.X11-unix`
+  - Add docker to allowed host list
+    `xhost +local:docker`
