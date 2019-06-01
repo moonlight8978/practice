@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "_MoonLight_ <moonlight8978@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.17.1"
+  }
+}
