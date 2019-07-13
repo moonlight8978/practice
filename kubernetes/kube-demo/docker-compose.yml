@@ -1,7 +1,0 @@
-version: "3.7"
-services:
-  node-server:
-    image: moonlight8978/kube-demo:node-server
-    build:
-      context: .
-      dockerfile: ./docker/production/Dockerfile
