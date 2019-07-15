@@ -18,7 +18,7 @@ services:
       - fluentd
     logging:
       driver: fluentd
-      options: 
+      options:
         tag: rails
 
   kibana:
@@ -38,7 +38,7 @@ services:
       - ./fluentd/conf:/fluentd/etc
     ports:
       - 24224:24224
-    depends_on: 
+    depends_on:
       - elasticsearch
 
   elasticsearch:
@@ -48,3 +48,8 @@ services:
       - 9300:9300
     environment:
       discovery.type: single-node
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+
+volumes:
+  es-data:
