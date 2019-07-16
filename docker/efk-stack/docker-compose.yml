@@ -22,14 +22,14 @@ services:
       options:
         tag: rails
 
-  kibana:
-    image: kibana:7.2.0
-    ports:
-      - 5601:5601
-    environment:
-      elasticsearch.hosts: http://elasticsearch:9200
-    depends_on:
-      - fluentd
+  # kibana:
+  #   image: kibana:7.2.0
+  #   ports:
+  #     - 5601:5601
+  #   environment:
+  #     elasticsearch.hosts: http://elasticsearch:9200
+  #   depends_on:
+  #     - fluentd
 
   fluentd:
     build:
@@ -37,20 +37,21 @@ services:
       dockerfile: ../cluster/fluentd.Dockerfile
     volumes:
       - ./fluentd/conf:/fluentd/etc
+      - ./data/fluentd:/var/log/fluentd
     ports:
       - 24224:24224
-    depends_on:
-      - elasticsearch
+    # depends_on:
+    #   - elasticsearch
 
-  elasticsearch:
-    image: elasticsearch:7.2.0
-    ports:
-      - 9200:9200
-      - 9300:9300
-    environment:
-      discovery.type: single-node
-    volumes:
-      - es-data:/usr/share/elasticsearch/data
+  # elasticsearch:
+  #   image: elasticsearch:7.2.0
+  #   ports:
+  #     - 9200:9200
+  #     - 9300:9300
+  #   environment:
+  #     discovery.type: single-node
+  #   volumes:
+  #     - es-data:/usr/share/elasticsearch/data
 
 volumes:
   es-data:
