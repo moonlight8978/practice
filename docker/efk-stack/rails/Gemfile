@@ -12,7 +12,7 @@ gem 'dry-types'
 gem 'dry-validation'
 gem 'dry-struct'
 gem 'lograge'
-gem "logstash-event"
+gem 'lograge-sql'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

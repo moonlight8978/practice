@@ -14,6 +14,7 @@ services:
     environment:
       RAILS_MYSQL_DATABASE: dry_gems_development
       RAILS_MASTER_KEY: 3f4d2dbda7f3989dd78bfcbcdb1e2d85
+
     depends_on:
       - fluentd
     logging:

@@ -60,6 +60,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.lograge.enabled = true
-  config.lograge.formatter = ::Lograge::Formatters::Json.new
+  config.web_console.permissions = '172.0.0.0/8'
 end
