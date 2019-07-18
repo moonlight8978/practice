@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  rails:
+    build: .
+    command: bundle exec rails s -b 0.0.0.0
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 60100:3000
+    tty: true
+    stdin_open: true
+    restart: always
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:11.4-alpine
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    restart: always
+volumes:
+  pg-data:
