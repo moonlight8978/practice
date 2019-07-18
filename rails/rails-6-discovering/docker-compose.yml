@@ -12,6 +12,8 @@ services:
     restart: always
     depends_on:
       - postgres
+    environment:
+      RAILS_MASTER_KEY: 9346703829d09fdc99738da279412ed2
   postgres:
     image: postgres:11.4-alpine
     volumes:
