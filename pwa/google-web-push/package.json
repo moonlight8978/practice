@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Push notifications codelab.",
   "scripts": {
-    "lint": "eslint \".\"",
-    "test": "npm run lint"
+    "start": "http-server ./app -c-1 -o"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-config-google": "^0.13.0"
+    "http-server": "^0.11.1",
+    "prettier": "^1.18.2"
   },
   "repository": {
     "type": "git",
