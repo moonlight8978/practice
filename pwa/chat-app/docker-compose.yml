@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  web:
+    build:
+      context: server
+      dockerfile: ../cluster/development/web.Dockerfile
+    tty: true
+    stdin_open: true
+    ports:
+      - 60080:3000
+    volumes:
+      - ./web:/usr/src/app
+    restart: always
+  server:
+    build:
+      context: server
+      dockerfile: ../cluster/development/server.Dockerfile
+    tty: true
+    stdin_open: true
+    ports:
+      - 60000:3000
+    volumes:
+      - ./web:/usr/src/app
+    restart: always
