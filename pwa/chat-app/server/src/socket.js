@@ -13,14 +13,7 @@ class Socket {
   io = null
 
   init(server) {
-    this.io = new Server(server, {
-      path: '/test',
-      serveClient: false,
-      // below are engine.IO options
-      pingInterval: 10000,
-      pingTimeout: 5000,
-      cookie: false,
-    })
+    this.io = new Server(server)
   }
 
   listen() {

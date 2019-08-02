@@ -2,8 +2,9 @@ version: "3.7"
 services:
   web:
     build:
-      context: server
+      context: web
       dockerfile: ../cluster/development/web.Dockerfile
+    command: yarn start
     tty: true
     stdin_open: true
     ports:
@@ -11,14 +12,18 @@ services:
     volumes:
       - ./web:/usr/src/app
     restart: always
+
   server:
     build:
       context: server
       dockerfile: ../cluster/development/server.Dockerfile
+    command: yarn start
     tty: true
     stdin_open: true
     ports:
       - 60000:3000
     volumes:
-      - ./web:/usr/src/app
+      - ./server:/usr/src/app
     restart: always
+    environment:
+      PORT: 3000

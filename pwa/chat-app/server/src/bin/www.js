@@ -7,16 +7,16 @@ import socket from '../socket'
 const runApp = () => {
   const server = http.createServer(app)
   const logger = debug('server:server')
-  const port = normalizePort(process.env.PORT || '60080')
+  const port = normalizePort(process.env.PORT || '3000')
 
   socket.init(server)
+  socket.listen()
+
   app.set('port', port)
 
   server.listen(port)
   server.on('error', onError)
   server.on('listening', onListening)
-
-  socket.listen()
 
   function onListening() {
     const addr = server.address()
