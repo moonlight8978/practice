@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+.leftSidebar {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.main {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
