@@ -6,6 +6,9 @@ const settings = {
       host: 'http://localhost:60000',
       prefix: '/api',
     },
+    web: {
+      host: 'http://localhost:60080'
+    }
   },
   production: {},
 }

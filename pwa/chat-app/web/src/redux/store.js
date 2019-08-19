@@ -1,12 +1,12 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 
-import counterReducer from './reducers'
+import reducers from './reducers'
 
 const middlewares = [thunk]
 
 const store = createStore(
-  counterReducer,
+  reducers,
   undefined,
   compose(
     window.__REDUX_DEVTOOLS_EXTENSION__ &&

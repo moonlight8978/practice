@@ -1,0 +1,57 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+
+  .logo {
+    width: 36px;
+    align-self: center;
+  }
+}
+
+.content {
+  background-color: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  .title {
+    letter-spacing: -1.5px;
+    margin-top: 0.5rem;
+  }
+
+  .subTitleWrapper {
+    margin-bottom: 1rem;
+  }
+
+  .subTitle {
+    letter-spacing: -0.5px;
+  }
+
+  .formItem {
+    margin-bottom: 0.75rem;
+  }
+
+  .input {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: transparent;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    height: auto;
+
+    &::-webkit-input-placeholder {
+      color: #90949c;
+    }
+
+    &:focus {
+      border-color: #0084ff;
+      box-shadow: none;
+    }
+  }
+
+  .signInButton {
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+}
