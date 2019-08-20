@@ -1,13 +1,35 @@
-import React from 'react'
-import { Layout, Form, Input, Button, Typography } from 'antd'
-import classnames from 'classnames'
+import React, { useMemo } from 'react'
 import { Formik } from 'formik'
+import { connect } from 'react-redux'
+import classnames from 'classnames'
+import { Layout, Form, Input, Button, Typography } from 'antd'
 
 import { Image } from '../../components/image'
+import { signIn } from '../authorization.actions'
 
 import styles from './sign-in.module.scss'
 
 const { Title, Text } = Typography
+
+const initForm = () => ({
+  username: '',
+  password: '',
+})
+
+const SignInFormView = ({ children, signIn }) => {
+  const initialValues = useMemo(initForm, [])
+
+  return (
+    <Formik initialValues={initialValues} onSubmit={signIn}>
+      {formikProps => children(formikProps)}
+    </Formik>
+  )
+}
+
+const SignInForm = connect(
+  null,
+  { signIn }
+)(SignInFormView)
 
 export default function SignIn() {
   return (
@@ -32,7 +54,7 @@ export default function SignIn() {
           </Text>
         </div>
 
-        <Formik>
+        <SignInForm>
           {({
             values,
             touched,
@@ -76,6 +98,7 @@ export default function SignIn() {
               </Form.Item>
 
               <Button
+                htmlType="submit"
                 type="primary"
                 shape="round"
                 className={styles.signInButton}
@@ -84,7 +107,7 @@ export default function SignIn() {
               </Button>
             </Form>
           )}
-        </Formik>
+        </SignInForm>
       </Layout.Content>
     </Layout>
   )

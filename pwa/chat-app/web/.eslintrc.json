@@ -20,6 +20,15 @@
     "arrow-body-style": "off",
     "comma-dangle": ["error", "always-multiline"],
     "consistent-return": "off",
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "__REDUX_DEVTOOLS_EXTENSION__",
+          "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"
+        ]
+      }
+    ],
     "no-unused-vars": [
       "error",
       {

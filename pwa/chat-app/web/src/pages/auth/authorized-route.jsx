@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 
 import authorizationSelectors from './authorization.selectors'
 
@@ -11,9 +12,8 @@ export default function authorizedRoute(Component) {
   function AuthorizedRoute({ isAuthenticated, ...props }) {
     if (isAuthenticated) {
       return <Component {...props} />
-    } else {
-      return <div>Redirect to sign in page</div>
     }
+    return <Redirect to="/" />
   }
 
   return connect(
@@ -26,9 +26,8 @@ export function unauthorizedRoute(Component) {
   function UnauthorizedRoute({ isAuthenticated, ...props }) {
     if (!isAuthenticated) {
       return <Component {...props} />
-    } else {
-      return <div>Redirect to home page</div>
     }
+    return <Redirect to="/conversations" />
   }
 
   return connect(

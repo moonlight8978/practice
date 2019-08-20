@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import settings from '../config/settings'
 
 const http = axios.create({
@@ -7,10 +8,16 @@ const http = axios.create({
 })
 
 export default {
-  request: (config, adapter) => {
+  request: (config, requestAdapter = null, responseAdapter = null) => {
     return http.request({
       ...config,
-      transformResponse: [data => adapter.parse(data)],
+      transformRequest: [
+        (data, headers) =>
+          requestAdapter ? requestAdapter.parse(data, headers) : data,
+      ],
+      transformResponse: [
+        data => (responseAdapter ? responseAdapter.parse(data) : data),
+      ],
     })
   },
 }

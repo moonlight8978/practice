@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import { authorizationReducer } from '../components/authorization'
+import { authorizationReducer } from '../pages/auth'
 
 export default combineReducers({
   authorization: authorizationReducer,
