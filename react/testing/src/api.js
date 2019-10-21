@@ -6,7 +6,9 @@ function delay(time) {
 
 export const PeopleApi = {
   async fetch() {
-    await delay(500)
+    if (!process.env.NODE_ENV === 'test') {
+      await delay(500)
+    }
     return axios.get('/people.json')
   },
 }

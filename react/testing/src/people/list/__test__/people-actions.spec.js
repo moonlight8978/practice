@@ -4,7 +4,7 @@ import peopleTypes from '../people-types'
 import peopleActions from '../people-actions'
 import { initialState } from '../people-reducer'
 import { PeopleApi } from '../../../api'
-import { mockStore } from '../../../test-utils/helpers'
+import { mockStore, mockAxios } from '../../../test-utils'
 
 describe('peopleActions.creator', () => {
   it('should create action to request fetching people', () => {
@@ -34,19 +34,20 @@ describe('peopleActions.creator', () => {
 describe('peopleActions', () => {
   const person = { uuid: 'uuid-1', name: 'Doan Chi Binh' }
 
-  beforeEach(() => {
+  function mockApi() {
     sinon.replace(
       PeopleApi,
       'fetch',
       sinon.stub().returns(Promise.resolve([person]))
     )
-  })
+  }
 
   afterEach(() => {
     sinon.restore()
   })
 
   it('should dispatch correct actions when fetching success', async () => {
+    mockApi()
     const store = await mockStore(
       { people: initialState },
       peopleActions.fetchPeople()
@@ -57,7 +58,27 @@ describe('peopleActions', () => {
     ])
   })
 
+  it('should dispatch error action when http request failed', async () => {
+    mockAxios(axios => {
+      axios
+        .onGet('/people.json')
+        .reply(500, { message: 'Internal Server Error' })
+    })
+    const store = await mockStore(
+      { people: initialState },
+      peopleActions.fetchPeople()
+    )
+    expect(store.getActions()).toEqual([
+      { type: peopleTypes.REQUEST },
+      {
+        type: peopleTypes.ERROR,
+        payload: 'Request failed with status code 500',
+      },
+    ])
+  })
+
   it('should not dispatch actions when data is still fetching', async () => {
+    mockApi()
     const store = await mockStore(
       { people: { isFetching: true } },
       peopleActions.fetchPeople()

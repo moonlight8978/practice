@@ -21,8 +21,12 @@
     "eject": "react-scripts eject",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!node_modules/*.*",
+      "!src/test-utils.js"
+    ]
   },
   "browserslist": {
     "production": [
@@ -38,6 +42,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^9.3.0",
+    "axios-mock-adapter": "^1.17.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.4.0",
