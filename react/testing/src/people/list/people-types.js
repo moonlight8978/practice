@@ -1,0 +1,5 @@
+export default {
+  REQUEST: 'PEOPLE.REQUEST',
+  SUCCESS: 'PEOPLE.SUCCESS',
+  ERROR: 'PEOPLE.ERROR',
+}
