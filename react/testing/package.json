@@ -23,7 +23,7 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/*.{js,jsx}",
+      "src/**/*.{js,jsx}",
       "!node_modules/*.*",
       "!src/test-utils.js"
     ]
@@ -52,6 +52,7 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.1.2",
     "flow-bin": "^0.109.0",
+    "jest-config": "^24.9.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "redux-devtools": "^3.5.0",
