@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  web:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    environment:
+      RAILS_MASTER_KEY: 89d944e4944f90f10c330308d8c50bfd
