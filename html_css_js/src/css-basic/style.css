@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box !important;
+}
+
+.flex-parent {
+  display: flex;
+  padding: 0 20%;
+}
+
+.flex-child {
+  height: 200px;
+  flex: 0 0 33.33333333%;
+}

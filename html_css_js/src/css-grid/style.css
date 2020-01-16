@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  grid-template-areas:
+    "header header header header"
+    "body body body body";
+  grid-gap: 8px 16px;
+}
+
+.grid-item {
+  /* height: 200px; */
+}
