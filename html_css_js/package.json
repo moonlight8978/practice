@@ -17,7 +17,7 @@
     "axios": "^0.17.1",
     "bootstrap": "4.0.0-beta.2",
     "http-server": "^0.11.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.0",
     "lazyload": "^2.0.0-beta.2",
     "popper.js": "^1.14.1"
   }
