@@ -1,0 +1,1 @@
+echo "Cloning... $1"
