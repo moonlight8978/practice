@@ -55,31 +55,48 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        screenOptions={({ navigation }) => ({
-          headerTitle: ({ children }) => (
-            <View
-              style={{
-                flex: 1,
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Text>{children}</Text>
-            </View>
-          ),
-          headerBackTitleVisible: false,
-          headerLeft: ({ canGoBack, ...rest }) => {
-            console.log(rest);
-            return canGoBack ? (
-              <Button onPress={() => navigation.goBack()} title="Back" />
-            ) : undefined;
+        screenOptions={{
+          header: ({ scene, previous, navigation }) => {
+            const { options } = scene.descriptor;
+            const title =
+              options.headerTitle !== undefined
+                ? options.headerTitle
+                : options.title !== undefined
+                ? options.title
+                : scene.route.name;
+            return (
+              <ScreenHeader
+                title={title}
+                leftButton={
+                  previous ? (
+                    <ScreenHeaderButton onPress={navigation.goBack} />
+                  ) : undefined
+                }
+                style={options.headerStyle}
+              />
+            );
           },
-          headerBackground: () => (
-            <View
-              style={[{ backgroundColor: "red" }, StyleSheet.absoluteFill]}
-            />
-          ),
-        })}
+          header: ({ scene, previous, navigation }) => {
+            const { options } = scene.descriptor;
+            const title =
+              options.headerTitle !== undefined
+                ? options.headerTitle
+                : options.title !== undefined
+                ? options.title
+                : scene.route.name;
+            return (
+              <View style={options.headerStyle}>
+                {previous ? <Text>Back</Text> : undefined}
+                <Text>{title}</Text>
+              </View>
+            );
+          },
+          headerMode: "screen",
+          headerStyle: {
+            height: 64,
+            // paddingTop: 20,
+          },
+        }}
       >
         <Stack.Screen
           name="Home"
@@ -97,43 +114,3 @@ function App() {
 }
 
 export default App;
-// header: ({ scene, previous, navigation }) => {
-//   const { options } = scene.descriptor;
-//   const title =
-//     options.headerTitle !== undefined
-//       ? options.headerTitle
-//       : options.title !== undefined
-//       ? options.title
-//       : scene.route.name;
-//   return (
-//     <ScreenHeader
-//       title={title}
-//       leftButton={
-//         previous ? (
-//           <ScreenHeaderButton onPress={navigation.goBack} />
-//         ) : undefined
-//       }
-//       style={options.headerStyle}
-//     />
-//   );
-// },
-// header: ({ scene, previous, navigation }) => {
-//   const { options } = scene.descriptor;
-//   const title =
-//     options.headerTitle !== undefined
-//       ? options.headerTitle
-//       : options.title !== undefined
-//       ? options.title
-//       : scene.route.name;
-//   return (
-//     <View style={options.headerStyle}>
-//       {previous ? <Text>Back</Text> : undefined}
-//       <Text>{title}</Text>
-//     </View>
-//   );
-// },
-// headerMode: "screen",
-// headerStyle: {
-//   height: 64,
-//   // paddingTop: 20,
-// },
