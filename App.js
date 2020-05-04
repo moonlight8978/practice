@@ -21,6 +21,11 @@ const styles = StyleSheet.create({
   text: {
     flex: 1,
     alignItems: "center",
+    textAlign: "center",
+  },
+  innerText: {
+    alignSelf: "center",
+    textAlign: "center",
   },
 });
 
@@ -29,7 +34,7 @@ function ScreenHeader({ title, leftButton, rightButton, style }) {
     <View style={[style, styles.header]}>
       <View style={styles.headerButton}>{leftButton}</View>
       <View style={styles.text}>
-        <Text>{title}</Text>
+        <Text style={styles.innerText}>{title}</Text>
       </View>
       <View style={styles.headerButton}>{rightButton}</View>
     </View>
@@ -56,17 +61,8 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={({ navigation }) => ({
-          headerTitle: ({ children }) => (
-            <View
-              style={{
-                flex: 1,
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Text>{children}</Text>
-            </View>
-          ),
+          headerTitle: ({ children }) => <Text>{children}</Text>,
+          headerTitleAlign: "center",
           headerBackTitleVisible: false,
           headerLeft: ({ canGoBack, ...rest }) => {
             console.log(rest);
