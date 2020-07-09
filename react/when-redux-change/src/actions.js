@@ -1,0 +1,9 @@
+const types = {
+  SET_PRODUCTS_STORAGE: "SET_PRODUCTS_STORAGE",
+  SET_PRODUCT_DISPLAY: "SET_PRODUCT_DISPLAY",
+  SET_CURRENT_PAGE: "SET_CURRENT_PAGE",
+};
+
+export default {
+  types,
+};
