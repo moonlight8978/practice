@@ -1,43 +1,56 @@
-import { action, autorun, computed, makeAutoObservable, observable, remove, set, toJS } from 'mobx'
+import { action, computed, get, makeAutoObservable, observable, reaction, toJS } from 'mobx'
 import { AccountNumber, Recipient } from '../types/local'
 
-const createRecipient = ({ name, accountNumber }: Partial<Recipient>): Recipient => ({
+const createRecipient = ({ name, accountNumber }: Recipient): Recipient => ({
   name,
   accountNumber,
 })
 
 export class RecipientsState {
-  recipientsMap: { [key: AccountNumber]: Recipient } = {}
+  recipientsMap: { [key: string]: Recipient } = {}
 
-  constructor(recipientsMap: { [key: AccountNumber]: Recipient }) {
+  constructor(recipientsMap: { [key: string]: Recipient }) {
     makeAutoObservable(this, {
       recipientsMap: observable,
       recipients: computed,
-      addRecipient: action,
-      removeRecipient: action,
+      createRecipient: action,
+      deleteRecipient: action,
     })
 
     this.recipientsMap = recipientsMap
   }
 
-  addRecipient(recipient: Recipient) {
-    set(this.recipientsMap, recipient.accountNumber, recipient)
+  createRecipient(recipient: Recipient) {
+    this.recipientsMap = {
+      ...this.recipientsMap,
+      [recipient.accountNumber]: recipient,
+    }
   }
 
-  removeRecipient(recipient: Recipient) {
-    remove(this.recipientsMap, recipient.accountNumber)
+  deleteRecipient(recipient: Recipient) {
+    const { [recipient.accountNumber]: removedRecipient, ...recipients } = toJS(this.recipientsMap)
+    this.recipientsMap = recipients
   }
 
   get recipients(): Recipient[] {
     return Object.values(this.recipientsMap)
   }
+
+  recipient(accountNumber: AccountNumber): Recipient | null {
+    return get(this.recipientsMap, accountNumber) || null
+  }
 }
 
-const recipientsState = new RecipientsState(JSON.parse(localStorage.getItem('recipients')) || {})
+const recipientsState = new RecipientsState(JSON.parse(localStorage.getItem('recipients') || '{}'))
 
-autorun(() => {
-  console.log(toJS(recipientsState.recipients))
-})
+reaction(
+  () => recipientsState.recipientsMap,
+  (observableRecipientsMap) => {
+    const recipientsMap = toJS(observableRecipientsMap)
+    console.log('Save recipients list', recipientsMap)
+    localStorage.setItem('recipients', JSON.stringify(recipientsMap))
+  }
+)
 
 const recipientDomain = {
   recipientsState,
