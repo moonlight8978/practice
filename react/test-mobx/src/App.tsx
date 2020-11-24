@@ -1,49 +1,124 @@
 import React, { SyntheticEvent, useState } from 'react'
 import { observer } from 'mobx-react'
-import faker from 'faker'
+import { Button, Col, Container, Form, ListGroup, Modal, Row } from 'react-bootstrap'
+import recipientDomain from './domain/recipient'
+import { Formik, Form as FormikForm } from 'formik'
+import { Recipient } from './types/local'
 
-import './App.css'
-import { createUser, UsersState } from './domain/user'
+const newRecipient = recipientDomain.create({})
 
-const users = new Array(50).fill(0).map(() =>
-  createUser({
-    id: faker.random.uuid(),
-    age: faker.random.number(),
-    name: faker.name.findName(),
-  })
-)
+const Recipients = observer(() => {
+  const [show, setShow] = useState(false)
 
-function App() {
-  const [usersState] = useState<UsersState>(new UsersState(users))
-  const [filter, setFilter] = useState<{ keyword: string }>({ keyword: '' })
-  const onSubmit = (event: SyntheticEvent<HTMLFormElement>) => {
-    event.preventDefault()
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
-    usersState.filter(filter)
+  const onSubmit = (recipient: Recipient) => {
+    recipientDomain.recipientsState.addRecipient(recipient)
+    handleClose()
   }
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
-        <input value={filter.keyword} onChange={(event) => setFilter({ keyword: event.target.value })} />
+      <Row className="align-items-center">
+        <Col>
+          <span>Danh sách thụ hưởng</span>
+        </Col>
 
-        <button type="submit">Filter</button>
-      </form>
+        <Col className="d-flex justify-content-end">
+          <Button variant="success" onClick={handleShow}>
+            Thêm mới +
+          </Button>
+        </Col>
+      </Row>
 
-      {usersState.result.map((user) => (
-        <div key={user.id}>
-          <div>
-            <span>ID：{user.id}</span>
-          </div>
-          <div>
-            <span>名前：{user.name}</span>
-          </div>
-          <div>
-            <span>年齢：{user.age}際</span>
-          </div>
-        </div>
-      ))}
+      <ListGroup className="mt-3">
+        {recipientDomain.recipientsState.recipients.map((recipient: Recipient) => (
+          <ListGroup.Item
+            variant="light"
+            key={recipient.accountNumber}
+            className="d-flex justify-content-between align-items-center"
+          >
+            <div>
+              <div>
+                <span>{recipient.name}</span>
+              </div>
+
+              <div className="d-flex align-items-center">
+                <h6 className="mb-0 pr-2">STK:</h6>
+                <span>{recipient.accountNumber}</span>
+              </div>
+            </div>
+
+            <div>
+              <Button variant="danger" onClick={() => recipientDomain.recipientsState.removeRecipient(recipient)}>
+                X
+              </Button>
+            </div>
+          </ListGroup.Item>
+        ))}
+      </ListGroup>
+
+      <Formik<Recipient> initialValues={newRecipient} onSubmit={onSubmit}>
+        {({ values, handleChange, handleSubmit }) => {
+          return (
+            <FormikForm>
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Thêm người thụ hưởng</Modal.Title>
+                </Modal.Header>
+
+                <Modal.Body>
+                  <Form.Group controlId="recipientName">
+                    <Form.Label>Tên người thụ hưởng</Form.Label>
+                    <Form.Control type="text" placeholder="" value={values.name} onChange={handleChange('name')} />
+                  </Form.Group>
+
+                  <Form.Group controlId="recipientAccountNumber">
+                    <Form.Label>Số tài khoản</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder=""
+                      value={values.accountNumber}
+                      onChange={handleChange('accountNumber')}
+                    />
+                  </Form.Group>
+                </Modal.Body>
+
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Đóng
+                  </Button>
+                  <Button variant="primary" onClick={handleSubmit}>
+                    Lưu
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            </FormikForm>
+          )
+        }}
+      </Formik>
     </div>
+  )
+})
+
+const Transactions = observer(() => {
+  return <div>Lịch sử giao dịch</div>
+})
+
+function App() {
+  return (
+    <Container className="my-4">
+      <Row>
+        <Col>
+          <Transactions />
+        </Col>
+
+        <Col>
+          <Recipients />
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
