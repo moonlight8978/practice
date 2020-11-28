@@ -3,12 +3,13 @@ import { observer } from 'mobx-react'
 import { Col, Container, Row } from 'react-bootstrap'
 import TransactionList from './TransactionList'
 import RecipientList from './RecipientList'
+import { getCurrentAmount } from './domain/selectors'
 
 const Account = observer(() => {
-  return <span>Số dư: 50.000.000VNĐ</span>
+  return <span>Số dư: ${getCurrentAmount().toLocaleString()}VNĐ</span>
 })
 
-function App() {
+const App = () => {
   return (
     <Container className="my-4">
       <div className="text-center mb-5">
@@ -28,4 +29,4 @@ function App() {
   )
 }
 
-export default observer(App)
+export default App

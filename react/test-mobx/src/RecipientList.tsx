@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { observer } from 'mobx-react'
 import { Button, Col, Form, ListGroup, Modal, Row } from 'react-bootstrap'
-import recipientDomain from './domain/recipient'
 import { Formik } from 'formik'
 import { Recipient } from './types/local'
+import { createRecipient, deleteRecipient } from './domain/actions'
+import { getRecipients } from './domain/selectors'
 
 const newRecipient: Recipient = { name: '', accountNumber: '' }
 
@@ -13,8 +14,10 @@ const RecipientList = () => {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
+  const recipients = getRecipients()
+
   const onSubmit = (recipient: Recipient) => {
-    recipientDomain.recipientsState.createRecipient(recipient)
+    createRecipient(recipient)
     handleClose()
   }
 
@@ -33,11 +36,9 @@ const RecipientList = () => {
       </Row>
 
       <ListGroup className="mt-3">
-        {recipientDomain.recipientsState.recipients.length === 0 && (
-          <ListGroup.Item variant="light">Không có người thụ hưởng nào</ListGroup.Item>
-        )}
+        {recipients.length === 0 && <ListGroup.Item variant="light">Không có người thụ hưởng nào</ListGroup.Item>}
 
-        {recipientDomain.recipientsState.recipients.map((recipient: Recipient) => (
+        {recipients.map((recipient: Recipient) => (
           <ListGroup.Item
             variant="light"
             key={recipient.accountNumber}
@@ -55,7 +56,7 @@ const RecipientList = () => {
             </div>
 
             <div>
-              <Button variant="danger" onClick={() => recipientDomain.recipientsState.deleteRecipient(recipient)}>
+              <Button variant="danger" onClick={() => deleteRecipient(recipient)}>
                 X
               </Button>
             </div>

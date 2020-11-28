@@ -1,22 +1,21 @@
 import React, { useMemo, useState } from 'react'
 import { observer } from 'mobx-react'
 import { Button, Col, Form, ListGroup, Modal, Row } from 'react-bootstrap'
-import recipientDomain from './domain/recipient'
 import { Formik, FormikHelpers } from 'formik'
 import { Recipient, Transaction, TransactionForm } from './types/local'
-import transactionDomain from './domain/transaction'
-import accountDomain from './domain/account'
+import { getCard, getPrimaryCard, getRecipients, getTransactions } from './domain/selectors'
+import { createTransaction } from './domain/actions'
 
 const TransactionListItem = observer(({ transaction }: { transaction: Transaction }) => {
-  const recipient = recipientDomain.recipientsState.recipient(transaction.recipientAccountNumber)
-  const recipientName = recipient?.accountNumber || 'unknown'
+  const recipient = getCard(transaction.recipientAccountNumber)
+  const recipientName = recipient?.name || 'unknown'
 
   return (
     <ListGroup.Item variant="light" key={transaction.id}>
       <div>
         <div>
           <span>
-            {transaction.senderAccountNumber} → {transaction.recipientAccountNumber} (${recipientName})
+            {transaction.senderAccountNumber} → {transaction.recipientAccountNumber} ({recipientName})
           </span>
         </div>
 
@@ -29,28 +28,32 @@ const TransactionListItem = observer(({ transaction }: { transaction: Transactio
   )
 })
 
-const TransactionList = () => {
+const TransactionList = observer(() => {
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
   const onSubmit = (form: TransactionForm, helpers: FormikHelpers<TransactionForm>) => {
-    transactionDomain.transactionsState.createTransaction(form)
+    createTransaction(form)
     helpers.resetForm()
     handleClose()
   }
 
-  const sender = accountDomain.accountState.primaryCard
+  const sender = getPrimaryCard()
+
+  const recipients = getRecipients()
 
   const newTransaction = useMemo<TransactionForm>(
     () => ({
       amount: 0,
-      recipientAccountNumber: '',
+      recipientAccountNumber: recipients[0]?.accountNumber,
       senderAccountNumber: sender.accountNumber,
     }),
-    [sender.accountNumber]
+    [sender.accountNumber, recipients]
   )
+
+  const transactions = getTransactions()
 
   return (
     <div>
@@ -67,11 +70,9 @@ const TransactionList = () => {
       </Row>
 
       <ListGroup className="mt-3">
-        {transactionDomain.transactionsState.transactions.length === 0 && (
-          <ListGroup.Item variant="light">Không có giao dịch nào gần đây</ListGroup.Item>
-        )}
+        {transactions.length === 0 && <ListGroup.Item variant="light">Không có giao dịch nào gần đây</ListGroup.Item>}
 
-        {transactionDomain.transactionsState.transactions.map((transaction: Transaction) => (
+        {transactions.map((transaction: Transaction) => (
           <TransactionListItem key={transaction.id} transaction={transaction} />
         ))}
       </ListGroup>
@@ -98,7 +99,7 @@ const TransactionList = () => {
                       value={values.recipientAccountNumber}
                       onChange={handleChange('recipientAccountNumber')}
                     >
-                      {recipientDomain.recipientsState.recipients.map((recipient: Recipient) => (
+                      {recipients.map((recipient: Recipient) => (
                         <option value={recipient.accountNumber} key={recipient.accountNumber}>
                           {`${recipient.accountNumber} (${recipient.name})`}
                         </option>
@@ -127,6 +128,6 @@ const TransactionList = () => {
       </Modal>
     </div>
   )
-}
+})
 
-export default observer(TransactionList)
+export default TransactionList

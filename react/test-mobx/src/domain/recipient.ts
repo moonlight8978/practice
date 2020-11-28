@@ -1,4 +1,4 @@
-import { action, computed, get, makeAutoObservable, observable, reaction, toJS } from 'mobx'
+import { action, computed, get, makeObservable, observable, reaction, toJS } from 'mobx'
 import { AccountNumber, Recipient } from '../types/local'
 
 const createRecipient = ({ name, accountNumber }: Recipient): Recipient => ({
@@ -10,7 +10,7 @@ export class RecipientsState {
   recipientsMap: { [key: string]: Recipient } = {}
 
   constructor(recipientsMap: { [key: string]: Recipient }) {
-    makeAutoObservable(this, {
+    makeObservable(this, {
       recipientsMap: observable,
       recipients: computed,
       createRecipient: action,
