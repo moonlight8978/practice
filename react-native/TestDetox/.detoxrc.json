@@ -1,0 +1,26 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "e2e/config.json",
+  "configurations": {
+    "ios.debug": {
+      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/TestDetox.app",
+      "build": "xcodebuild -workspace ios/TestDetox.xcworkspace -scheme TestDetox -sdk iphonesimulator -configuration Debug -derivedDataPath ios/build",
+      "type": "ios.simulator",
+      "device": {
+        "type": "iPhone 11"
+      }
+    },
+    "android.debug": {
+      "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+      "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+      "type": "android.attached",
+      "device": {
+        "adbName": "BH9057609A"
+      },
+      "session": {
+        "sessionId": "manualsession",
+        "server": "ws://10.0.15.94:8099"
+      }
+    }
+  }
+}
