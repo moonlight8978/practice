@@ -1,4 +1,4 @@
-describe('Example', () => {
+describe('auth', () => {
   beforeEach(async () => {
     await device.reloadReactNative()
   })
@@ -11,7 +11,8 @@ describe('Example', () => {
     await expect(element(by.text('moonlight'))).toBeVisible()
 
     await element(by.id('signOutButton')).tap()
-    await element(by.label('OK').and(by.type('_UIAlertControllerActionView'))).tap()
+    // ios await element(by.label('OK').and(by.type('_UIAlertControllerActionView'))).tap()
+    // android await element(by.text('OK')).tap()
 
     await expect(element(by.text('SignIn'))).toBeVisible()
   })
