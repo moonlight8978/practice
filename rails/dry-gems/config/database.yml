@@ -1,0 +1,14 @@
+default: &default
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: <%= ENV["RAILS_MYSQL_DATABASE"] %>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: dry_gems_test
+
+production:
+  <<: *default
