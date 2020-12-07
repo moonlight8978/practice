@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  node-server:
+    build:
+      context: .
+      dockerfile: ./docker/development/Dockerfile
+      args:
+        APP_ROOT: "${APP_ROOT}"
+    command: node index.js
+    volumes:
+      - ".:${APP_ROOT}"
+    ports:
+      - 8080:8080
+    restart: always
+    tty: true
+    stdin_open: true
