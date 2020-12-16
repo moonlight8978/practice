@@ -1,0 +1,9 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container
+    = link_to 'BIG LOGO', companies_path, class: 'navbar-brand'
+    button.navbar-toggler aria-controls="navbarNav" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNav" data-toggle="collapse" type="button"
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item.active
+          = link_to 'Company', companies_path, class: 'nav-link'
