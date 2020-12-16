@@ -1,0 +1,15 @@
+h2 Company user list
+
+table.table.table-bordered
+  thead.thead-light
+    tr
+      th #
+      th Name
+      th Role
+      th Gender
+
+  tbody
+    - @users.each do |user|
+      = render 'user', user: user
+
+== pagy_bootstrap_nav(@pagy)

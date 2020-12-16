@@ -1,0 +1,19 @@
+h2 Company list
+
+table.table.table-bordered
+  thead.thead-light
+    tr
+      th[rowspan=2] #
+      th[rowspan=2] Name
+      th[colspan=3] Users count
+      th[rowspan=2] Average blood pressure
+    tr
+      th Male
+      th Female
+      th Hospitalized
+
+  tbody
+    - @companies.each do |company|
+      = render 'company', company: company
+
+== pagy_bootstrap_nav(@pagy)

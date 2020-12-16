@@ -1,0 +1,9 @@
+tr
+  td = company.id
+  td
+    = link_to company.name, company_users_path(company)
+  td = company.male_users_count
+  td = company.female_users_count
+  td = company.hospitalized_users_count
+  td = company.avg_blood_pressure
+

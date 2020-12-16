@@ -1,0 +1,17 @@
+h2 User task list
+
+table.table.table-bordered
+  thead.thead-light
+    tr
+      th #
+      th Name
+      th Status
+      th Start time
+      th Finish time
+      th Create time
+
+  tbody
+    - @tasks.each do |task|
+      = render 'task', task: task
+
+== pagy_bootstrap_nav(@pagy)

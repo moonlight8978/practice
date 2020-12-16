@@ -1,0 +1,69 @@
+version: "3.7"
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+      - type: tmpfs
+        target: /app/tmp/pids/
+    restart: always
+    command: rails s -b 0.0.0.0
+    ports:
+      - 3000:3000
+    tty: true
+    stdin_open: true
+    depends_on:
+      - db
+      - cache
+    env_file: .env
+
+  bundler:
+    build: .
+    volumes:
+      - .:/app
+    restart: always
+    command: ./bin/webpack-dev-server
+    ports:
+      - 3035:3035
+    environment:
+      WEBPACKER_DEV_SERVER_HOST: "0.0.0.0"
+      RAILS_ENV: development
+
+  db:
+    image: mysql:5.7.32
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: $DB_PASSWORD
+    restart: always
+
+  cache:
+    image: redis:5.0.6-alpine3.10
+    volumes:
+      - cache-data:/data
+    restart: always
+
+  # cron:
+  #   build: .
+  #   command: cron -f
+  #   volumes:
+  #     - .:/app
+  #   env_file: .env
+  #   depends_on:
+  #     - postgres
+  #     - redis
+
+  adminer:
+    image: adminer:4.7.8-standalone
+    restart: always
+    ports:
+      - 9900:8080
+    volumes:
+      - ./adminer.css:/var/www/html/adminer.css
+    depends_on:
+      - db
+
+volumes:
+  db-data:
+  cache-data:
