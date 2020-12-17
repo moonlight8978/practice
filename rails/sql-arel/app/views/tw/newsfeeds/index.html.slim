@@ -1,0 +1,6 @@
+- @newsfeeds.each do |newsfeed|
+  = render newsfeed.newsfeedable_type.underscore.gsub('/', '_'), newsfeed: newsfeed
+
+== pagy_bootstrap_nav(@pagy)
+
+- console

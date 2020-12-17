@@ -1,0 +1,23 @@
+- tweet = newsfeed.newsfeedable
+
+.card.mb-3
+  .card-body
+    h5.card-title
+      = newsfeed.creator.name
+      | ・
+      = link_to distance_of_time_in_words_to_now(newsfeed.created_at), tw_tweet_path(tweet)
+
+    p.card-text = tweet.content
+
+  .card-footer
+    a.card-link
+      = tweet.replies.size
+      | replies
+
+    a.card-link
+      = tweet.reactions.size
+      | reactions
+
+    a.card-link
+      = tweet.retweets.size
+      | retweets

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_16_020858) do
+ActiveRecord::Schema.define(version: 2020_12_17_034200) do
 
   create_table "companies", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
@@ -39,6 +39,37 @@ ActiveRecord::Schema.define(version: 2020_12_16_020858) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["assignee_id"], name: "index_tasks_on_assignee_id"
     t.index ["creator_id"], name: "index_tasks_on_creator_id"
+  end
+
+  create_table "tw_activities", charset: "utf8mb4", force: :cascade do |t|
+    t.string "newsfeedable_type"
+    t.bigint "newsfeedable_id"
+    t.bigint "creator_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["creator_id"], name: "index_tw_activities_on_creator_id"
+    t.index ["newsfeedable_type", "newsfeedable_id"], name: "index_tw_activities_on_newsfeedable"
+  end
+
+  create_table "tw_reactions", charset: "utf8mb4", force: :cascade do |t|
+    t.bigint "tweet_id"
+    t.bigint "responder_id"
+    t.string "emoticon"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["responder_id"], name: "index_tw_reactions_on_responder_id"
+    t.index ["tweet_id"], name: "index_tw_reactions_on_tweet_id"
+  end
+
+  create_table "tw_tweets", charset: "utf8mb4", force: :cascade do |t|
+    t.bigint "creator_id"
+    t.bigint "subject_id"
+    t.string "type"
+    t.string "content"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["creator_id"], name: "index_tw_tweets_on_creator_id"
+    t.index ["subject_id"], name: "index_tw_tweets_on_subject_id"
   end
 
   create_table "users", charset: "utf8mb4", force: :cascade do |t|

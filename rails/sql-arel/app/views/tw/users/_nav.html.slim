@@ -1,0 +1,11 @@
+ul.nav.nav-tabs
+  li.nav-item
+    = link_to 'Newsfeed', tw_user_newsfeeds_path(params[:user_id]), class: 'nav-link'
+  li.nav-item
+    = link_to 'Tweets', tw_user_tweets_path(params[:user_id]), class: 'nav-link'
+  li.nav-item
+    = link_to 'Replies', tw_user_replies_path(params[:user_id]), class: 'nav-link'
+  li.nav-item
+    = link_to 'Retweets', tw_user_retweets_path(params[:user_id]), class: 'nav-link'
+  li.nav-item
+    = link_to 'Reactions', tw_user_reactions_path(params[:user_id]), class: 'nav-link'

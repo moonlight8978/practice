@@ -1,0 +1,29 @@
+- tweet = newsfeed.newsfeedable.subject
+- retweet = newsfeed.newsfeedable
+
+.card.mb-3
+  .card-header
+    = "#{newsfeed.creator.name} Retweeted"
+    | ・
+    = link_to distance_of_time_in_words_to_now(newsfeed.created_at), tw_tweet_path(retweet)
+
+  .card-body
+    h5.card-title
+      = tweet.creator.name
+      | ・
+      = link_to distance_of_time_in_words_to_now(tweet.created_at), tw_tweet_path(tweet)
+
+    p.card-text = tweet.content
+
+  .card-footer
+    a.card-link
+      = retweet.replies.size
+      | replies
+
+    a.card-link
+      = retweet.reactions.size
+      | reactions
+
+    a.card-link
+      = retweet.retweets.size
+      | retweets

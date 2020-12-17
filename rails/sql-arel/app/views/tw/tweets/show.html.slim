@@ -1,0 +1,71 @@
+.card.mb-3
+  .card-body
+    h5.card-title
+      = @tweet.creator.name
+      | ・
+      = link_to distance_of_time_in_words_to_now(@tweet.created_at), tw_tweet_path(@tweet)
+
+    p.card-text = @tweet.content
+
+  .card-footer
+    a.card-link
+      = @tweet.replies.size
+      | replies
+
+    a.card-link
+      = @tweet.reactions.size
+      | reactions
+
+    a.card-link
+      = @tweet.retweets.size
+      | retweets
+
+  ul.list-group.list-group-flush
+    - @tweet.replies.each do |reply|
+      li.list-group-item
+        h6
+          = reply.creator.name
+          | ・
+          = link_to distance_of_time_in_words_to_now(reply.created_at), tw_tweet_path(reply)
+
+        p = reply.content
+
+        .card-footer.border-0
+          a.card-link
+            = reply.replies.size
+            | replies
+
+          a.card-link
+            = reply.reactions.size
+            | reactions
+
+          a.card-link
+            = reply.retweets.size
+            | retweets
+
+        - if reply.replies.size == 1
+          - last_reply = reply.replies.first
+          .card-body
+            h6
+              = last_reply.creator.name
+              | ・
+              = link_to distance_of_time_in_words_to_now(last_reply.created_at), tw_tweet_path(last_reply)
+
+            p.card-text = last_reply.content
+
+            .card-footer
+              a.card-link
+                = last_reply.replies.size
+                | replies
+
+              a.card-link
+                = last_reply.reactions.size
+                | reactions
+
+              a.card-link
+                = last_reply.retweets.size
+                | retweets
+        - else
+          .mt-2
+            a[href='#'] Show replies
+

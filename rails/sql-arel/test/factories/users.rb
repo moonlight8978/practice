@@ -4,5 +4,6 @@ FactoryBot.define do
 
     name { Faker::Name.name }
     gender { User.gender.values.sample }
+    role { User.role.values.sample }
   end
 end
